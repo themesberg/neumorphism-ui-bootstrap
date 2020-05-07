@@ -1,0 +1,14 @@
+/**
+ * = Shadows
+ */
+
+[class*="shadow"] {
+	@if $enable-transitions {
+        transition: $transition-base;
+    }
+}
+
+// stylelint-disable declaration-no-important
+.shadow-soft { box-shadow: $box-shadow-soft !important; }
+.shadow-inset { box-shadow: $shadow-inset !important; }
+

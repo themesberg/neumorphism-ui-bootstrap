@@ -1,0 +1,261 @@
+/**
+ * = Sections
+ */
+
+.section {
+    position: relative;
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 3;
+}
+
+.section-header {
+    position: relative;
+    padding-top: $spacer * 6;
+    padding-bottom: $spacer * 3;
+}
+
+@include media-breakpoint-up(sm) {
+    .section {
+        position: relative;
+        padding-top: $spacer * 6;
+        padding-bottom: $spacer * 6;
+    }
+    .section-header {
+        position: relative;
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+        &.section-sm{
+            padding-top: $spacer * 4;
+            padding-bottom: $spacer * 3;
+        }
+    }
+    .section-xl {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+    }
+    .section-lg {
+        padding-top: $spacer * 8;
+        padding-bottom: $spacer * 8;
+    }
+    .section-sm {
+        padding-top: $spacer * 4;
+        padding-bottom: $spacer * 4;
+    }
+}
+
+// Hero sections
+.section-hero {
+    @include media-breakpoint-up(md) {
+        height: 100vh;
+    }
+}
+
+// Profile cover
+.section-profile-cover {
+    height: 580px;
+    background-size: cover;
+    background-position: center center;
+    @include media-breakpoint-down(md) {
+        height: 400px;
+    }
+}
+
+.components-section {
+    >.form-control {
+        +.form-control {
+            margin-top: .5rem;
+        }
+    }
+    >.nav+.nav,
+    >.alert+.alert,
+    >.navbar+.navbar,
+    >.progress+.progress,
+    >.progress+.btn,
+    .badge,
+    .btn {
+        margin-right: .75rem;
+        margin-bottom: .75rem;
+    }
+    .btn-group {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        .btn {
+            margin: 0;
+        }
+    }
+    .alert {
+        margin: 0;
+        +.alert {
+            margin-top: 1.25rem;
+        }
+    }
+    .badge {
+        margin-right: .5rem;
+    }
+    .modal-footer {
+        .btn {
+            margin: 0;
+        }
+    }
+}
+
+
+// Pages section
+.card-box {
+    @include perspective(900px);
+    width: 250px;
+    position: relative;
+    .card-component {
+        @include transform-style(preserve-3d);
+        position: relative;
+        height: 300px;
+        @include media-breakpoint-up(lg) {
+            height: 450px;
+        }
+        &.card-component-lg{
+            height: auto;
+
+            @include media-breakpoint-up(xs) {
+                max-height: 800px;
+            }
+
+            @include media-breakpoint-up(md) {
+                max-height: 410px;
+            }
+        }
+        &.card-component-xs{
+            height: auto;
+            max-height: 230px;
+        }
+        .front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            @include box-shadow($box-shadow-light);
+            @include border-radius($border-radius);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .page-card {
+        @include box-shadow($box-shadow-light);
+        @include border-radius($border-radius);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        width: 200px;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 260px;
+    }
+}
+
+.copy-docs {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: $transition-base;
+    &.copied {
+        background: $success;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.index-icon {
+    position: absolute;
+    font-size: 38px;
+    color: #dcdcdc;
+    transition: 0.3s all ease;
+}
+
+.index-icon-javascript {
+    bottom: 80px;
+    left: 40px;
+}
+
+.index-icon-javascript:hover {
+    color: #f1da1c;
+}
+
+.index-icon-bootstrap {
+    bottom: -150px;
+    right: -7%;
+}
+
+.index-icon-bootstrap:hover {
+    color: #553d7c;
+}
+
+.icon-sass:hover {
+    color: #CD6799;
+}
+
+.index-icon-code {
+    bottom: 180px;
+    left: -80px;
+}
+
+.index-icon-code:hover {
+    color: #ff7f66;
+}
+
+.index-icon-gulp:hover {
+    color: #e34a4f;
+}
+
+.index-icon-gulp {
+    left: 250px;
+    bottom: -10px;
+}
+
+.index-icon-html5 {
+    right: 30px;
+    bottom: 150px;
+}
+
+.index-icon-html5:hover {
+    color: #e54b20;
+}
+
+.index-icon-css3 {
+    right: 40px;
+    bottom: -20px;
+}
+
+.index-icon-css3:hover {
+    color: #e54b20;
+}
+
+.index-icon-npm {
+    right: 180px;
+    bottom: 20px;
+}
+
+.index-icon-npm:hover {
+    color: #cc3f3d;
+}
+
+.index-icon-fontawesome {
+    right: 340px;
+    bottom: -40px;
+}
+
+.index-icon-fontawesome:hover {
+    color: #3499EF;
+}
+
+.index-icon-illustrations {
+    left: 20px;
+    bottom: -40px;
+}
+
+.index-icon-illustrations:hover {
+    color: $secondary;
+}

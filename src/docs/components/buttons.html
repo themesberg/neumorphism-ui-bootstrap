@@ -1,0 +1,1103 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Buttons"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn mb-2 mr-2 btn-lg btn-primary btn-block rounded-0 d-lg-none" role="button" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Buttons</h1>
+                            <p class="lead text-dark">Use Pixel's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                            <a href="https://getbootstrap.com/docs/4.3/components/buttons/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="main" class="my-5">
+                            <h5 class="mb-3">Main buttons</h5>
+                            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <button class="btn mb-2 mr-2 btn-primary" type="button">Primary</button>
+                                                <button class="btn mb-2 mr-2 btn-secondary" type="button">Secondary</button>
+                                                <button class="btn mb-2 mr-2 btn-tertiary" type="button">Tertiary</button>
+                                                <button class="btn mb-2 mr-2 btn-success" type="button">Success</button>
+                                                <button class="btn mb-2 mr-2 btn-warning" type="button">Warning</button>
+                                                <button class="btn mb-2 mr-2 btn-danger" type="button">Danger</button>
+                                                <button class="btn mb-2 mr-2 btn-info" type="button">Info</button>
+                                                <button class="btn mb-2 mr-2 btn-dark" type="button">Dark</button>
+                                                <button class="btn mb-2 mr-2 btn-gray" type="button">Gray</button>
+                                                <button class="btn mb-2 mr-2 btn-light" type="button">Light</button>
+                                                <button class="btn mb-2 mr-2 btn-white" type="button">White</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-secondary&quot; type=&quot;button&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-tertiary&quot; type=&quot;button&quot;&gt;Tertiary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-success&quot; type=&quot;button&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-warning&quot; type=&quot;button&quot;&gt;Warning&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-danger&quot; type=&quot;button&quot;&gt;Danger&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-info&quot; type=&quot;button&quot;&gt;Info&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-dark&quot; type=&quot;button&quot;&gt;Dark&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-gray&quot; type=&quot;button&quot;&gt;Gray&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-light&quot; type=&quot;button&quot;&gt;Light&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-white&quot; type=&quot;button&quot;&gt;White&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="outline" class="my-5">
+                            <h5 class="mb-3">Outline buttons</h5>
+                            <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code class="text-danger">.btn-outline-*</code> ones (e.g,
+                                <code class="text-danger">.btn-outline-primary</code>) to remove all background images and colors on any button.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <button class="btn mb-2 mr-2 btn-outline-primary" type="button">Primary</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-secondary" type="button">Secondary</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-tertiary" type="button">Tertiary</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-success" type="button">Success</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-warning" type="button">Warning</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-danger" type="button">Danger</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-info" type="button">Info</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-dark" type="button">Dark</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-gray" type="button">Gray</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-light" type="button">Light</button>
+                                                <button class="btn mb-2 mr-2 btn-outline-white" type="button">White</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-primary&quot; type=&quot;button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-secondary&quot; type=&quot;button&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-tertiary&quot; type=&quot;button&quot;&gt;Tertiary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-success&quot; type=&quot;button&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-warning&quot; type=&quot;button&quot;&gt;Warning&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-danger&quot; type=&quot;button&quot;&gt;Danger&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-info&quot; type=&quot;button&quot;&gt;Info&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-dark&quot; type=&quot;button&quot;&gt;Dark&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-gray&quot; type=&quot;button&quot;&gt;Gray&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-light&quot; type=&quot;button&quot;&gt;Light&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-outline-white&quot; type=&quot;button&quot;&gt;White&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="pill" class="my-5">
+                            <h5 class="mb-3">Pill buttons</h5>
+                            <p>If you like buttons more rounded (with a larger <code class="text-danger">border-radius</code>) use the <code class="text-danger">.btn-pill</code> modifier class.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <button class="btn mb-2 mr-2 btn-pill btn-primary" type="button">Primary</button>
+                                                <button class="btn mb-2 mr-2 btn-pill btn-outline-primary" type="button">Primary</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-pill btn-primary&quot; type=&quot;button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-pill btn-outline-primary&quot; type=&quot;button&quot;&gt;Primary&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="circle" class="my-5">
+                            <h5 class="mb-3">Circle buttons</h5>
+                            <p>You can use the border utility class, like:<code class="text-danger">.rounded-circle </code> if you want circle button.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <button class="btn mb-2 mr-2 btn-icon-only btn-primary" type="button">
+                                                    <span class="btn-inner-icon"><i class="far fa-heart"></i></span>
+                                                </button>
+                                                <button class="btn mb-2 mr-2 btn-icon-only rounded-circle btn-primary" type="button">
+                                                    <span class="btn-inner-icon"><i class="far fa-thumbs-up"></i></span>
+                                                </button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon-only btn-primary&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon-only rounded-circle btn-primary&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;far fa-thumbs-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="icons" class="my-5">
+                            <h5 class="mb-3">With icons</h5>
+                            <p>In our product buttons with icons can be implemented using a combination of <code class="text-danger">&lt;button&gt;</code> and <code class="text-danger">&lt;span&gt;</code></p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <button class="btn mb-2 mr-2 btn-icon btn-primary" type="button">
+                                                    <span class="btn-inner-icon"><i class="fas fa-brain"></i></span>
+                                                    <span class="btn-inner-text">Icon Left</span>
+                                                </button>
+                                                <button class="btn mb-2 mr-2 btn-icon btn-primary" type="button">
+                                                    <span class="btn-inner-text">Icon Right</span>
+                                                    <span class="btn-inner-icon"><i class="fas fa-brain"></i></span>
+                                                </button>
+                                                <button class="btn mb-2 mr-2 btn-icon-only btn-primary" type="button">
+                                                    <span class="btn-inner-icon"><i class="far fa-heart"></i></span>
+                                                </button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon btn-primary&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fas fa-brain&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;btn-inner-text&quot;&gt;Icon Left&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon btn-primary&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-text&quot;&gt;Icon Right&lt;/span&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fas fa-brain&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon-only btn-primary&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="animated" class="my-5">
+                            <h5 class="mb-3">Animated buttons</h5>
+                            <p>Use animation modifier classes <code class="text-danger">.animate-*-#</code> (eg. <code class="text-danger">.animate-up-1, .animate-down-3</code>). You can use up, right, down and bottom and use a counter from 1 to 5 to specify
+                                the distance in pixels.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-55" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-55" data-toggle="tab" href="#tab-content-55" role="tab" aria-controls="tab-link-55" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-56" data-toggle="tab" href="#tab-content-56" role="tab" aria-controls="tab-link-56" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent55">
+                                            <div class="tab-pane fade show active" id="tab-content-55" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <button class="btn mb-2 mr-2 btn-primary animate-up-2" type="button">Animate
+                                                    up</button>
+                                                <button class="btn mb-2 mr-2 btn-secondary animate-right-3" type="button">Animate
+                                                    right</button>
+                                                <button class="btn mb-2 mr-2 btn-tertiary animate-left-3" type="button">Animate
+                                                    left</button>
+                                                <button class="btn mb-2 mr-2 btn-success animate-down-2" type="button">Animate
+                                                    down</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-56" role="tabpanel" aria-labelledby="tab-content-56">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-html">
+&#x3C;button class=&#x22;btn mb-2 mr-2 btn-primary animate-up-2&#x22; type=&#x22;button&#x22;&#x3E;Animate up&#x3C;/button&#x3E;
+&#x3C;button class=&#x22;btn mb-2 mr-2 btn-secondary animate-right-3&#x22; type=&#x22;button&#x22;&#x3E;Animate right&#x3C;/button&#x3E;
+&#x3C;button class=&#x22;btn mb-2 mr-2 btn-tertiary animate-left-3&#x22; type=&#x22;button&#x22;&#x3E;Animate left&#x3C;/button&#x3E;
+&#x3C;button class=&#x22;btn mb-2 mr-2 btn-success animate-down-2&#x22; type=&#x22;button&#x22;&#x3E;Animate down&#x3C;/button&#x3E;
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="dropdowns" class="my-5">
+                            <h5 class="mb-3">Dropdown buttons</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-dropdowns-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-dropdowns-1" data-toggle="tab" href="#tab-content-dropdowns-1" role="tab" aria-controls="tab-link-dropdowns-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-dropdowns-2" data-toggle="tab" href="#tab-content-dropdowns-2" role="tab" aria-controls="tab-link-dropdowns-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tab-dropdowns-1">
+                                            <div class="tab-pane fade show active" id="tab-content-dropdowns-1" role="tabpanel" aria-labelledby="tab-content-dropdowns-1">
+                                                <div class="btn-group mr-2 mb-2">
+                                                    <button type="button" class="btn btn-primary">Primary</button>
+                                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-angle-down dropdown-arrow"></i>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group mr-2 mb-2">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-angle-down dropdown-arrow"></i>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary">Secondary</button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group mb-2 mr-2">
+                                                    <button type="button" class="btn btn-tertiary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-angle-down dropdown-arrow"></i>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-dropdowns-2" role="tabpanel" aria-labelledby="tab-content-dropdowns-2">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-html">
+&#x3C;div class=&#x22;btn-group mr-2 mb-2&#x22;&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;Primary&#x3C;/button&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary dropdown-toggle dropdown-toggle-split&#x22;
+        data-toggle=&#x22;dropdown&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+        &#x3C;i class=&#x22;fas fa-angle-down dropdown-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle Dropdown&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;div class=&#x22;dropdown-menu&#x22;&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Action&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Another action&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Something else here&#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;dropdown-divider&#x22;&#x3E;&#x3C;/div&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Separated link&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;btn-group mr-2 mb-2&#x22;&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-secondary dropdown-toggle dropdown-toggle-split&#x22;
+        data-toggle=&#x22;dropdown&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+        &#x3C;i class=&#x22;fas fa-angle-down dropdown-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle Dropdown&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-secondary&#x22;&#x3E;Secondary&#x3C;/button&#x3E;
+    &#x3C;div class=&#x22;dropdown-menu&#x22;&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Action&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Another action&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Something else here&#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;dropdown-divider&#x22;&#x3E;&#x3C;/div&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Separated link&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;btn-group mb-2 mr-2&#x22;&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-tertiary dropdown-toggle dropdown-toggle-split&#x22;
+        data-toggle=&#x22;dropdown&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+        &#x3C;i class=&#x22;fas fa-angle-down dropdown-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle Dropdown&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;div class=&#x22;dropdown-menu&#x22;&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Action&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Another action&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Something else here&#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;dropdown-divider&#x22;&#x3E;&#x3C;/div&#x3E;
+        &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Separated link&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="link" class="my-5">
+                            <h5 class="mb-3">Link buttons</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-default">Default</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-primary">Primary</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-secondary">Secondary</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-tertiary">Tertiary</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-success">Success</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-warning">Warning</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-danger">Danger</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-info">Info</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-dark">Dark</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-gray">Gray</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link text-light">Light</a>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-default&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-secondary&quot;&gt;Secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-tertiary&quot;&gt;Tertiary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-warning&quot;&gt;Warning&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-danger&quot;&gt;Danger&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-info&quot;&gt;Info&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-dark&quot;&gt;Dark&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-gray&quot;&gt;Gray&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link text-light&quot;&gt;Light&lt;/a&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="social" class="my-5">
+                            <h5 class="mb-3">Social buttons</h5>
+                            <p>Start using the buttons as you would normally do with the Bootstrap buttons that have an icon by adding the relevant class. For example:<code class="text-info">.btn-twitter</code></p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-8" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-15" data-toggle="tab" href="#tab-content-15" role="tab" aria-controls="tab-link-15" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-16" data-toggle="tab" href="#tab-content-16" role="tab" aria-controls="tab-link-16" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent8">
+                                            <div class="tab-pane fade show active" id="tab-content-15" role="tabpanel" aria-labelledby="tab-content-15">
+                                                <button class="btn mb-2 mr-2 btn-icon btn-twitter" type="button">
+                                                    <span class="btn-inner-icon"><i class="fab fa-twitter"></i></span>
+                                                    <span class="btn-inner-text">Login with Twitter</span>
+                                                </button>
+                                                <button class="btn mb-2 mr-2 btn-icon btn-pill btn-twitter" type="button">
+                                                    <span class="btn-inner-icon"><i class="fab fa-twitter"></i></span>
+                                                    <span class="btn-inner-text">Login with Twitter</span>
+                                                </button>
+                                                <button class="btn mb-2 mr-2 btn-icon-only btn-twitter" type="button">
+                                                    <span class="btn-inner-icon"><i class="fab fa-twitter"></i></span>
+                                                </button>
+                                                <button class="btn mb-2 mr-2 btn-icon-only btn-pill btn-twitter" type="button">
+                                                    <span class="btn-inner-icon"><i class="fab fa-twitter"></i></span>
+                                                </button>
+                                                <a href="#" class="btn mb-2 mr-2 btn-link btn-twitter">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-16" role="tabpanel" aria-labelledby="tab-content-16">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon btn-twitter&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;btn-inner-text&quot;&gt;Login with Twitter&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon btn-pill btn-twitter&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;btn-inner-text&quot;&gt;Login with Twitter&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon-only btn-twitter&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-icon-only btn-pill btn-twitter&quot; type=&quot;button&quot;&gt;
+    &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-link btn-twitter&quot;&gt;
+    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="tags" class="my-5">
+                            <h5 class="mb-3">Button tags</h5>
+                            <p>The <code class="text-danger">.btn</code> classes are designed to be used with the <code class="text-danger">&lt;button&gt;</code> element. However, you can also use these classes on <code class="text-danger">&lt;a&gt;</code>                                or <code class="text-danger">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+                            <p>When using button classes on <code class="text-danger">&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page,
+                                these links should be given a
+                                <code class="text-danger">role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-9" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-17" data-toggle="tab" href="#tab-content-17" role="tab" aria-controls="tab-link-17" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-18" data-toggle="tab" href="#tab-content-18" role="tab" aria-controls="tab-link-18" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent9">
+                                            <div class="tab-pane fade show active" id="tab-content-17" role="tabpanel" aria-labelledby="tab-content-17">
+                                                <a class="btn mb-2 mr-2 btn-primary" href="#" role="button">Link</a>
+                                                <button class="btn mb-2 mr-2 btn-primary" type="submit">Button</button>
+                                                <input class="btn mb-2 mr-2 btn-primary" type="button" value="Input">
+                                                <input class="btn mb-2 mr-2 btn-primary" type="submit" value="Submit">
+                                                <input class="btn mb-2 mr-2 btn-primary" type="reset" value="Reset">
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-18" role="tabpanel" aria-labelledby="tab-content-18">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;a class=&quot;btn mb-2 mr-2 btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="sizes" class="my-5">
+                            <h5 class="mb-3">Sizes</h5>
+                            <p>Fancy larger or smaller buttons? Add <code class="text-danger">.btn-lg</code> or <code class="text-danger">.btn-sm</code> for additional sizes.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-10" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-19" data-toggle="tab" href="#tab-content-19" role="tab" aria-controls="tab-link-19" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-20" data-toggle="tab" href="#tab-content-20" role="tab" aria-controls="tab-link-20" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent10">
+                                            <div class="tab-pane fade show active" id="tab-content-19" role="tabpanel" aria-labelledby="tab-content-19">
+                                                <button class="btn mb-2 mr-2 btn-sm btn-primary" type="button">Small</button>
+                                                <button class="btn mb-2 mr-2 btn-primary" type="button">Regular</button>
+                                                <button class="btn mb-2 mr-2 btn-lg btn-primary" type="button">Large
+                                                    Button</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-20" role="tabpanel" aria-labelledby="tab-content-20">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-sm btn-primary&quot; type=&quot;button&quot;&gt;Small&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;button&quot;&gt;Regular&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-lg btn-primary&quot; type=&quot;button&quot;&gt;Large Button&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="block" class="my-5">
+                            <h5 class="mb-3">Block level buttons</h5>
+                            <p>Create block level buttons—those that span the full width of a parent—by adding <code class="text-danger">.btn-block</code>.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-11" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-21" data-toggle="tab" href="#tab-content-21" role="tab" aria-controls="tab-link-21" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-22" data-toggle="tab" href="#tab-content-22" role="tab" aria-controls="tab-link-22" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent11">
+                                            <div class="tab-pane fade show active" id="tab-content-21" role="tabpanel" aria-labelledby="tab-content-21">
+                                                <button type="button" class="btn mb-2 mr-2 btn-primary btn-block">Block
+                                                    level
+                                                    button</button>
+                                                <button type="button" class="btn mb-2 mr-2 btn-secondary btn-block">Block
+                                                    level
+                                                    button</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-22" role="tabpanel" aria-labelledby="tab-content-22">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button class=&quot;btn mb-2 mr-2 btn-sm btn-primary&quot; type=&quot;button&quot;&gt;Small&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-primary&quot; type=&quot;button&quot;&gt;Regular&lt;/button&gt;
+&lt;button class=&quot;btn mb-2 mr-2 btn-lg btn-primary&quot; type=&quot;button&quot;&gt;Large Button&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="active" class="my-5">
+                            <h5 class="mb-3">Active state</h5>
+                            <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. <strong>There’s no need to add a class to <code class="text-danger">&lt;button&gt;</code>s
+                                    as they use a pseudo-class</strong>. However, you can still force the same active appearance with <code class="text-danger">.active</code> (and include the <code class="text-danger">aria-pressed="true"</code> attribute)
+                                should you need to replicate the state programmatically.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-12" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-23" data-toggle="tab" href="#tab-content-23" role="tab" aria-controls="tab-link-23" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-24" data-toggle="tab" href="#tab-content-24" role="tab" aria-controls="tab-link-24" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent12">
+                                            <div class="tab-pane fade show active" id="tab-content-23" role="tabpanel" aria-labelledby="tab-content-23">
+                                                <a href="#" class="btn mb-2 mr-2 btn-primary active" role="button" aria-pressed="true">Primary
+                                                    link</a>
+                                                <a href="#" class="btn mb-2 mr-2 btn-secondary active" role="button" aria-pressed="true">Link</a>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-24" role="tabpanel" aria-labelledby="tab-content-24">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-primary btn-lg active&quot; role=&quot;button&quot; aria-pressed=&quot;true&quot;&gt;Primary link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-secondary btn-lg active&quot; role=&quot;button&quot; aria-pressed=&quot;true&quot;&gt;Link&lt;/a&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="disabled" class="my-5">
+                            <h5 class="mb-3">Disabled state</h5>
+                            <p>Make buttons look inactive by adding the <code class="text-danger">disabled</code> boolean attribute to any <code class="text-danger">&lt;button&gt;</code> element.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-13" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-25" data-toggle="tab" href="#tab-content-25" role="tab" aria-controls="tab-link-25" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-26" data-toggle="tab" href="#tab-content-26" role="tab" aria-controls="tab-link-26" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent13">
+                                            <div class="tab-pane fade show active" id="tab-content-25" role="tabpanel" aria-labelledby="tab-content-25">
+                                                <button type="button" class="btn mb-2 mr-2 btn-primary" disabled>Primary
+                                                    button</button>
+                                                <button type="button" class="btn mb-2 mr-2 btn-secondary" disabled>Button</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-26" role="tabpanel" aria-labelledby="tab-content-26">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn mb-2 mr-2 btn-primary&quot; disabled&gt;Primary button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn mb-2 mr-2 btn-secondary&quot; disabled&gt;Button&lt;/button&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <p>Disabled buttons using the <code class="text-danger">&lt;a&gt;</code> element behave a bit different:
+                        </p>
+                        <ul>
+                            <li><code class="text-danger">&lt;a&gt;</code>s don't support the <code class="text-danger">disabled</code> attribute, so you must add the <code class="text-danger">.disabled</code> class to make it visually appear disabled.</li>
+                            <li>Some future-friendly styles are included to disable all <code class="text-danger">pointer-events</code> on anchor buttons. In browsers which support that property, you won't see the disabled cursor at all.</li>
+                            <li>Disabled buttons should include the <code class="text-danger">aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
+                        </ul>
+                        <div class="nav-wrapper position-relative mt-5 p-0">
+                            <ul class="nav nav-tabs flex-column flex-md-row" id="tab-14" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-27" data-toggle="tab" href="#tab-content-27" role="tab" aria-controls="tab-link-27" aria-selected="true">Result</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-28" data-toggle="tab" href="#tab-content-28" role="tab" aria-controls="tab-link-28" aria-selected="false">Html</a>
+                                </li>
+                                <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                            </ul>
+                        </div>
+                        <!-- End of Tab Nav -->
+                        <div class="card">
+                            <div class="card-body px-0 pb-0">
+                                <div class="tab-content" id="tabcontent14">
+                                    <div class="tab-pane fade show active" id="tab-content-27" role="tabpanel" aria-labelledby="tab-content-27">
+                                        <a href="#" class="btn mb-2 mr-2 btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+                                        <a href="#" class="btn mb-2 mr-2 btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-content-28" role="tabpanel" aria-labelledby="tab-content-28">
+                                        <div>
+                                            <pre>
+                                                <code class="language-html">
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-primary disabled&quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Primary link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn mb-2 mr-2 btn-secondary disabled&quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Link&lt;/a&gt;
+                                                </code>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="toggles" class="alert alert-white mt-4">
+                            <h5 class="alert-heading">Link functionality caveat</h5>
+                            <p>The <code class="text-danger">.disabled</code> class uses <code class="text-danger">pointer-events: none</code> to try to disable the link functionality of <code class="text-danger">&lt;a&gt;</code>s, but that CSS property
+                                is not yet standardized. In addition, even in browsers that do support <code class="text-danger">pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive
+                                technologies will still be able to activate these links. So to be safe, add a <code class="text-danger">tabindex="-1"</code> attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript
+                                to disable their functionality.
+                            </p>
+                        </div>
+                        <div id="button-plugin" class="my-5">
+                            <h5 class="mb-3">Button plugin</h5>
+                            <p>Add <code class="text-danger">data-toggle="button"</code> to toggle a button's <code class="text-danger">active</code> state. If you're pre-toggling a button, you must manually add the <code class="text-danger">.active</code>                                class <strong class="text-dark">and</strong>
+                                <code class="text-danger">aria-pressed="true"</code> to the <code class="text-danger">&lt;button&gt;</code>.</p>
+                            <!-- Tab Nav -->
+                            <div class="nav-wrapper position-relative p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-15" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-29" data-toggle="tab" href="#tab-content-29" role="tab" aria-controls="tab-link-29" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-30" data-toggle="tab" href="#tab-content-30" role="tab" aria-controls="tab-link-30" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <!-- End of Tab Nav -->
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tabcontent15">
+                                        <div class="tab-pane fade show active" id="tab-content-29" role="tabpanel" aria-labelledby="tab-content-29">
+                                            <button type="button" class="btn mb-2 mr-2 btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                                Single toggle
+                                            </button>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-30" role="tabpanel" aria-labelledby="tab-content-30">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn mb-2 mr-2 btn-primary&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
+    Single toggle
+&lt;/button&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Tab -->
+                        <div id="checkbox-and-radio" class="my-5">
+                            <h5 class="mb-3">Button plugin</h5>
+                            <p>Pixel and Bootstrap's <code class="text-danger">.button</code> styles can be applied to other elements, such as <code class="text-danger">&lt;label&gt;</code>s, to provide checkbox or radio style button toggling. Add
+                                <code
+                                    class="text-danger">data-toggle="buttons"</code>
+                                    to a <code class="text-danger">.btn-group</code> containing those modified buttons to enable their toggling behavior via JavaScript and add <code class="text-danger">.btn-group-toggle</code> to style the <code class="text-danger">&lt;input&gt;</code>s
+                                    within your buttons.
+                                    <strong class="text-dark">Note that you can create single input-powered buttons or
+                                    groups of them.</strong></p>
+                            <p>The checked state for these buttons is <strong class="text-dark">only updated via <code
+                                        class="text-danger">click</code> event</strong> on the button. If you use another method to update the input—e.g., with <code class="text-danger">&lt;input type="reset"&gt;</code> or by manually applying the input's
+                                <code class="text-danger">checked</code> property—you'll need to toggle <code class="text-danger">.active</code> on the <code class="text-danger">&lt;label&gt;</code> manually.</p>
+                            <p>Note that pre-checked buttons require you to manually add the <code class="text-danger">.active</code> class to the input's <code class="text-danger">&lt;label&gt;</code>.</p>
+                            <!-- Tab Nav -->
+                            <div class="nav-wrapper position-relative p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-16" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-31" data-toggle="tab" href="#tab-content-31" role="tab" aria-controls="tab-link-31" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-32" data-toggle="tab" href="#tab-content-32" role="tab" aria-controls="tab-link-32" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <!-- End of Tab Nav -->
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tabcontent16">
+                                        <div class="tab-pane fade show active" id="tab-content-31" role="tabpanel" aria-labelledby="tab-content-31">
+                                            <div class="btn-group-toggle" data-toggle="buttons">
+                                                <label class="btn mb-2 mr-2 btn-dark active">
+                                                    <input type="checkbox" checked autocomplete="off"> Checked
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-32" role="tabpanel" aria-labelledby="tab-content-32">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div class=&quot;btn-group-toggle&quot; data-toggle=&quot;buttons&quot;&gt;
+    &lt;label class=&quot;btn mb-2 mr-2 btn-secondary active&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; checked autocomplete=&quot;off&quot;&gt; Checked
+    &lt;/label&gt;
+&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab Nav -->
+                            <div class="nav-wrapper position-relative mt-4 p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-17" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-33" data-toggle="tab" href="#tab-content-33" role="tab" aria-controls="tab-link-33" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-34" data-toggle="tab" href="#tab-content-34" role="tab" aria-controls="tab-link-34" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <!-- End of Tab Nav -->
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tabcontent17">
+                                        <div class="tab-pane fade show active" id="tab-content-33" role="tabpanel" aria-labelledby="tab-content-33">
+                                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <label class="btn mb-2 mr-2 btn-dark active">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off"
+                                                        checked /> Active
+                                                </label>
+                                                <label class="btn mb-2 mr-2 btn-dark">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off" />
+                                                    Radio
+                                                </label>
+                                                <label class="btn mb-2 mr-2 btn-dark">
+                                                    <input type="radio" name="options" id="option3" autocomplete="off" />
+                                                    Radio
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-34" role="tabpanel" aria-labelledby="tab-content-34">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div class=&quot;btn-group btn-group-toggle&quot; data-toggle=&quot;buttons&quot;&gt;
+    &lt;label class=&quot;btn mb-2 mr-2 btn-dark active&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option1&quot; autocomplete=&quot;off&quot; checked /&gt; Active
+    &lt;/label&gt;
+    &lt;label class=&quot;btn mb-2 mr-2 btn-dark&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option2&quot; autocomplete=&quot;off&quot; /&gt; Radio
+    &lt;/label&gt;
+    &lt;label class=&quot;btn mb-2 mr-2 btn-dark&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option3&quot; autocomplete=&quot;off&quot; /&gt; Radio
+    &lt;/label&gt;
+&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Tab -->
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#main" class="nav-link" data-smooth-scroll>Main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#outline" class="nav-link" data-smooth-scroll>Outline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#pill" class="nav-link" data-smooth-scroll>Pill</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#circle" class="nav-link" data-smooth-scroll>Circle</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#icons " class="nav-link" data-smooth-scroll>Icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#creative" class="nav-link" data-smooth-scroll>Creative</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#animated" class="nav-link">Animated</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#dropdowns" class="nav-link">Dropdowns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#link" class="nav-link" data-smooth-scroll>Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#social" class="nav-link" data-smooth-scroll>Social</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tags" class="nav-link" data-smooth-scroll>Using tags (eg. a)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sizes" class="nav-link" data-smooth-scroll>Sizes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#block" class="nav-link" data-smooth-scroll>Block</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#active" class="nav-link" data-smooth-scroll>Active state</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#disabled" class="nav-link" data-smooth-scroll>Disabled state</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#toggles" class="nav-link" data-smooth-scroll>Toggles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

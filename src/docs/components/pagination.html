@@ -1,0 +1,638 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Pagination"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Pagination</h1>
+                            <p class="lead text-dark">Use Pixel's custom pagination styles to organize blog posts, cards or images.</p>
+                            <a href="https://getbootstrap.com/docs/4.3/components/pagination/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="example" class="my-5">
+                            <h5 class="mb-3">Pagination example</h5>
+                            <p>The following example is completely identical to the markup from Bootstrap 4. This is the default style using text for "Previous" and "Next".</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Previous</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;Previous&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;Next&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="icons" class="my-5">
+                            <h5 class="mb-3">Pagination with icons</h5>
+                            <p>The following example uses icons instead of the to mark "Next" and "Previous".</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="rounded" class="my-5">
+                            <h5 class="mb-3">Rounded pagination</h5>
+                            <p>To use rounded pagination add the modifier class <code class="text-danger">.circle-pagination</code> to the <code class="text-danger">.pagination</code> element.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination circle-pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination circle-pagination&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="disabled-active" class="my-5">
+                            <h5 class="mb-3">Disabled and active states</h5>
+                            <p>To disable an item add the modifier class <code class="text-danger">.disabled</code> to a <code class="text-danger">.page-item</code> element.</p>
+                            <p>To indicate an active item add the modifier class <code class="text-danger">.active</code> to a <code class="text-danger">.page-item</code> element.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" tabindex="-1" href="#">Previous</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item disabled&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; tabindex=&#x22;-1&#x22; href=&#x22;#&#x22;&#x3E;Previous&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;Next&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="sizing" class="my-5">
+                            <h5 class="mb-3">Choose your size</h5>
+                            <p>To increase/decrease the size of the pagination elements use the modifier classes <code class="text-danger">.pagination-*</code> (eg. <code class="text-danger">.pagination-lg</code>) on the <code class="text-danger">.pagination</code>                                element.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination pagination-lg">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination pagination-md">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination pagination-sm">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">4</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">5</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination pagination-lg&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination pagination-md&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+&#x3C;nav aria-label=&#x22;Page navigation example&#x22;&#x3E;
+    &#x3C;ul class=&#x22;pagination pagination-sm&#x22;&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item active&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;4&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;5&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;page-item&#x22;&#x3E;
+            &#x3C;a class=&#x22;page-link&#x22; href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#example" class="nav-link" data-smooth-scroll>Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#icons" class="nav-link " data-smooth-scroll>Icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#rounded" class="nav-link " data-smooth-scroll>Rounded</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#disabled-active" class="nav-link " data-smooth-scroll>Disabled & Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sizing" class="nav-link " data-smooth-scroll>Sizing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+/**
+ * = Popovers
+ */
+
+
+.popover-header {
+    font-weight: $font-weight-bold;
+    @include box-shadow($shadow-inset);
+}
+
+// Alternative colors
+@each $color, $value in $theme-colors {
+    .popover-#{$color} {
+        @include popover-variant($value);
+    }
+}

@@ -1,0 +1,181 @@
+<!--
+
+=========================================================
+* Neumorphism UI Kit Pro - v1.0.0
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui-kit-pro
+* Copyright 2020 Themesberg (https://www.themesberg.com/licensing)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Neumorph Pro Components - All"
+    })
+</head>
+
+<body>
+    @@include('./_navigation.html', {
+        "path": "../..",
+        "classes": "navbar-dark"
+    })
+    <main>
+
+        <section class="section section bg-primary pb-5 overflow-hidden z-2">
+            <div class="container z-2">
+                <div class="row justify-content-center text-center pt-6">
+                    <div class="col-lg-8 col-xl-8">
+                        <h1 class="display-2 mb-3">Neumorphism<span class="presentation-badge bg-primary border border-light shadow-soft font-weight-bolder text-dark">PRO</span></h1>
+                        <p class="lead px-md-6 mb-5">Neumorphism inspired <strong>User Interface Kit</strong> that will help you prototype and design beautiful, creative and modern websites.</p>
+                        <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center flex-column">
+                            <img src="../../assets/img/themesberg.svg" height="25" class="mb-3" alt="Themesberg Logo">
+                            <span class="text-muted font-small">A Themesberg production</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('./components/_accordions.html', {
+            "path": "../..",
+            "classes": "bg-primary text-white"
+        })
+
+        @@include('./components/_alerts.html', {
+            "path": "../..",
+            "classes": "bg-primary text-white"
+        })
+
+        @@include('./components/_badges.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_cards.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_bootstrap-carousels.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_breadcrumbs.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_buttons.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_counters.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_e-commerce.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_forms.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_icon-boxes.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_modals.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_navs.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_owl-carousels.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_pagination.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_pagination.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_progress-bars.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_steps.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_tables.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_tabs.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_toasts.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_timelines.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_tooltips.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_typography.html', {
+            "path": "../.."
+        })
+
+        @@include('./components/_widgets.html', {
+            "path": "../.."
+        })
+
+        @@include('./_pricing.html', {
+            "path": "../.."
+        })
+        
+    </main>
+
+    @@include('./_footer.html', {
+        "path": "../..",
+        "classes": "bg-primary"
+    })
+
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+    
+    <script>
+        $toggleTransitions = $('#toggleTransitions');
+        $buttonOverlay = $('.btn-loading-overlay');
+
+        $toggleTransitions.on('change', function() {
+            if ($(this).is(':checked')) {
+                $buttonOverlay.addClass('btn-loading');
+                $buttonOverlay.attr('disabled', true);
+            } else {
+                $buttonOverlay.removeClass('btn-loading');
+                $buttonOverlay.attr('disabled', false);
+            }
+        });
+    </script>
+</body>
+
+</html>

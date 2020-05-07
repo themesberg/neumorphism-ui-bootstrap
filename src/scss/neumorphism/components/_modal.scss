@@ -1,0 +1,46 @@
+/**
+ * = Modals
+ */
+
+.modal{
+    &.static-example{
+        position: relative;
+        display: block;
+    }
+}
+
+.modal-content {
+    border: $modal-content-border-width solid $modal-content-border-color;
+    @include box-shadow($shadow-inset);
+    // Remove focus outline from opened modal
+    outline: 0;
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+    border-bottom: $modal-header-border-width solid $modal-header-border-color;
+  
+    .close {
+      padding: $modal-header-padding;
+      // auto on the left force icon to the right even when there is no .modal-title
+      margin: (-$modal-header-padding-y) (-$modal-header-padding-x) (-$modal-header-padding-y) auto;
+    }
+  }
+
+.modal-fluid {
+    .modal-dialog {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .modal-content {
+        border-radius: 0;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .modal-#{$color} {
+        @include modal-variant($value);
+    }
+}
+

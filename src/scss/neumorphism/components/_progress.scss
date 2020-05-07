@@ -1,0 +1,86 @@
+/**
+ * = Progress bars
+ */
+
+.progress-wrapper {
+    position: relative;
+}
+
+.progress-bar {
+    box-shadow: none;
+    height: auto;
+    @include border-radius($badge-border-radius);
+}
+
+.progress {
+    height: .6rem;
+    border: $border-width solid $light;
+    margin-bottom: $spacer;
+    overflow: hidden;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    @include box-shadow($shadow-inset);
+}
+
+.progress-xl {
+    height: $progress-xl-size;
+}
+.progress-lg {
+    height: $progress-lg-size;
+}
+
+.progress-info{
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(space-between);
+    margin-bottom: .5rem;
+
+    .progress-label {
+        span {
+            display: inline-block;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-bold;
+        }
+    }
+    
+    .progress-percentage {
+        text-align: right;
+        span {
+            display: inline-block;
+            font-size: $font-size-xs;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+.info-xl{
+    .progress-label,
+    .progress-percentage {
+        span {
+            font-size: $font-size-sm;
+        }
+    }
+
+    .progress-percentage {
+        text-align: right;
+    }
+
+}
+
+.progress-tooltip {
+    background: $primary;
+    font-weight: $font-weight-bold;
+    padding: .25rem .375rem;
+    line-height: 1;
+    font-size: $font-size-xs;
+    position: relative;
+    @include box-shadow($shadow-inset);
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive{
+    0% { width: 0%; }
+}
+

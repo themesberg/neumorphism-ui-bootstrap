@@ -1,0 +1,248 @@
+/**
+ * = Buttons
+ */
+
+.btn {
+    position: relative;
+    transition: $transition-base;
+    letter-spacing: $btn-letter-spacing;
+    font-size: $btn-font-size;
+    border-color: $light;
+    @include box-shadow($box-shadow-light);
+
+
+	&.btn-pill {
+		border-radius: $border-radius-pill;
+    }
+
+    &.btn-circle {
+        border-radius: $circle-radius;
+    }
+    
+
+    .btn-group &, .input-group & {
+        margin-right: 0;
+        transform: translateY(0);
+    }
+
+    .toggle-arrow {
+        transition: $transition-base;
+    }
+
+    &[aria-expanded="true"] {
+        .toggle-arrow {
+            @include transform(rotate(180deg));
+        }
+    }
+
+    &.btn-dropdown{
+        @include box-shadow($box-shadow-light);
+    }
+	
+}
+
+//Btn Group
+.btn-group {
+    > .btn:not(:first-child),
+    > .btn-group:not(:first-child) {
+      box-shadow: 3px 3px 6px #b8b9be, 0px -3px 6px #ffffff;
+    }
+}
+
+// Sizes
+.btn-xs {
+    padding:0.25rem 0.45rem;
+    @include box-shadow($box-shadow-light);
+    line-height: 1.8;
+    &, i {
+        font-size: $font-size-xs !important;
+    }
+}
+
+.btn-sm {
+    &, i {
+        font-size: $font-size-sm !important;
+    }
+}
+
+.btn-md {
+    &, i {
+        font-size: $font-size-md !important;
+    }
+}
+
+.btn-lg {
+    &, i {
+        font-size: $font-size-lg !important;
+    }
+}
+
+
+// Fixes
+[class*="btn-outline-"] {
+    border-width: 2px;
+}
+
+.btn-outline-secondary {
+    color: $secondary;
+}
+
+.btn-inner-icon {
+    i:not(.fa) {
+        position: relative;
+    }
+}
+
+.btn-link {
+    font-weight: $btn-font-weight;
+    box-shadow: none;
+    padding: 0;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: transparent;
+		box-shadow: none;
+        transform: none;
+	}
+}
+
+// Icons 
+.btn-icon {
+    display: inline-block;
+
+    .btn-inner-icon:first-of-type {
+        margin-right: .3rem;
+    }
+    .btn-inner-icon:last-of-type {
+        margin-left: .3rem;
+    }
+}
+
+.btn-icon-only {
+    position: relative;
+    width: 2.575rem;
+    height: 2.575rem;
+    padding: 0;
+
+    span, i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+    }
+
+    &a {
+        line-height: 2.5;
+    }
+
+    &.btn-xs {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    &.btn-sm {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.spinner-border,
+.spinner-brow {
+    vertical-align: middle;
+}
+
+.btn-loading-overlay {
+    .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        opacity: 0;
+    }
+    .btn-inner-text,
+    .spinner {
+        transition: $transition-base;
+    }
+    .btn-inner-text {
+        opacity: 1;
+    }
+    &.btn-loading {
+        .spinner {
+            opacity: 1;
+        }
+        .btn-inner-text {
+            opacity: 0;
+        }
+    }
+}
+
+.btn-group,
+.btn-vertical {
+
+    .dropdown-arrow {
+        transition: $transition-base;
+    }
+
+    &.show {
+        .dropdown-arrow {
+            @include transform(rotate(180deg));
+        }
+
+        &.dropright .dropdown-arrow {
+            @include transform(rotate(90deg));
+        }
+
+        &.dropleft .dropdown-arrow {
+            @include transform(rotate(-90deg));
+        }
+    }
+
+    // reset Bootstrap z-index: 1 from scss/bootstrap/_button-group.scss
+    // from overlaying the second button border
+    > .btn {
+        @include hover {
+            z-index: 0;
+          }
+          &:focus,
+          &:active,
+          &.active {
+            z-index: 0;
+          }
+    }
+}
+
+// Set color of theme buttons
+@each $color, $value in $theme-colors {
+    &.btn-#{$color}{
+        @include button-variant($value, $value);
+    }
+}
+
+
+// Brand (social) buttons 
+@each $color, $value in $brand-colors {
+    .btn-#{$color} {
+        background-color: $primary;
+        color:$value;
+        border-color:$light;
+        &:hover{
+            color:$value;
+            @include box-shadow($shadow-inset);
+            background-color: transparent;
+            border-color:$light;
+        }
+		&.btn-link {
+			color: $value;
+			background: transparent;
+            border:0;
+            border-style: none;
+			&:hover,
+			&:focus,
+			&.active {
+                background-color: none !important;
+                border: 0;
+				color: $value;
+			}
+		}
+    }
+}

@@ -1,0 +1,1466 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Timelines"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Timelines</h1>
+                            <p class="lead text-dark">Use our creative and clean timelines to showcase progress and events.
+                            </p>
+                        </div>
+                        <div id="icon" class="my-5">
+                            <h5 class="mb-3">Icon timelines</h5>
+                            <p>This timeline uses <code class="text-danger">.timeline .timeline-one</code> classes to style the <code class="text-danger">.timeline-item</code>.</p>
+                            <p>Additionally, each <code class="text-danger">.timeline-item</code> contains an icon and text.
+                            </p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-10">
+                                                        <!-- Timeline -->
+                                                        <div class="timeline timeline-one">
+                                                            <!-- Timeline Item 1 -->
+                                                            <div class="timeline-item">
+                                                                <span class="icon icon-info"><i class="fab fa-react"></i></span>
+                                                                <h5 class="my-3">React</h5>
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.</p>
+                                                            </div>
+                                                            <!-- Timeline Item 2 -->
+                                                            <div class="timeline-item">
+                                                                <span class="icon icon-secondary"><i class="fab fa-vuejs"></i></span>
+                                                                <h5 class="my-3">VueJs</h5>
+                                                                <p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS,
+                                                                    and JS. Quickly prototype your ideas.</p>
+                                                            </div>
+                                                            <!-- Timeline Item 3 -->
+                                                            <div class="timeline-item">
+                                                                <span class="icon icon-danger"><i class="fab fa-angular"></i></span>
+                                                                <h5 class="my-3">Angular</h5>
+                                                                <p>AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges
+                                                                    encountered in developing single-page applications.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--End of Timeline-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;timeline timeline-one&quot;&gt;
+    &lt;!-- Timeline Item 1 --&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+        &lt;span class=&quot;icon icon-info&quot;&gt;&lt;i class=&quot;fab fa-react&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;h5 class=&quot;my-3&quot;&gt;React&lt;/h5&gt;
+        &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 2 --&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+            &lt;span class=&quot;icon icon-secondary&quot;&gt;&lt;i class=&quot;fab fa-vuejs&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;h5 class=&quot;my-3&quot;&gt;VueJs&lt;/h5&gt;
+        &lt;p&gt;Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 3 --&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+            &lt;span class=&quot;icon icon-danger&quot;&gt;&lt;i class=&quot;fab fa-angular&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;h5 class=&quot;my-3&quot;&gt;Angular&lt;/h5&gt;
+        &lt;p&gt;AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="card" class="my-5">
+                            <h5 class="mb-3">Card timelines</h5>
+                            <p>These card timelines have <code class="text-danger">.timeline .timeline-two</code> classes for specific styling.</p>
+                            <p>Furtherly, you can add timeline items by creating a <code class="text-danger">.timeline-item</code> and update the content inside the card.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent-1">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-10">
+                                                        <!-- Timeline -->
+                                                        <div class="timeline timeline-two">
+                                                            <!-- Timeline Item 1 -->
+                                                            <div class="timeline-item shadow-sm border border-light">
+                                                                <div class="post-meta mb-3">
+                                                                    <a class="text-secondary mr-2" href="#"><i class="far fa-heart mr-2"></i>2.1k</a>
+                                                                    <span class="text-light"><i class="far fa-clock mr-2"></i>Jan
+                                                                        03, 2019</span>
+                                                                </div>
+                                                                <h5>We open our first office</h5>
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.</p>
+                                                                <a href="#" class="btn btn-link text-dark btn-icon">
+                                                                    <span class="btn-inner-icon"><i class="fab fa-readme"></i></span>
+                                                                    <span class="btn-inner-text font-weight-bold">See
+                                                                        story</span>
+                                                                </a>
+                                                            </div>
+                                                            <!-- Timeline Item 2 -->
+                                                            <div class="timeline-item shadow-sm border border-light">
+                                                                <div class="post-meta mb-3">
+                                                                    <a class="text-secondary mr-2" href="#"><i class="far fa-heart mr-2"></i>10k</a>
+                                                                    <span class="text-light"><i class="far fa-clock mr-2"></i>Mar
+                                                                        10, 2017</span>
+                                                                </div>
+                                                                <h5>We sold more than 1000 copies </h5>
+                                                                <p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS,
+                                                                    and JS. Quickly prototype your ideas.</p>
+                                                                <a href="#" class="btn btn-link text-dark btn-icon">
+                                                                    <span class="btn-inner-icon"><i class="fab fa-readme"></i></span>
+                                                                    <span class="btn-inner-text font-weight-bold">See
+                                                                        story</span>
+                                                                </a>
+                                                            </div>
+                                                            <!-- Timeline Item 3 -->
+                                                            <div class="timeline-item shadow-sm border border-light">
+                                                                <div class="post-meta mb-3">
+                                                                    <a class="text-secondary mr-2" href="#"><i class="far fa-heart mr-2"></i>15.2k</a>
+                                                                    <span class="text-light"><i class="far fa-clock mr-2"></i>Set
+                                                                        24, 2016</span>
+                                                                </div>
+                                                                <h5>The begining</h5>
+                                                                <p>AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges
+                                                                    encountered in developing single-page applications.
+                                                                </p>
+                                                                <a href="#" class="btn btn-link text-dark btn-icon">
+                                                                    <span class="btn-inner-icon"><i class="fab fa-readme"></i></span>
+                                                                    <span class="btn-inner-text font-weight-bold">See
+                                                                        story</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Timeline -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;timeline timeline-two&quot;&gt;
+    &lt;!-- Timeline Item 1 --&gt;
+    &lt;div class=&quot;timeline-item shadow-sm&quot;&gt;
+        &lt;div class=&quot;post-meta mb-3&quot;&gt;
+            &lt;a class=&quot;text-secondary mr-2&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;2.1k&lt;/a&gt;
+            &lt;span class=&quot;text-light&quot;&gt;&lt;i class=&quot;far fa-clock&quot;&gt;&lt;/i&gt;Jan 03, 2019&lt;/span&gt;
+        &lt;/div&gt; 
+        &lt;h5&gt;We open our first office&lt;/h5&gt;
+        &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.&lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark btn-icon&quot;&gt;
+            &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-readme&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;btn-inner-text&quot;&gt;See story&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 2 --&gt;
+    &lt;div class=&quot;timeline-item shadow-sm&quot;&gt;
+        &lt;div class=&quot;post-meta mb-3&quot;&gt;
+            &lt;a class=&quot;text-secondary mr-2&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;10k&lt;/a&gt;
+            &lt;span class=&quot;text-light&quot;&gt;&lt;i class=&quot;far fa-clock&quot;&gt;&lt;/i&gt;Mar 10, 2017&lt;/span&gt;
+        &lt;/div&gt; 
+        &lt;h5&gt;We sold more than 1000 copies &lt;/h5&gt;
+        &lt;p&gt;Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas.&lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark btn-icon&quot;&gt;
+            &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-readme&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;btn-inner-text&quot;&gt;See story&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 3 --&gt;
+    &lt;div class=&quot;timeline-item shadow-sm&quot;&gt;
+        &lt;div class=&quot;post-meta mb-3&quot;&gt;
+            &lt;a class=&quot;text-secondary mr-2&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;15.2k&lt;/a&gt;
+            &lt;span class=&quot;text-light&quot;&gt;&lt;i class=&quot;far fa-clock&quot;&gt;&lt;/i&gt;Set 24, 2016&lt;/span&gt;
+        &lt;/div&gt; 
+        &lt;h5&gt;The begining&lt;/h5&gt;
+        &lt;p&gt;AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.&lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark btn-icon&quot;&gt;
+            &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fab fa-readme&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;btn-inner-text&quot;&gt;See story&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="creative-icon" class="my-5">
+                            <h5 class="mb-3">Creative icon timelines 1</h5>
+                            <p>These creative icons have a <code class="text-danger">.vertical-timeline</code> wrapper class. Afterward, there are two <code class="text-danger">div</code> tags with their appropiate classes, as seen in the Html tab.</p>
+                            <p>In the first <code class="text-danger">div</code> you can find the Fontawesome font which you can change to your liking.</p>
+                            <p>For the second <code class="text-danger">div</code> you can add any components you'd like, such as text, buttons, alerts and so on.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="vertical-timeline">
+                                                            <!-- Timeline Item 1 -->
+                                                            <div class="row d-flex align-items-center">
+                                                                <div class="col-md-2 text-center bottom">
+                                                                    <div class="shape d-flex align-items-center justify-content-center organic-radius icon-danger">
+                                                                        <i class="fab fa-angular"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>Organic shape</h6>
+                                                                    <p>Picseel ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row timeline timeline-inner">
+                                                                <div class="col-md-2">
+                                                                    <div class="corner top-right"></div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <hr>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="corner left-bottom"></div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 2 -->
+                                                            <div class="row align-items-center justify-content-end vertical-timeline">
+                                                                <div class="col-md-6 text-right">
+                                                                    <h6>Circle shape</h6>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.</p>
+                                                                </div>
+                                                                <div class="col-md-2 text-center full">
+                                                                    <div class="shape right d-flex align-items-center justify-content-center icon-secondary rounded-circle">
+                                                                        <i class="fab fa-vuejs"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row timeline timeline-inner">
+                                                                <div class="col-md-2">
+                                                                    <div class="corner right-bottom"></div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <hr>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="corner top-left"></div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 3 -->
+                                                            <div class="row align-items-center vertical-timeline">
+                                                                <div class="col-md-2 text-center top">
+                                                                    <div class="shape d-flex align-items-center justify-content-center icon-info">
+                                                                        <i class="fab fa-react"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>Square shape</h6>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;vertical-timeline&quot;&gt;
+            &lt;!-- Timeline Item 1 --&gt;
+            &lt;div class=&quot;row d-flex align-items-center&quot;&gt;
+                &lt;div class=&quot;col-md-2 text-center bottom&quot;&gt;
+                    &lt;div class=&quot;shape organic-radius icon-danger&quot;&gt;&lt;i class=&quot;fab fa-angular&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;
+                    &lt;h6&gt;Organic shape&lt;/h6&gt;
+                    &lt;p&gt;Picseel ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row timeline-inner&quot;&gt;
+                &lt;div class=&quot;col-md-2&quot;&gt;
+                    &lt;div class=&quot;corner top-right&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-2&quot;&gt;
+                    &lt;div class=&quot;corner left-bottom&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Timeline Item 2 --&gt;
+            &lt;div class=&quot;row align-items-center justify-content-end vertical-timeline&quot;&gt;
+                &lt;div class=&quot;col-md-6 text-right&quot;&gt;
+                    &lt;h6&gt;Circle shape&lt;/h6&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-2 text-center full&quot;&gt;
+                    &lt;div class=&quot;shape right icon-secondary rounded-circle&quot;&gt;&lt;i class=&quot;fab fa-vuejs&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row timeline-inner&quot;&gt;
+                &lt;div class=&quot;col-md-2&quot;&gt;
+                    &lt;div class=&quot;corner right-bottom&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-2&quot;&gt;
+                    &lt;div class=&quot;corner top-left&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Timeline Item 3 --&gt;
+            &lt;div class=&quot;row align-items-center vertical-timeline&quot;&gt;
+                &lt;div class=&quot;col-md-2 text-center top&quot;&gt;
+                    &lt;div class=&quot;shape icon-info&quot;&gt;&lt;i class=&quot;fab fa-react&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;
+                    &lt;h6&gt;Square shape&lt;/h6&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="creative-icon-2" class="my-5">
+                            <h5 class="mb-3">Creative icon timelines 2</h5>
+                            <p>This timeline has <code class="text-danger">.timeline .timeline-four</code> classes for specific styles.</p>
+                            <p>To create a timeline item, create an item with <code class="text-danger">.timeline-item</code> in which you can change the icon used and add content and components inside the <code class="text-danger">.timeline-content</code>                                tag.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-10 mx-auto">
+                                                        <!-- Timeline -->
+                                                        <div class="timeline timeline-four">
+                                                            <!-- Timeline Item 1 -->
+                                                            <div class="timeline-item">
+                                                                <div class="icon"></div>
+                                                                <div class="date-content">
+                                                                    <div class="date-outer">
+                                                                        <span class="date">
+                                                                            <i class="far fa-money-bill-alt"></i>
+                                                                            <span class="year mt-1">2018-2019</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="timeline-content">
+                                                                    <h5 class="title">Business</h5>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 2 -->
+                                                            <div class="timeline-item">
+                                                                <div class="icon"></div>
+                                                                <div class="date-content">
+                                                                    <div class="date-outer">
+                                                                        <span class="date">
+                                                                            <i class="far fa-lightbulb"></i>
+                                                                            <span class="year mt-1">2017-2018</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="timeline-content">
+                                                                    <h5 class="title">Development</h5>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.</p>
+
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 3 -->
+                                                            <div class="timeline-item">
+                                                                <div class="icon"></div>
+                                                                <div class="date-content">
+                                                                    <div class="date-outer">
+                                                                        <span class="date">
+                                                                            <i class="far fa-paper-plane"></i>
+                                                                            <span class="year mt-1">2015-2016</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="timeline-content">
+                                                                    <h5 class="title">Marketing</h5>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Timeline -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;timeline timeline-four&quot;&gt;
+    &lt;!-- Timeline Item 1 --&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+        &lt;div class=&quot;icon&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;date-content&quot;&gt;
+            &lt;div class=&quot;date-outer&quot;&gt;
+                &lt;span class=&quot;date&quot;&gt;
+                    &lt;i class=&quot;far fa-money-bill-alt&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;year mt-1&quot;&gt;2018-2019&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;timeline-content&quot;&gt;
+            &lt;h5 class=&quot;title&quot;&gt;Business&lt;/h5&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 2 --&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+        &lt;div class=&quot;icon&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;date-content&quot;&gt;
+            &lt;div class=&quot;date-outer&quot;&gt;
+                &lt;span class=&quot;date&quot;&gt;
+                    &lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;year mt-1&quot;&gt;2017-2018&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;timeline-content&quot;&gt;
+            &lt;h5 class=&quot;title&quot;&gt;Development&lt;/h5&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 3 --&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+        &lt;div class=&quot;icon&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;date-content&quot;&gt;
+            &lt;div class=&quot;date-outer&quot;&gt;
+                &lt;span class=&quot;date&quot;&gt;
+                    &lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;year mt-1&quot;&gt;2015-2016&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;timeline-content&quot;&gt;
+            &lt;h5 class=&quot;title&quot;&gt;Marketing&lt;/h5&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="events" class="my-5">
+                            <h5 class="mb-3">Event card timeline</h5>
+                            <p>These timelines have a main wrapper <code class="text-danger">.timeline .timeline-five</code> for specific styles.</p>
+                            <p>You can add images inside the <code class="text-danger">.img-fluid</code> element and change content inside the <code class="text-danger">.card</code> element.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <!-- Timeline -->
+                                                        <div class="timeline timeline-five">
+                                                            <!-- Item 1 -->
+                                                            <div class="row">
+                                                                <!-- timeline item 1 center image & middle line -->
+                                                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid rounded-circle" src="../../assets/img/team/8.jpg"
+                                                                            alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Timeline item 1 content-->
+                                                                <div class="col my-4">
+                                                                    <div class="card shadow-sm bw-md border-primary text-primary">
+                                                                        <div class="card-body">
+                                                                            <div class="post-meta float-right">
+                                                                                <a class="text-primary" href="#"><i
+                                                                                        class="far fa-thumbs-up"></i>345</a>
+                                                                            </div>
+                                                                            <h5 class="card-title text-primary">Time Schedule 1</h5>
+                                                                            <p class="card-text">Stay organized, reduce stress, and accomplish personal and business goals with a daily schedule template. It’s a simple yet effective time-management tool for any daily activity,
+                                                                                whether you’re managing a busy work schedule, academic assignments or family chores. </p>
+                                                                            <button class="btn btn-sm btn-primary" type="button" data-target="#t1_details" data-toggle="collapse">Show
+                                                                                Details <i class="fas fa-angle-down toggle-arrow ml-1"></i></button>
+                                                                            <div class="collapse" id="t1_details">
+                                                                                <div class="p-2 mt-3 text-monospace">
+                                                                                    <div>08:30 - 09:00 Breakfast in Town
+                                                                                    </div>
+                                                                                    <div>09:00 - 10:30 Attend a team meeting
+                                                                                    </div>
+                                                                                    <div>10:30 - 10:45 Research on new technologies and tools</div>
+                                                                                    <div>10:45 - 12:00 It’s a good idea to review the day’s work</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Item 2 -->
+                                                            <div class="row">
+                                                                <!-- timeline item 2 center image & middle line -->
+                                                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid rounded-circle" src="../../assets/img/team/10.jpg"
+                                                                            alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Timeline item 2 content -->
+                                                                <div class="col my-4">
+                                                                    <div class="card shadow-sm bw-md border-secondary text-success">
+                                                                        <div class="card-body">
+                                                                            <div class="post-meta float-right">
+                                                                                <a class="text-secondary" href="#"><i
+                                                                                        class="far fa-thumbs-up"></i>515</a>
+                                                                            </div>
+                                                                            <h5 class="card-title text-secondary">Time Schedule 2</h5>
+                                                                            <p class="card-text">Stay organized, reduce stress, and accomplish personal and business goals with a daily schedule template. It’s a simple yet effective time-management tool for any daily activity,
+                                                                                whether you’re managing a busy work schedule, academic assignments or family chores. </p>
+                                                                            <button class="btn btn-sm btn-secondary" type="button" data-target="#t2_details" data-toggle="collapse">Show Details <i
+                                                                                    class="fas fa-angle-down toggle-arrow ml-1"></i></button>
+                                                                            <div class="collapse" id="t2_details">
+                                                                                <div class="p-2 mt-3 text-monospace">
+                                                                                    <div>08:30 - 09:00 Breakfast in Town
+                                                                                    </div>
+                                                                                    <div>09:00 - 10:30 Attend a team meeting
+                                                                                    </div>
+                                                                                    <div>10:30 - 10:45 Research on new technologies and tools</div>
+                                                                                    <div>10:45 - 12:00 It’s a good idea to review the day’s work</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 3 -->
+                                                            <div class="row">
+                                                                <!-- timeline item 3 center image & middle line -->
+                                                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid rounded-circle" src="../../assets/img/team/9.jpg"
+                                                                            alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Timeline item 3 content -->
+                                                                <div class="col my-4">
+                                                                    <div class="card shadow-sm bw-md border-tertiary text-tertiary">
+                                                                        <div class="card-body">
+                                                                            <div class="post-meta float-right">
+                                                                                <a class="text-tertiary" href="#"><i
+                                                                                        class="far fa-thumbs-up"></i>115</a>
+                                                                            </div>
+                                                                            <h5 class="card-title text-tertiary">Time Schedule 3</h5>
+                                                                            <p class="card-text">Stay organized, reduce stress, and accomplish personal and business goals with a daily schedule template. It’s a simple yet effective time-management tool for any daily activity,
+                                                                                whether you’re managing a busy work schedule, academic assignments or family chores. </p>
+                                                                            <button class="btn btn-sm btn-tertiary" type="button" data-target="#t3_details" data-toggle="collapse">Show Details <i
+                                                                                    class="fas fa-angle-down toggle-arrow ml-1"></i></button>
+                                                                            <div class="collapse" id="t3_details">
+                                                                                <div class="p-2 mt-3 text-monospace">
+                                                                                    <div>08:30 - 09:00 Breakfast in Town
+                                                                                    </div>
+                                                                                    <div>09:00 - 10:30 Attend a team meeting
+                                                                                    </div>
+                                                                                    <div>10:30 - 10:45 Research on new technologies and tools</div>
+                                                                                    <div>10:45 - 12:00 It’s a good idea to review the day’s work</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Timeline -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Timeline --&gt;
+&lt;div class=&quot;timeline timeline-five&quot;&gt;
+    &lt;!-- Item 1 --&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- timeline item 1 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-auto text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid rounded-circle&quot; src=&quot;../../assets/img/team/8.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Timeline item 1 content--&gt;
+        &lt;div class=&quot;col my-4&quot;&gt;
+            &lt;div class=&quot;card shadow-sm bw-md border-primary text-primary&quot;&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;div class=&quot;post-meta float-right&quot;&gt;
+                        &lt;a class=&quot;text-primary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-thumbs-up&quot;&gt;&lt;/i&gt;345&lt;/a&gt;
+                    &lt;/div&gt;  
+                    &lt;h5 class=&quot;card-title text-primary&quot;&gt;Time Schedule 1&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;Stay organized, reduce stress, and accomplish personal and business goals with a daily schedule template. It&rsquo;s a simple yet effective time-management tool for any daily activity, whether you&rsquo;re managing a busy work schedule, academic assignments or family chores. &lt;/p&gt;
+                    &lt;button class=&quot;btn btn-sm btn-primary&quot; type=&quot;button&quot; data-target=&quot;#t1_details&quot; data-toggle=&quot;collapse&quot;&gt;Show Details &lt;i class=&quot;fas fa-angle-down toggle-arrow ml-1&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;div class=&quot;collapse&quot; id=&quot;t1_details&quot;&gt;
+                        &lt;div class=&quot;p-2 mt-3 text-monospace&quot;&gt;
+                            &lt;div&gt;08:30 - 09:00 Breakfast in Town&lt;/div&gt;
+                            &lt;div&gt;09:00 - 10:30 Attend a team meeting&lt;/div&gt;
+                            &lt;div&gt;10:30 - 10:45 Research on new technologies and tools&lt;/div&gt;
+                            &lt;div&gt;10:45 - 12:00 It&rsquo;s a good idea to review the day&rsquo;s work&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Item 2 --&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- timeline item 2 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-auto text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid rounded-circle&quot; src=&quot;../../assets/img/team/10.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Timeline item 2 content --&gt;
+        &lt;div class=&quot;col my-4&quot;&gt;
+            &lt;div class=&quot;card shadow-sm bw-md border-secondary text-success&quot;&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;div class=&quot;post-meta float-right&quot;&gt;
+                        &lt;a class=&quot;text-secondary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-thumbs-up&quot;&gt;&lt;/i&gt;515&lt;/a&gt;
+                    &lt;/div&gt;  
+                    &lt;h5 class=&quot;card-title text-secondary&quot;&gt;Time Schedule 2&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;Stay organized, reduce stress, and accomplish personal and business goals with a daily schedule template. It&rsquo;s a simple yet effective time-management tool for any daily activity, whether you&rsquo;re managing a busy work schedule, academic assignments or family chores. &lt;/p&gt;
+                    &lt;button class=&quot;btn btn-sm btn-secondary&quot; type=&quot;button&quot; data-target=&quot;#t2_details&quot; data-toggle=&quot;collapse&quot;&gt;Show Details &lt;i class=&quot;fas fa-angle-down toggle-arrow ml-1&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;div class=&quot;collapse&quot; id=&quot;t2_details&quot;&gt;
+                        &lt;div class=&quot;p-2 mt-3 text-monospace&quot;&gt;
+                            &lt;div&gt;08:30 - 09:00 Breakfast in Town&lt;/div&gt;
+                            &lt;div&gt;09:00 - 10:30 Attend a team meeting&lt;/div&gt;
+                            &lt;div&gt;10:30 - 10:45 Research on new technologies and tools&lt;/div&gt;
+                            &lt;div&gt;10:45 - 12:00 It&rsquo;s a good idea to review the day&rsquo;s work&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 3 --&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- timeline item 3 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-auto text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid rounded-circle&quot; src=&quot;../../assets/img/team/9.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Timeline item 3 content --&gt;
+        &lt;div class=&quot;col my-4&quot;&gt;
+            &lt;div class=&quot;card shadow-sm bw-md border-tertiary text-tertiary&quot;&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;div class=&quot;post-meta float-right&quot;&gt;
+                        &lt;a class=&quot;text-tertiary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-thumbs-up&quot;&gt;&lt;/i&gt;115&lt;/a&gt;
+                    &lt;/div&gt;  
+                    &lt;h5 class=&quot;card-title text-tertiary&quot;&gt;Time Schedule 3&lt;/h5&gt;
+                    &lt;p class=&quot;card-text&quot;&gt;Stay organized, reduce stress, and accomplish personal and business goals with a daily schedule template. It&rsquo;s a simple yet effective time-management tool for any daily activity, whether you&rsquo;re managing a busy work schedule, academic assignments or family chores. &lt;/p&gt;
+                    &lt;button class=&quot;btn btn-sm btn-tertiary&quot; type=&quot;button&quot; data-target=&quot;#t3_details&quot; data-toggle=&quot;collapse&quot;&gt;Show Details &lt;i class=&quot;fas fa-angle-down toggle-arrow ml-1&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;div class=&quot;collapse&quot; id=&quot;t3_details&quot;&gt;
+                        &lt;div class=&quot;p-2 mt-3 text-monospace&quot;&gt;
+                            &lt;div&gt;08:30 - 09:00 Breakfast in Town&lt;/div&gt;
+                            &lt;div&gt;09:00 - 10:30 Attend a team meeting&lt;/div&gt;
+                            &lt;div&gt;10:30 - 10:45 Research on new technologies and tools&lt;/div&gt;
+                            &lt;div&gt;10:45 - 12:00 It&rsquo;s a good idea to review the day&rsquo;s work&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Timeline --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="icon-card" class="my-5">
+                            <h5 class="mb-3">Creative icon & card timelines</h5>
+                            <p>These timelines have the <code class="text-danger">.timeline .timeline-six</code> classes for specific classes.</p>
+                            <p>Change the image inside the <code class="text-danger">.avatar-separator</code> and update the content of the <code class="text-danger">.profile-card</code> item.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-8" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-15" data-toggle="tab" href="#tab-content-15" role="tab" aria-controls="tab-link-15" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-16" data-toggle="tab" href="#tab-content-16" role="tab" aria-controls="tab-link-16" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent8">
+                                            <div class="tab-pane fade show active" id="tab-content-15" role="tabpanel" aria-labelledby="tab-content-15">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="timeline timeline-six">
+                                                            <!-- Timeline Item 1 -->
+                                                            <div class="row no-gutters">
+                                                                <div class="col-sm">
+                                                                    <!--spacer-->
+                                                                </div>
+                                                                <!-- timeline item 1 center image & middle line -->
+                                                                <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid organic-radius border-tertiary"
+                                                                            src="../../../../assets/img/team/9.jpg" alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- timeline profile card -->
+                                                                <div class="col-sm py-2">
+                                                                    <div class="profile-card">
+                                                                        <div class="card shadow border-light">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Tanislav Robert</h5>
+                                                                                <h6 class="card-subtitle">Director</h6>
+                                                                                <p class="card-text my-2">I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual
+                                                                                    design.</p>
+                                                                                <ul class="social-buttons mt-3">
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                            <i class="fab fa-slack-hash"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                                            <i class="fab fa-dribbble"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                            <i class="fab fa-google-plus"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                                            <i class="fab fa-dropbox"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 2 -->
+                                                            <div class="row no-gutters">
+                                                                <!-- timeline profile card -->
+                                                                <div class="col-sm py-2">
+                                                                    <div class="profile-card">
+                                                                        <div class="card shadow border-light">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Zoltan Szőgyényi</h5>
+                                                                                <h6 class="card-subtitle">Founder</h6>
+                                                                                <p class="card-text my-2">I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual
+                                                                                    design.</p>
+                                                                                <ul class="social-buttons mt-3">
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                            <i class="fab fa-slack-hash"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                                            <i class="fab fa-dribbble"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                            <i class="fab fa-google-plus"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                                            <i class="fab fa-dropbox"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- timeline item 2 center image & middle line -->
+                                                                <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid organic-radius border-secondary"
+                                                                            src="../../../../assets/img/team/8.jpg" alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm">
+                                                                    <!--spacer-->
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 3 -->
+                                                            <div class="row no-gutters">
+                                                                <div class="col-sm">
+                                                                    <!--spacer-->
+                                                                </div>
+                                                                <!-- timeline item 3 center image & middle line -->
+                                                                <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid organic-radius border-warning"
+                                                                            src="../../../../assets/img/team/10.jpg" alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- timeline profile card -->
+                                                                <div class="col-sm py-2">
+                                                                    <div class="profile-card">
+                                                                        <div class="card shadow border-light">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Calota Oana</h5>
+                                                                                <h6 class="card-subtitle">Marketing</h6>
+                                                                                <p class="card-text my-2">I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual
+                                                                                    design.</p>
+                                                                                <ul class="social-buttons mt-3">
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                            <i class="fab fa-slack-hash"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                                            <i class="fab fa-dribbble"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                            <i class="fab fa-google-plus"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                                            <i class="fab fa-dropbox"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Timeline Item 4 -->
+                                                            <div class="row no-gutters">
+                                                                <!-- timeline profile card -->
+                                                                <div class="col-sm py-2">
+                                                                    <div class="profile-card">
+                                                                        <div class="card shadow border-light">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Lucian Tanislav</h5>
+                                                                                <h6 class="card-subtitle">Sales</h6>
+                                                                                <p class="card-text my-2">I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual
+                                                                                    design.</p>
+                                                                                <ul class="social-buttons mt-3">
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                            <i class="fab fa-slack-hash"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                                            <i class="fab fa-dribbble"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                            <i class="fab fa-google-plus"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                                            <i class="fab fa-dropbox"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- timeline item 4 center image & middle line -->
+                                                                <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                                                                    <div class="row h-50">
+                                                                        <div class="col middle-line">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                    <span class="m-3 avatar-separator">
+                                                                        <img class="img-fluid organic-radius border-info"
+                                                                            src="../../../../assets/img/team/6.jpg" alt="avatar">
+                                                                    </span>
+                                                                    <div class="row h-50">
+                                                                        <div class="col">&nbsp;</div>
+                                                                        <div class="col">&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm">
+                                                                    <!--spacer-->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-16" role="tabpanel" aria-labelledby="tab-content-16">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;timeline timeline-six&quot;&gt;
+    &lt;!-- Timeline Item 1 --&gt;
+    &lt;div class=&quot;row no-gutters&quot;&gt;
+        &lt;div class=&quot;col-sm&quot;&gt; &lt;!--spacer--&gt; &lt;/div&gt;
+        &lt;!-- timeline item 1 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-sm-1 text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid organic-radius border-tertiary&quot; src=&quot;../../../../assets/img/team/9.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- timeline profile card --&gt;
+        &lt;div class=&quot;col-sm py-2&quot;&gt;
+            &lt;div class=&quot;profile-card&quot;&gt;
+                &lt;div class=&quot;card shadow border-light&quot;&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h5 class=&quot;card-title&quot;&gt;Tanislav Robert&lt;/h5&gt;
+                        &lt;h6 class=&quot;card-subtitle&quot;&gt;Director&lt;/h6&gt;
+                        &lt;p class=&quot;card-text my-2&quot;&gt;I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual design.&lt;/p&gt;
+                        &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 2 --&gt;
+    &lt;div class=&quot;row no-gutters&quot;&gt;
+        &lt;!-- timeline profile card --&gt;
+        &lt;div class=&quot;col-sm py-2&quot;&gt;
+            &lt;div class=&quot;profile-card&quot;&gt;
+                &lt;div class=&quot;card shadow border-light&quot;&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h5 class=&quot;card-title&quot;&gt;Zoltan Szőgy&eacute;nyi&lt;/h5&gt;
+                        &lt;h6 class=&quot;card-subtitle&quot;&gt;Founder&lt;/h6&gt;
+                        &lt;p class=&quot;card-text my-2&quot;&gt;I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual design.&lt;/p&gt;
+                        &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- timeline item 2 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-sm-1 text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid organic-radius border-secondary&quot; src=&quot;../../../../assets/img/team/8.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm&quot;&gt; &lt;!--spacer--&gt; &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 3 --&gt;
+    &lt;div class=&quot;row no-gutters&quot;&gt;
+        &lt;div class=&quot;col-sm&quot;&gt; &lt;!--spacer--&gt; &lt;/div&gt;
+        &lt;!-- timeline item 3 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-sm-1 text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid organic-radius border-warning&quot; src=&quot;../../../../assets/img/team/10.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- timeline profile card --&gt;
+        &lt;div class=&quot;col-sm py-2&quot;&gt;
+            &lt;div class=&quot;profile-card&quot;&gt;
+                &lt;div class=&quot;card shadow border-light&quot;&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h5 class=&quot;card-title&quot;&gt;Calota Oana&lt;/h5&gt;
+                        &lt;h6 class=&quot;card-subtitle&quot;&gt;Marketing&lt;/h6&gt;
+                        &lt;p class=&quot;card-text my-2&quot;&gt;I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual design.&lt;/p&gt;
+                        &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Timeline Item 4 --&gt;
+    &lt;div class=&quot;row no-gutters&quot;&gt;
+        &lt;!-- timeline profile card --&gt;
+        &lt;div class=&quot;col-sm py-2&quot;&gt;
+            &lt;div class=&quot;profile-card&quot;&gt;
+                &lt;div class=&quot;card shadow border-light&quot;&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h5 class=&quot;card-title&quot;&gt;Lucian Tanislav&lt;/h5&gt;
+                        &lt;h6 class=&quot;card-subtitle&quot;&gt;Sales&lt;/h6&gt;
+                        &lt;p class=&quot;card-text my-2&quot;&gt;I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual design.&lt;/p&gt;
+                        &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                                    &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- timeline item 4 center image &amp; middle line --&gt;
+        &lt;div class=&quot;col-sm-1 text-center flex-column d-none d-sm-flex&quot;&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col middle-line&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;m-3 avatar-separator&quot;&gt;
+                &lt;img class=&quot;img-fluid organic-radius border-info&quot; src=&quot;../../../../assets/img/team/6.jpg&quot; alt=&quot;avatar&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;row h-50&quot;&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+                &lt;div class=&quot;col&quot;&gt;&nbsp;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm&quot;&gt; &lt;!--spacer--&gt; &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#icon" class="nav-link" data-smooth-scroll>Icon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#card" class="nav-link" data-smooth-scroll>Card</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#creative-icon" class="nav-link" data-smooth-scroll>Creative icon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#creative-icon-2" class="nav-link" data-smooth-scroll>Creative icon 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#events" class="nav-link" data-smooth-scroll>Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#icon-card" class="nav-link" data-smooth-scroll>Icon & Card</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

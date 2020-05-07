@@ -1,0 +1,85 @@
+/**
+ * = Spacing grids
+ */
+
+
+.row.row-grid > [class*="col-"] + [class*="col-"] {
+    margin-top: 3rem;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        .row.row-grid > [class*="col-#{$breakpoint}-"] + [class*="col-#{$breakpoint}-"] {
+            margin-top: 0;
+        }
+    }
+}
+
+.row-grid + .row-grid {
+    margin-top: 3rem;
+}
+
+// Negative margins and paddings
+@media(min-width: 992px) {
+    [class*="mt--"],
+    [class*="mr--"],
+    [class*="mb--"],
+    [class*="ml--"] {
+        position: relative;
+        z-index: 5;
+    }
+
+    // change this value to update the generated classes
+    // if you add 20, classes will be .mt-20, pl-40, pb-20 and so on
+    $mp-increment: 50;
+    $nr-increments: 13;
+
+    // Negative margins in pixels
+    @for $nr from 1 to $nr-increments {
+        .mt--#{$nr*$mp-increment} {
+            margin-top: -#{$nr*$mp-increment}px !important;
+        }
+        .mr--#{$nr*$mp-increment} {
+            margin-right: -#{$nr*$mp-increment}px !important;
+        }
+        .mb--#{$nr*$mp-increment} {
+            margin-bottom: -#{$nr*$mp-increment}px !important;
+        }
+        .ml--#{$nr*$mp-increment} {
+            margin-left: -#{$nr*$mp-increment}px !important;
+        }
+    }
+
+    // Margins in pixels
+    @for $nr from 1 to $nr-increments {
+        .mt-#{$nr*$mp-increment} {
+            margin-top: #{$nr*$mp-increment}px !important;
+        }
+        .mr-#{$nr*$mp-increment} {
+            margin-right: #{$nr*$mp-increment}px !important;
+        }
+        .mb-#{$nr*$mp-increment} {
+            margin-bottom: #{$nr*$mp-increment}px !important;
+        }
+        .ml-#{$nr*$mp-increment} {
+            margin-left: #{$nr*$mp-increment}px !important;
+        }
+    }
+
+    // Paddings in pixels
+    @for $nr from 1 to $nr-increments {
+        .pt-#{$nr*$mp-increment} {
+            padding-top: #{$nr*$mp-increment}px !important;
+        }
+        .pr-#{$nr*$mp-increment} {
+            padding-right: #{$nr*$mp-increment}px !important;
+        }
+        .pb-#{$nr*$mp-increment} {
+            padding-bottom: #{$nr*$mp-increment}px !important;
+        }
+        .pl-#{$nr*$mp-increment} {
+            padding-left: #{$nr*$mp-increment}px !important;
+        }
+    }
+
+}

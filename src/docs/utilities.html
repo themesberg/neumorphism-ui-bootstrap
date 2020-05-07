@@ -1,0 +1,619 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "..",
+        "title": "Pixel Documentation - Utilities"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse"
+        data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "..",
+                "docs-path": "."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-3 py-md-5">
+                        <div class="border-bottom mb-5">
+                            <h1>Utilities</h1>
+                            <p class="lead text-dark">Use Pixel's custom utility classes such as spacing, shadows and
+                                text class modifiers.</p>
+                            <p></p>
+                            <div class="alert alert-warning mb-3" role="alert">
+                                <p class="alert-text mb-0">We recommend using Bootstrap's utility classes firsthand.
+                                    Check them out:</p>
+                            </div>
+                            <a href="https://getbootstrap.com/docs/4.0/utilities/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="margins" class="my-5">
+                            <h5 class="mb-3">Margins</h5>
+                            <p>Use these classes to add increments of 50 pixels of margins in each direction (<code
+                                    class="text-danger">top, right, bottom, left</code>).</p>
+                            <p>The maximum value is <code class="text-danger">600</code>.</p>
+                            <pre class="bg-primary"><code class="language-css">.mt-50
+.mr-100
+.mb-250
+.ml-600</code></pre>
+                            <p>Change the hex color for each variable to the color palette that you desire.</p>
+                        </div>
+                        <div id="paddings" class="my-5">
+                            <h5 class="mb-3">Paddings</h5>
+                            <p>Use these classes to add increments of 50 pixels of padding in each direction (<code
+                                    class="text-danger">top, right, bottom, left</code>).</p>
+                            <p>The maximum value is <code class="text-danger">600</code>.</p>
+                            <pre class="bg-primary"><code class="language-css">.pt-50
+.pr-100
+.pb-250
+.pl-600</code></pre>
+                            <p>Change the hex color for each variable to the color palette that you desire.</p>
+                        </div>
+                        <div id="negative-margins" class="my-5">
+                            <h5 class="mb-3">Negative margins</h5>
+                            <p>Use these classes to add increments of minus 50 pixels of margin in each direction (<code
+                                    class="text-danger">top, right, bottom, left</code>).</p>
+                            <p>The maximum value is <code class="text-danger">600</code>.</p>
+                            <pre class="bg-primary"><code class="language-css">.mt--50
+.mr--100
+.mb--250
+.ml--600</code></pre>
+                            <p>Change the hex color for each variable to the color palette that you desire.</p>
+                        </div>
+                        <div id="increment" class="my-5">
+                            <h5 class="mb-3">Change increment</h5>
+                            <p>Of course you can change the increment value by modifying our custom utility Sass file
+                                located at <code class="text-danger">scss/pixel/utilities/_spacing.scss</code>.</p>
+                            <p>Change the variable <code class="text-danger">$mp-increment</code> (stands for margin &
+                                padding increment) to update the value of multiplication. If you change it to 20 the
+                                classes will be <code class="text-danger">.mt-20, mt-40, mb-60, pb-40</code>.</p>
+                            <p>To change the limit of incremented classes update the variable <code class="text-danger">$nr-increments</code>.
+                                By default it is 13.</p>
+                            <pre class="bg-primary"><code class="language-css">$mp-increment: 50;
+$nr-increments: 13;</code></pre>
+                        </div>
+                        <div id="shadows" class="my-5">
+                            <h5 class="mb-3">Custom shadow classes</h5>
+                            <p>Use the following classes to add custom Pixel made shadows to your elements:</p>
+                            <div class="nav-wrapper position-relative mt-5 p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-14" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-27" data-toggle="tab"
+                                            href="#tab-content-27" role="tab" aria-controls="tab-link-27" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-28" data-toggle="tab" href="#tab-content-28"
+                                            role="tab" aria-controls="tab-link-28" aria-selected="false">Html</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tabcontent14">
+                                        <div class="tab-pane fade show active" id="tab-content-27" role="tabpanel"
+                                            aria-labelledby="tab-content-27">
+                                            <div class="d-flex">
+                                                <div style="width: 50px; height: 50px; background: #ececec" class="shadow-pixel mr-3"></div>
+                                                <div style="width: 50px; height: 50px; background: #ececec" class="shadow-soft"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-28" role="tabpanel" aria-labelledby="tab-content-28">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&#x3C;div class=&#x22;d-flex&#x22;&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px; background: #ececec&#x22; class=&#x22;shadow-pixel mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px; background: #ececec&#x22; class=&#x22;shadow-soft&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="text" class="my-5">
+                            <h5 class="mb-3">Decorations</h5>
+                            <p>Use the following custom classes to apply underline or strikethrough to your text:</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab"
+                                                href="#tab-content-1" role="tab" aria-controls="tab-link-1"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2"
+                                                role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel"
+                                                aria-labelledby="tab-content-1">
+                                                <p>Lorem ipsum dolor, <span class="text-underline">sit amet consectetur
+                                                        adipisicing elit</span>. Exercitationem perferendis odio omnis
+                                                    repellendus saepe voluptatem obcaecati nihil similique natus eaque,
+                                                    facere ullam esse numquam ut sapiente, fuga possimus explicabo
+                                                    iusto.</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                    Exercitationem perferendis odio omnis <span class="text-through">repellendus
+                                                        saepe voluptatem obcaecati nihil similique</span> natus eaque,
+                                                    facere ullam esse numquam ut sapiente, fuga possimus explicabo
+                                                    iusto.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel"
+                                                aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;p&#x3E;Lorem ipsum dolor, &#x3C;span class=&#x22;text-underline&#x22;&#x3E;sit amet consectetur adipisicing elit&#x3C;/span&#x3E;. Exercitationem perferendis odio omnis repellendus saepe voluptatem obcaecati nihil similique natus eaque, facere ullam esse numquam ut sapiente, fuga possimus explicabo iusto.&#x3C;/p&#x3E;
+&#x3C;p&#x3E;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem perferendis odio omnis &#x3C;span class=&#x22;text-through&#x22;&#x3E;repellendus saepe voluptatem obcaecati nihil similique&#x3C;/span&#x3E; natus eaque, facere ullam esse numquam ut sapiente, fuga possimus explicabo iusto.&#x3C;/p&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="opacity" class="my-5">
+                            <h5 class="mb-3">Opacity</h5>
+                            <p>Use the following opacity modifier classes <code class="text-danger">.opacity-*</code>
+                                (eg. <code class="text-danger">.opacity-3</code>) to change the opacity of the element
+                                from 0 to 1.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab"
+                                                href="#tab-content-3" role="tab" aria-controls="tab-link-3"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4"
+                                                role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel"
+                                                aria-labelledby="tab-content-3">
+                                                <div class="d-flex">
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-0 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-1 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-2 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-3 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-4 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-5 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-6 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-7 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-8 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-9 mr-3"></div>
+                                                    <div style="width: 50px; height: 50px;" class="bg-primary opacity-10"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel"
+                                                aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;div class=&#x22;d-flex&#x22;&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-0 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-1 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-2 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-3 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-4 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-5 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-6 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-7 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-8 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-9 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-10&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="z-index" class="my-5">
+                            <h5 class="mb-3">Z-index</h5>
+                            <p>Use the following z-index modifier classes <code class="text-danger">.z-*</code> (eg.
+                                <code class="text-danger">.z-3</code>) to change the z-index of the element from 0 to
+                                10.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab"
+                                                href="#tab-content-5" role="tab" aria-controls="tab-link-5"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6"
+                                                role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel"
+                                                aria-labelledby="tab-content-5">
+                                                <div class="d-flex">
+                                                    <div style="width: 150px; height: 150px; position: relative;" class="bg-primary z-0 mr-3">
+                                                        <div style="width: 90px; height: 90px; position: absolute;"
+                                                            class="bg-secondary z-3 mr-3"></div>
+                                                        <div style="width: 70px; height: 70px; position: absolute;"" class="
+                                                            bg-tertiary z-7 mr-3"></div>
+                                                        <div style="width: 60px; height: 60px; position: absolute;"
+                                                            class="bg-warning z-1 mr-3"></div>
+                                                        <div style="width: 50px; height: 50px; position: absolute;  "
+                                                            class="bg-danger z-5 mr-3"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel"
+                                                aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;div class=&#x22;d-flex&#x22;&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-0 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-1 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-2 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-3 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-4 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-5 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-6 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-7 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-8 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-9 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-10&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="overflow" class="my-5">
+                            <h5 class="mb-3">Overflow</h5>
+                            <p>Use <code class="text-danger">.overflow-visible</code> and <code class="text-danger">.overflow-hidden</code>
+                                to allow or hide overflow from an element.</p>
+                        </div>
+                        <div id="absolute-positioning" class="my-5">
+                            <h5 class="mb-3">Absolute center positioning</h5>
+                            <p>Use <code class="text-danger">.center-vertical-absolute</code> and <code class="text-danger">.center-horizontal-absolute</code>
+                                to center elements. Note that this makes the element positioned absolutely.</p>
+                            <pre class="bg-primary"><code class="language-css">.center-vertical-absolute,
+.center-horizontal-absolute {
+    position: absolute;
+}
+
+.center-vertical-absolute {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-horizontal-absolute {
+    left: 50%;
+    transform: translateX(-50%);
+}
+</code></pre>
+                        </div>
+                        <div id="fixed-height" class="my-5">
+                            <h5 class="mb-3">Fixed height & width</h5>
+                            <p>Use sizing classes <code class="text-danger">.w-*</code> and <code class="text-danger">.h-*</code>
+                                (eg. <code class="text-danger">.fw-200, fh-500</code>) to modify the width of the
+                                element by 200px or height by 500px.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab"
+                                                href="#tab-content-7" role="tab" aria-controls="tab-link-7"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8"
+                                                role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel"
+                                                aria-labelledby="tab-content-7">
+                                                <div class="d-flex">
+                                                    <div class="fw-200 fh-200 mr-2 bg-primary"></div>
+                                                    <div class="fw-300 fh-300 mr-2 bg-secondary"></div>
+                                                    <div class="fw-400 fh-400 bg-tertiary"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel"
+                                                aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;div class=&#x22;d-flex&#x22;&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-0 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-1 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-2 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-3 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-4 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-5 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-6 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-7 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-8 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-9 mr-3&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;width: 50px; height: 50px;&#x22; class=&#x22;bg-primary opacity-10&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hover-animation" class="my-5">
+                            <h5 class="mb-3">Hover animation</h5>
+                            <p>Use the following classes <code class="text-danger">.animate-up-*, .animate-down-*</code>
+                                (eg. <code class="text-danger">.animate-up-3</code>) to move the element away from its
+                                original position when it is being hovered. You can use from <code class="text-danger">.animate-*-1</code>
+                                to <code class="text-danger">.animate-*-5</code>.</p>
+                            <div class="nav-wrapper position-relative mt-5 p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-hover-animation-1"
+                                            data-toggle="tab" href="#tab-content-hover-animation-1" role="tab"
+                                            aria-controls="tab-link-hover-animation-1" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-hover-animation-2" data-toggle="tab"
+                                            href="#tab-content-hover-animation-2" role="tab" aria-controls="tab-link-hover-animation-2"
+                                            aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                        data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tab-hover-animation-1">
+                                        <div class="tab-pane fade show active" id="tab-content-hover-animation-1" role="tabpanel"
+                                            aria-labelledby="tab-content-hover-animation-1">
+                                            <div class="d-flex">
+                                                <div style="height: 50px;" class="mr-3 bg-primary animate-up-5 p-3">.animate-up-5</div>
+                                                <div style="height: 50px;" class="mr-3 bg-primary animate-right-1 p-3">.animate-right-1</div>
+                                                <div style="height: 50px;" class="mr-3 bg-primary animate-down-2 p-3">.animate-down-2</div>
+                                                <div style="height: 50px;" class="mr-3 bg-primary animate-left-3 p-3">.animate-left-3</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-hover-animation-2" role="tabpanel"
+                                            aria-labelledby="tab-content-hover-animation-2">
+                                            <div>
+                                                <pre>
+                                                        <code class="language-html">
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary animate-up-5 p-3&#x22;&#x3E;.animate-up-5&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary animate-right-1 p-3&#x22;&#x3E;.animate-right-1&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary animate-down-2 p-3&#x22;&#x3E;.animate-down-2&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary animate-left-3 p-3&#x22;&#x3E;.animate-left-3&#x3C;/div&#x3E;
+                                                        </code>
+                                                    </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hover-animation-child" class="my-5">
+                            <h5 class="mb-3">Hover animation child</h5>
+                            <p>Use <code class="text-danger">.animate-hover</code> class on a parent element and the
+                                <code class="text-danger">.animate-*-*</code> classes on the child element to animate
+                                it and not the parent.</p>
+                            <div class="nav-wrapper position-relative mt-5 p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-child-animation-1"
+                                            data-toggle="tab" href="#tab-content-child-animation-1" role="tab"
+                                            aria-controls="tab-link-child-animation-1" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-child-animation-2" data-toggle="tab"
+                                            href="#tab-content-child-animation-2" role="tab" aria-controls="tab-link-child-animation-2"
+                                            aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                        data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tab-child-animation-1">
+                                        <div class="tab-pane fade show active" id="tab-content-child-animation-1" role="tabpanel"
+                                            aria-labelledby="tab-content-child-animation-1">
+                                            <div class="d-flex">
+                                                <div style="height: 50px;" class="mr-3 bg-primary animate-hover p-3"><i
+                                                        class="fas fa-chevron-left mr-3 pl-2 animate-left-4"></i>.animate-left-4</div>
+                                                <div style="height: 50px;" class="mr-3 bg-primary animate-hover p-3">.animate-right-4<i
+                                                        class="fas fa-chevron-right mr-3 pl-2 animate-right-4"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-child-animation-2" role="tabpanel"
+                                            aria-labelledby="tab-content-child-animation-2">
+                                            <div>
+                                                <pre>
+                                                        <code class="language-html">
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary animate-hover p-3&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-chevron-left mr-3 pl-2 animate-left-4&#x22;&#x3E;&#x3C;/i&#x3E;.animate-left-4&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary animate-hover p-3&#x22;&#x3E;.animate-right-4&#x3C;i class=&#x22;fas fa-chevron-right mr-3 pl-2 animate-right-4&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/div&#x3E;
+                                                        </code>
+                                                    </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="floating" class="my-5">
+                            <h5 class="mb-3">Floating animation</h5>
+                            <p>Use <code class="text-danger">.floating-sm, .floating-md, .floating-lg</code> on any
+                                element to use a constant floating animation.</p>
+                            <div class="nav-wrapper position-relative mt-5 p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-floating-animation-1"
+                                            data-toggle="tab" href="#tab-content-floating-animation-1" role="tab"
+                                            aria-controls="tab-link-floating-animation-1" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-floating-animation-2"
+                                            data-toggle="tab" href="#tab-content-floating-animation-2" role="tab"
+                                            aria-controls="tab-link-floating-animation-2" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                        data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="tab-content" id="tab-floating-animation-1">
+                                        <div class="tab-pane fade show active" id="tab-content-floating-animation-1"
+                                            role="tabpanel" aria-labelledby="tab-content-floating-animation-1">
+                                            <div class="d-flex">
+                                                <div style="height: 50px;" class="mr-3 bg-primary text-white floating-sm p-3">.floating-sm</div>
+                                                <div style="height: 50px;" class="mr-3 bg-secondary text-white floating-md p-3">.floating-md</div>
+                                                <div style="height: 50px;" class="mr-3 bg-tertiary text-white floating-lg p-3">.floating-lg</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-floating-animation-2" role="tabpanel"
+                                            aria-labelledby="tab-content-floating-animation-2">
+                                            <div>
+                                                <pre>
+                                                        <code class="language-html">
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-primary text-white floating-sm p-3&#x22;&#x3E;.floating-sm&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-secondary text-white floating-md p-3&#x22;&#x3E;.floating-md&#x3C;/div&#x3E;
+    &#x3C;div style=&#x22;height: 50px;&#x22; class=&#x22;mr-3 bg-tertiary text-white floating-lg p-3&#x22;&#x3E;.floating-lg&#x3C;/div&#x3E;
+                                                        </code>
+                                                    </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#margins" class="nav-link " data-smooth-scroll>Margins</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#paddings" class="nav-link " data-smooth-scroll>Paddings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#negative-margins" class="nav-link " data-smooth-scroll>Negative margins</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#increment" class="nav-link " data-smooth-scroll>Spacing increments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#shadows" class="nav-link " data-smooth-scroll>Shadows</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#text" class="nav-link " data-smooth-scroll>Text decorations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#opacity" class="nav-link " data-smooth-scroll>Opacity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#z-index" class="nav-link " data-smooth-scroll>Z-index</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#overflow" class="nav-link " data-smooth-scroll>Overflow</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#absolute-positioning" class="nav-link " data-smooth-scroll>Absolute
+                                    positioning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#fixed-height" class="nav-link " data-smooth-scroll>Fixed height and width</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#hover-animation" class="nav-link " data-smooth-scroll>Hover animation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#hover-animation-child" class="nav-link " data-smooth-scroll>Hover animations
+                                    child</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#floating" class="nav-link " data-smooth-scroll>Floating animation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    <!-- Core -->
+    @@include('./_scripts.html', {
+        "path": "../"
+    })
+
+</html>

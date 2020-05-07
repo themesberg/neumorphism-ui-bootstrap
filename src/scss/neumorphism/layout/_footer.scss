@@ -1,0 +1,41 @@
+/**
+ * = Footers
+ */
+
+ .footer-links{
+
+    li {
+        display: block;
+        margin-left: -5px;
+
+        &:hover a {
+            @include box-shadow($shadow-inset);
+        }
+
+        a {
+            display: block;
+            @include border-radius($border-radius);
+            padding: 5px;
+
+            &:hover{
+                color: inherit !important;
+            }
+        }
+    }
+}
+
+.footer-brand {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    img, svg{
+        width: 40px;
+    }
+    &:hover,
+    &:focus{
+        color: $black;
+    }
+}
+
+.copyright {
+    font-size: $font-size-sm;
+}

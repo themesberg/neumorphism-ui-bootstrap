@@ -1,0 +1,1312 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Navigation bars & menu"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn mb-2 mr-2 btn-lg btn-primary btn-block rounded-0 d-lg-none" role="button" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Navbars</h1>
+                            <p class="lead text-dark">Use Pixel's custom navbars to create beautiful navigation bars.</p>
+                            <a href="https://getbootstrap.com/docs/4.3/components/navbar/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="default-navbar" class="my-5">
+                            <h5 class="mb-4">Default navbar</h5>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-default-primary">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/primary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">Primary navbar</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4&#x22;&#x3E;
+    &#x3C;div class=&#x22;container position-relative&#x22;&#x3E;
+        &#x3C;a class=&#x22;navbar-brand mr-lg-5&#x22; href=&#x22;../../index.html&#x22;&#x3E;
+            &#x3C;img class=&#x22;navbar-brand-dark&#x22; src=&#x22;../../assets/img/brand/light.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+            &#x3C;img class=&#x22;navbar-brand-light&#x22; src=&#x22;../../assets/img/brand/dark.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;navbar-collapse collapse&#x22; id=&#x22;navbar-default-primary&#x22;&#x3E;
+            &#x3C;div class=&#x22;navbar-collapse-header&#x22;&#x3E;
+                &#x3C;div class=&#x22;row&#x22;&#x3E;
+                    &#x3C;div class=&#x22;col-6 collapse-brand&#x22;&#x3E;
+                        &#x3C;a href=&#x22;../../index.html&#x22;&#x3E;
+                            &#x3C;img src=&#x22;../../assets/img/brand/primary.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;col-6 collapse-close&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-times&#x22; data-toggle=&#x22;collapse&#x22; role=&#x22;button&#x22;
+                            data-target=&#x22;#navbar-default-primary&#x22; aria-controls=&#x22;navbar-default-primary&#x22;
+                            aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;ul class=&#x22;navbar-nav navbar-nav-hover align-items-lg-center&#x22;&#x3E;
+                &#x3C;li class=&#x22;nav-item dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;nav-link&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-angle-down nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;nav-link-inner-text&#x22;&#x3E;Dropdown 1&#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;nav-item dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;nav-link&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-angle-down nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;nav-link-inner-text&#x22;&#x3E;Dropdown 2 &#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;nav-item dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;nav-link&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-angle-down nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;nav-link-inner-text&#x22;&#x3E;Dropdown 3&#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;d-flex align-items-center&#x22;&#x3E;
+            &#x3C;p class=&#x22;text-white mb-0&#x22;&#x3E;Primary navbar&#x3C;/p&#x3E;
+            &#x3C;button class=&#x22;navbar-toggler ml-2&#x22; type=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22;
+                data-target=&#x22;#navbar-default-primary&#x22; aria-controls=&#x22;navbar-default-primary&#x22;
+                aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+                &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+            &#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="navbar-colors" class="my-5">
+                            <h5 class="mb-4">Navbar colors</h5>
+                            <p>We've made sure that you can change the colors of the navbar very easily. All you have to do is add the modifier class <code class="text-danger">.navbar-theme-*</code> (eg.
+                                <code class="text-danger">.navbar-theme-primary, .navbar-theme-secondary, .navbar-theme-danger, .navbar-theme-dark</code>) in order to change the colors. As you can see, even the dropdown item hover effect will change their
+                                color.</p>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-colors-primary">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/primary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-colors-primary" aria-controls="navbar-colors-primary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">.navbar-theme-primary</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-colors-primary" aria-controls="navbar-colors-primary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-secondary mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-colors-secondary">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/secondary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-colors-secondary" aria-controls="navbar-colors-secondary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">.navbar-theme-secondary</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-colors-secondary" aria-controls="navbar-colors-secondary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-tertiary mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-colors-tertiary">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/tertiary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-colors-tertiary" aria-controls="navbar-colors-tertiary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">.navbar-theme-tertiary</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-colors-tertiary" aria-controls="navbar-colors-tertiary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-dark mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-colors-dark">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/tertiary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-colors-dark" aria-controls="navbar-colors-dark" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">.navbar-theme-dark</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-colors-dark" aria-controls="navbar-colors-dark" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-light navbar-theme-light mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-colors-light">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-colors-light" aria-controls="navbar-colors-light" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-dark mb-0">.navbar-theme-light</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-colors-light" aria-controls="navbar-colors-light" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="true">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-secondary mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-tertiary mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-dark mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-light navbar-theme-light mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="navbar-submenu" class="my-5">
+                            <h5 class="mb-4">Navbar submenu</h5>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-submenu-primary">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/primary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-submenu-primary" aria-controls="navbar-submenu-primary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-submenu">
+                                                        <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Submenu 1<i
+                                                                class="fas fa-angle-right nav-link-arrow"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="../../html/pages/about-company.html" class="dropdown-item">Submenu
+                                                                    item 1</a>
+                                                                <a href="../../html/pages/about-company.html" class="dropdown-item">Submenu
+                                                                    item 2</a>
+                                                                <a href="../../html/pages/about-company.html" class="dropdown-item">Submenu
+                                                                    item 3</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                        <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Submenu 2<i
+                                                                class="fas fa-angle-right nav-link-arrow"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="../../html/pages/about-company.html" class="dropdown-item">Submenu
+                                                                    item 1</a>
+                                                                <a href="../../html/pages/about-company.html" class="dropdown-item">Submenu
+                                                                    item 2</a>
+                                                                <a href="../../html/pages/about-company.html" class="dropdown-item">Submenu
+                                                                    item 3</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">Submenu navbar</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-submenu-primary" aria-controls="navbar-submenu-primary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-html">
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4&#x22;&#x3E;
+    &#x3C;div class=&#x22;container position-relative&#x22;&#x3E;
+        &#x3C;a class=&#x22;navbar-brand mr-lg-5&#x22; href=&#x22;../../index.html&#x22;&#x3E;
+            &#x3C;img class=&#x22;navbar-brand-dark&#x22; src=&#x22;../../assets/img/brand/light.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+            &#x3C;img class=&#x22;navbar-brand-light&#x22; src=&#x22;../../assets/img/brand/dark.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;navbar-collapse collapse&#x22; id=&#x22;navbar-submenu-primary&#x22;&#x3E;
+            &#x3C;div class=&#x22;navbar-collapse-header&#x22;&#x3E;
+                &#x3C;div class=&#x22;row&#x22;&#x3E;
+                    &#x3C;div class=&#x22;col-6 collapse-brand&#x22;&#x3E;
+                        &#x3C;a href=&#x22;../../index.html&#x22;&#x3E;
+                            &#x3C;img src=&#x22;../../assets/img/brand/primary.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;col-6 collapse-close&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-times&#x22; data-toggle=&#x22;collapse&#x22; role=&#x22;button&#x22;
+                            data-target=&#x22;#navbar-submenu-primary&#x22; aria-controls=&#x22;avbar-submenu-primary&#x22;
+                            aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;ul class=&#x22;navbar-nav navbar-nav-hover align-items-lg-center&#x22;&#x3E;
+                &#x3C;li class=&#x22;nav-item dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;nav-link&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-angle-down nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;nav-link-inner-text&#x22;&#x3E;Dropdown&#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                        &#x3C;li class=&#x22;dropdown-submenu&#x22;&#x3E;
+                            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-toggle dropdown-item d-flex justify-content-between align-items-center&#x22;
+                                aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;Submenu 1&#x3C;i
+                                    class=&#x22;fas fa-angle-right nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+                            &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                                &#x3C;li&#x3E;
+                                    &#x3C;a href=&#x22;../../html/pages/about-company.html&#x22; class=&#x22;dropdown-item&#x22;&#x3E;Submenu
+                                        item 1&#x3C;/a&#x3E;
+                                    &#x3C;a href=&#x22;../../html/pages/about-company.html&#x22; class=&#x22;dropdown-item&#x22;&#x3E;Submenu
+                                        item 2&#x3C;/a&#x3E;
+                                    &#x3C;a href=&#x22;../../html/pages/about-company.html&#x22; class=&#x22;dropdown-item&#x22;&#x3E;Submenu
+                                        item 3&#x3C;/a&#x3E;
+                                &#x3C;/li&#x3E;
+                            &#x3C;/ul&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li class=&#x22;dropdown-submenu&#x22;&#x3E;
+                            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-toggle dropdown-item d-flex justify-content-between align-items-center&#x22;
+                                aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;Submenu 2&#x3C;i
+                                    class=&#x22;fas fa-angle-right nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+                            &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                                &#x3C;li&#x3E;
+                                    &#x3C;a href=&#x22;../../html/pages/about-company.html&#x22; class=&#x22;dropdown-item&#x22;&#x3E;Submenu
+                                        item 1&#x3C;/a&#x3E;
+                                    &#x3C;a href=&#x22;../../html/pages/about-company.html&#x22; class=&#x22;dropdown-item&#x22;&#x3E;Submenu
+                                        item 2&#x3C;/a&#x3E;
+                                    &#x3C;a href=&#x22;../../html/pages/about-company.html&#x22; class=&#x22;dropdown-item&#x22;&#x3E;Submenu
+                                        item 3&#x3C;/a&#x3E;
+                                &#x3C;/li&#x3E;
+                            &#x3C;/ul&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/sections/about.html&#x22;&#x3E;Dropdown
+                                item 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;d-flex align-items-center&#x22;&#x3E;
+            &#x3C;p class=&#x22;text-white mb-0&#x22;&#x3E;Submenu navbar&#x3C;/p&#x3E;
+            &#x3C;button class=&#x22;navbar-toggler ml-2&#x22; type=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22;
+                data-target=&#x22;#navbar-submenu-primary&#x22; aria-controls=&#x22;avbar-submenu-primary&#x22;
+                aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+                &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+            &#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="navbar-megamenu" class="my-5">
+                            <h5 class="mb-4">Navbar mega menu</h5>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-secondary mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-megamenu-secondary">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/primary.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-megamenu-secondary" aria-controls="navbar-megamenu-secondary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown mega-dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Mega menu</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 inside-bg d-none d-lg-block">
+                                                            <div class="bg-img d-flex align-items-center overlay-dark bg-tertiary text-white overflow-hidden" data-background="../../assets/img/megamenu_bg.jpg">
+                                                                <div class="z-2">
+                                                                    <h4 class="text-white">Components</h4>
+                                                                    <p class="lead">These pages demonstrates components functionality.See Documentation for a detailed technical explanation.</p>
+                                                                    <a href="../../docs/introduction.html" class="btn btn-secondary btn-icon animate-up-2 mb-3 mb-sm-0">
+                                                                        <span class="btn-inner-icon"><i class="fas fa-book"></i></span>
+                                                                        <span class="btn-inner-text">Documentation</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col pl-0">
+                                                            <ul class="list-style-none">
+                                                                <li><a class="dropdown-item" href="../../html/components/accordions.html">Accordions</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/alerts.html">Alerts</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/badges.html">Badges</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/blog-cards.html">Blog
+                                                                        Cards</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/bootstrap-carousels.html">Bootstrap
+                                                                        Carousels</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/breadcrumbs.html">Breadcrumbs</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/buttons.html">Buttons</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/counters.html">Counters</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/dropdowns.html">Dropdowns</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/forms.html">Forms</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col pl-0">
+                                                            <ul class="list-style-none">
+                                                                <li><a class="dropdown-item" href="../../html/components/icon-boxes.html">Icon
+                                                                        Boxes</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/modals.html">Modals</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/navs.html">Navs</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/owl-carousels.html">Owl
+                                                                        Carousels</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/pagination.html">Pagination</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/popovers.html">Popovers</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/pricing-cards.html">Pricing
+                                                                        Cards</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/profile-cards.html">Profile
+                                                                        Cards</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/progress-bars.html">Progress
+                                                                        Bars</a></li>
+                                                                <li><a class="dropdown-item" href="../../html/components/steps.html">Steps</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">Submenu navbar</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-megamenu-secondary" aria-controls="navbar-megamenu-secondary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-html">
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-secondary mb-4&#x22;&#x3E;
+    &#x3C;div class=&#x22;container position-relative&#x22;&#x3E;
+        &#x3C;a class=&#x22;navbar-brand mr-lg-5&#x22; href=&#x22;../../index.html&#x22;&#x3E;
+            &#x3C;img class=&#x22;navbar-brand-dark&#x22; src=&#x22;../../assets/img/brand/light.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+            &#x3C;img class=&#x22;navbar-brand-light&#x22; src=&#x22;../../assets/img/brand/dark.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;navbar-collapse collapse&#x22; id=&#x22;navbar-megamenu-secondary&#x22;&#x3E;
+            &#x3C;div class=&#x22;navbar-collapse-header&#x22;&#x3E;
+                &#x3C;div class=&#x22;row&#x22;&#x3E;
+                    &#x3C;div class=&#x22;col-6 collapse-brand&#x22;&#x3E;
+                        &#x3C;a href=&#x22;../../index.html&#x22;&#x3E;
+                            &#x3C;img src=&#x22;../../assets/img/brand/primary.svg&#x22; alt=&#x22;menuimage&#x22;&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;col-6 collapse-close&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-times&#x22; data-toggle=&#x22;collapse&#x22; role=&#x22;button&#x22;
+                            data-target=&#x22;#navbar-megamenu-secondary&#x22; aria-controls=&#x22;navbar-megamenu-secondary&#x22;
+                            aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;ul class=&#x22;navbar-nav navbar-nav-hover align-items-lg-center&#x22;&#x3E;
+                &#x3C;li class=&#x22;nav-item dropdown mega-dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;nav-link&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;i class=&#x22;fas fa-angle-down nav-link-arrow&#x22;&#x3E;&#x3C;/i&#x3E;
+                        &#x3C;span class=&#x22;nav-link-inner-text&#x22;&#x3E;Mega menu&#x3C;/span&#x3E;
+                    &#x3C;/a&#x3E;
+                    &#x3C;div class=&#x22;dropdown-menu&#x22;&#x3E;
+                        &#x3C;div class=&#x22;row&#x22;&#x3E;
+                            &#x3C;div class=&#x22;col-lg-6 inside-bg d-none d-lg-block&#x22;&#x3E;
+                                &#x3C;div class=&#x22;bg-img d-flex align-items-center overlay-dark bg-tertiary text-white overflow-hidden&#x22;
+                                    data-background=&#x22;../../assets/img/megamenu_bg.jpg&#x22;&#x3E;
+                                    &#x3C;div class=&#x22;z-2&#x22;&#x3E;
+                                        &#x3C;h4 class=&#x22;text-white&#x22;&#x3E;Components&#x3C;/h4&#x3E;
+                                        &#x3C;p class=&#x22;lead&#x22;&#x3E;These pages demonstrates components
+                                            functionality.See
+                                            Documentation
+                                            for a detailed technical explanation.&#x3C;/p&#x3E;
+                                        &#x3C;a href=&#x22;../../docs/introduction.html&#x22; target=&#x22;_blank&#x22;
+                                            class=&#x22;btn btn-secondary btn-icon animate-up-2 mb-3 mb-sm-0&#x22;&#x3E;
+                                            &#x3C;span class=&#x22;btn-inner-icon&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-book&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+                                            &#x3C;span class=&#x22;btn-inner-text&#x22;&#x3E;Documentation&#x3C;/span&#x3E;
+                                        &#x3C;/a&#x3E;
+                                    &#x3C;/div&#x3E;
+                                &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;col pl-0&#x22;&#x3E;
+                                &#x3C;ul class=&#x22;list-style-none&#x22;&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/accordions.html&#x22;&#x3E;Accordions&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/alerts.html&#x22;&#x3E;Alerts&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/badges.html&#x22;&#x3E;Badges&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/blog-cards.html&#x22;&#x3E;Blog
+                                            Cards&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/bootstrap-carousels.html&#x22;&#x3E;Bootstrap
+                                            Carousels&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/breadcrumbs.html&#x22;&#x3E;Breadcrumbs&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/buttons.html&#x22;&#x3E;Buttons&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/counters.html&#x22;&#x3E;Counters&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/dropdowns.html&#x22;&#x3E;Dropdowns&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/forms.html&#x22;&#x3E;Forms&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;/ul&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;col pl-0&#x22;&#x3E;
+                                &#x3C;ul class=&#x22;list-style-none&#x22;&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/icon-boxes.html&#x22;&#x3E;Icon
+                                            Boxes&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/modals.html&#x22;&#x3E;Modals&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/navs.html&#x22;&#x3E;Navs&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/owl-carousels.html&#x22;&#x3E;Owl
+                                            Carousels&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/pagination.html&#x22;&#x3E;Pagination&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/popovers.html&#x22;&#x3E;Popovers&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/pricing-cards.html&#x22;&#x3E;Pricing
+                                            Cards&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/profile-cards.html&#x22;&#x3E;Profile
+                                            Cards&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/progress-bars.html&#x22;&#x3E;Progress
+                                            Bars&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/steps.html&#x22;&#x3E;Steps&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;/ul&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;col pl-0&#x22;&#x3E;
+                                &#x3C;ul class=&#x22;list-style-none&#x22;&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/tables.html&#x22;&#x3E;Tables&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/tabs.html&#x22;&#x3E;Tabs&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/timelines.html&#x22;&#x3E;Timelines&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/tooltips.html&#x22;&#x3E;Tooltips&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/typography.html&#x22;&#x3E;Typography&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;../../html/components/widgets.html&#x22;&#x3E;Widgets&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;/ul&#x3E;
+                            &#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;d-flex align-items-center&#x22;&#x3E;
+            &#x3C;p class=&#x22;text-white mb-0&#x22;&#x3E;Submenu navbar&#x3C;/p&#x3E;
+            &#x3C;button class=&#x22;navbar-toggler ml-2&#x22; type=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22;
+                data-target=&#x22;#navbar-megamenu-secondary&#x22; aria-controls=&#x22;navbar-megamenu-secondary&#x22;
+                aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+                &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+            &#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="navbar-dark-light" class="my-5">
+                            <h5 class="mb-4">Navbar dark & light text</h5>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-dark mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-dark-text">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-dark-text" aria-controls="navbar-dark-text" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-white mb-0">.navbar-dark .navbar-theme-dark</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-dark-text" aria-controls="navbar-dark-text" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav class="navbar navbar-expand-lg navbar-transparent navbar-light navbar-theme-soft mb-4">
+                                <div class="container position-relative">
+                                    <a class="navbar-brand mr-lg-5" href="../../index.html">
+                                        <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="menuimage">
+                                        <img class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                    </a>
+                                    <div class="navbar-collapse collapse" id="navbar-light-text">
+                                        <div class="navbar-collapse-header">
+                                            <div class="row">
+                                                <div class="col-6 collapse-brand">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/img/brand/dark.svg" alt="menuimage">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 collapse-close">
+                                                    <i class="fas fa-times" data-toggle="collapse" role="button" data-target="#navbar-light-text" aria-controls="navbar-light-text" aria-expanded="false" aria-label="Toggle navigation"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 1</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 2 </span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                                    <i class="fas fa-angle-down nav-link-arrow"></i>
+                                                    <span class="nav-link-inner-text">Dropdown 3</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 1</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 2</a></li>
+                                                    <li><a class="dropdown-item" href="../../html/sections/about.html">Dropdown
+                                                            item 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-dark mb-0">.navbar-light .navbar-theme-soft</p>
+                                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-light-text" aria-controls="navbar-light-text" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-html">
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-dark mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+
+&#x3C;nav class=&#x22;navbar navbar-expand-lg navbar-transparent navbar-light navbar-theme-soft mb-4&#x22;&#x3E;
+...
+&#x3C;/nav&#x3E;
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="headroom" class="my-5">
+                            <h5 class="mb-4">Headroom.js</h5>
+                            <p>In order to enable headroom for the navbar add the class <code class="text-danger">.headroom</code> to the main <code class="text-danger">.navbar</code> element.</p>
+                            <p>You can update the options of Headroom.js in <code class="text-danger">js/pixel.js</code>.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">JS</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div>
+                                                    <pre>
+                                                                <code class="language-js">
+    if ($('.headroom')[0]) {
+        var headroom = new Headroom(document.querySelector("#navbar-main"), {
+            offset: 0,
+            tolerance: {
+                up: 0,
+                down: 0
+            },
+        });
+        headroom.init();
+    }
+                                                                </code>
+                                                            </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://wicky.nillia.ms/headroom.js/" target="_blank" class="btn btn-icon btn-secondary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Headroom.js documentation</span>
+                            </a>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#default-navbar" class="nav-link" data-smooth-scroll>Default</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#navbar-colors" class="nav-link" data-smooth-scroll>Colors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#navbar-submenu" class="nav-link" data-smooth-scroll>Submenus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#navbar-megamenu" class="nav-link" data-smooth-scroll>Mega menus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#navbar-dark-light" class="nav-link" data-smooth-scroll>Dark & Light text</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#headroom" class="nav-link" data-smooth-scroll>Headroom.js</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

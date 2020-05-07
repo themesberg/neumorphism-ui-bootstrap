@@ -1,0 +1,34 @@
+/**
+ * = Avatars
+ */
+
+.avatar + .avatar-content {
+	display: inline-block;
+	margin-left: .75rem;
+}
+
+.avatar-link {
+	img{
+		width: 4rem;
+		height: 4rem;
+	}
+}
+
+// Overlapped avatars 
+
+.avatar-group {
+	.avatar {
+		position: relative;
+		z-index: 2;
+		border: 2px solid $card-bg;
+		
+		&:hover {
+			z-index: 3;
+		}
+	}
+
+	.avatar + .avatar {
+		margin-left: -1rem;
+		
+	}
+}

@@ -1,0 +1,83 @@
+/**
+ * = Icon boxes
+ */
+
+
+.icon {
+	text-align: center;
+	display: inline-flex;
+	@include align-items(center);
+	@include justify-content(center);
+
+	span, svg {
+		font-size: $icon-size;
+	}
+
+	&.icon-shape{
+		width: $icon-shape;
+		height: $icon-shape;
+	}
+
+	&.icon-shape-xs{
+		width: $icon-shape-xs;
+		height: $icon-shape-xs;
+		span, svg {
+			font-size: $icon-size-xs;
+		}
+	}
+
+	&.icon-shape-sm{
+		width: $icon-shape-sm;
+		height: $icon-shape-sm;
+		span, svg {
+			font-size: $icon-size-sm;
+		}
+	}
+
+	&.icon-shape-lg{
+		width: $icon-shape-lg;
+		height: $icon-shape-lg;
+		span, svg {
+			font-size: $icon-size-lg;
+		}
+	}
+
+	&.icon-sm{
+		span, svg {
+			font-size: $icon-size-sm;
+		}
+	}
+
+	&.icon-md{
+		span, svg {
+			font-size: $icon-size;
+		}
+	}
+
+	&.icon-xs{
+		span, svg {
+			font-size: $icon-size-xs;
+		}
+	}
+}
+
+.github-big-icon {
+	position: absolute;
+    right: -255px;
+    top: 75px;
+	span{
+		font-size: 800px;
+    	opacity: .1;
+	}
+}
+
+//Colors for icons
+@each $color, $value in $theme-colors {
+	.icon-shape-#{$color} {
+		@include icon-shape-variant(theme-color($color));
+	}
+	.icon-#{$color} {
+		color:$value;
+	}
+}
+

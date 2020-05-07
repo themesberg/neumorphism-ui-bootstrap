@@ -1,0 +1,656 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Collapse"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Collapse</h1>
+                            <p class="lead text-dark">Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
+                            <a href="https://getbootstrap.com/docs/4.3/components/collapse/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="how-it-works" class="my-5">
+                            <h5>How it works</h5>
+                            <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the <code class="text-danger">height</code>                                from its current value to
+                                <code class="text-danger">0</code>. Given how CSS handles animations, you cannot use
+                                <code class="text-danger">padding</code> on a <code class="text-danger">.collapse</code> element. Instead, use the class as an independent wrapping element.</p>
+                        </div>
+                        <div id="example" class="my-5">
+                            <h5 class="mb-3">Example</h5>
+                            <p>Click the buttons below to show and hide another element via class changes:</p>
+                            <ul>
+                                <li><code class="text-danger">.collapse</code> hides content</li>
+                                <li><code class="text-danger">.collapsing</code> is applied during transitions</li>
+                                <li><code class="text-danger">.collapse.show</code> shows content</li>
+                            </ul>
+                            <p>You can use a link with the <code class="text-danger">href</code> attribute, or a button with the <code class="text-danger">data-target</code> attribute. In both cases, the
+                                <code class="text-danger">data-toggle="collapse"</code> is required.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <p>
+                                                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                        Link with href
+                                                    </a>
+                                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                        Button with data-target
+                                                    </button>
+                                                </p>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;p&gt;
+    &lt;a class=&quot;btn btn-primary&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapseExample&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+        Link with href
+    &lt;/a&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+        Button with data-target
+    &lt;/button&gt;
+&lt;/p&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;collapseExample&quot;&gt;
+    &lt;div class=&quot;card card-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="multiple-targets" class="my-5">
+                            <h5 class="mb-3">Multiple targets</h5>
+                            <p>A <code class="text-danger">&lt;button&gt;</code> or <code class="text-danger">&lt;a&gt;</code> can show and hide multiple elements by referencing them with a JQuery selector in its
+                                <code class="text-danger">href</code> or <code class="text-danger">data-target</code> attribute. Multiple <code class="text-danger">&lt;button&gt;</code> or <code class="text-danger">&lt;a&gt;</code> can show and hide an
+                                element if they each reference it with their <code class="text-danger">href</code> or <code class="text-danger">data-target</code> attribute</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <p>
+                                                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle
+                                                        first element</a>
+                                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle
+                                                        both elements</button>
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                                            <div class="card card-body">
+                                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                                            <div class="card card-body">
+                                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;p&gt;
+    &lt;a class=&quot;btn btn-primary&quot; data-toggle=&quot;collapse&quot; href=&quot;#multiCollapseExample1&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;multiCollapseExample1&quot;&gt;Toggle first element&lt;/a&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#multiCollapseExample2&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;multiCollapseExample2&quot;&gt;Toggle second element&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.multi-collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;multiCollapseExample1 multiCollapseExample2&quot;&gt;Toggle both elements&lt;/button&gt;
+&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;div class=&quot;collapse multi-collapse&quot; id=&quot;multiCollapseExample1&quot;&gt;
+        &lt;div class=&quot;card card-body&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;div class=&quot;collapse multi-collapse&quot; id=&quot;multiCollapseExample2&quot;&gt;
+        &lt;div class=&quot;card card-body&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="accordion-example" class="my-5">
+                            <h5 class="mb-3">Default accordion</h5>
+                            <p>Using the <a href="https://getbootstrap.com/docs/4.3/components/card/">card</a> component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code class="text-danger">.accordion</code>                                as a wrapper.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <!--Accordion-->
+                                                <div class="accordion" id="accordionExample1">
+                                                    <div class="card card-sm card-body shadow-sm border-soft border">
+                                                        <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="h6 mb-0 font-weight-bold">Our Company</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-1">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card card-sm card-body shadow-sm border-soft border">
+                                                        <div data-target="#panel-2" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="h6 mb-0 font-weight-bold">Neumorph Components</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-2">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card card-sm card-body shadow-sm border-soft border">
+                                                        <div data-target="#panel-3" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="h6 mb-0 font-weight-bold">Licenses</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-3">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--End of Accordion-->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!--Accordion--&gt;
+&lt;div class=&quot;accordion&quot; id=&quot;accordionExample1&quot;&gt;
+    &lt;div class=&quot;card card-sm card-body shadow-sm border-soft border&quot;&gt;
+        &lt;div data-target=&quot;#panel-1&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;h6 mb-0 font-weight-bold&quot;&gt;Our Company&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-1&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card card-sm card-body shadow-sm border-soft border&quot;&gt;
+        &lt;div data-target=&quot;#panel-2&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;h6 mb-0 font-weight-bold&quot;&gt;Neumorph Components&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-2&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card card-sm card-body shadow-sm border-soft border&quot;&gt;
+        &lt;div data-target=&quot;#panel-3&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;h6 mb-0 font-weight-bold&quot;&gt;Licenses&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-3&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End of Accordion--&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="with-icon" class="my-5">
+                            <h5 class="mb-3">Accordion with icon</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <!--Accordion-->
+                                                <div class="accordion">
+                                                    <div class="card card-sm card-body shadow-sm border-soft border">
+                                                        <div data-target="#panel-4" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="icon-title h6 mb-0 font-weight-bold"><i class="fab fa-leanpub"></i>Our
+                                                                Company</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-4">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card card-sm card-body shadow-sm border-soft border">
+                                                        <div data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="icon-title h6 mb-0 font-weight-bold"><i class="fas fa-box-open"></i>Pixel
+                                                                Components</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-5">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card card-sm card-body shadow-sm border-soft border">
+                                                        <div data-target="#panel-6" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="icon-title h6 mb-0 font-weight-bold"><i class="fas fa-donate"></i>Licenses</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-6">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--End of Accordion-->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!--Accordion--&gt;
+&lt;div class=&quot;accordion&quot;&gt;
+    &lt;div class=&quot;card card-sm card-body shadow-sm border-soft border&quot;&gt;
+        &lt;div data-target=&quot;#panel-4&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;icon-title h6 mb-0 font-weight-bold&quot;&gt;&lt;i class=&quot;fab fa-leanpub&quot;&gt;&lt;/i&gt;Our Company&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-4&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card card-sm card-body shadow-sm border-soft border&quot;&gt;
+        &lt;div data-target=&quot;#panel-5&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;icon-title h6 mb-0 font-weight-bold&quot;&gt;&lt;i class=&quot;fas fa-box-open&quot;&gt;&lt;/i&gt;Neumorph Components&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-5&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card card-sm card-body shadow-sm border-soft border&quot;&gt;
+        &lt;div data-target=&quot;#panel-6&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;icon-title h6 mb-0 font-weight-bold&quot;&gt;&lt;i class=&quot;fas fa-donate&quot;&gt;&lt;/i&gt;Licenses&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-6&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End of Accordion--&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="with-border" class="my-5">
+                            <h5 class="mb-3">Accordion with border</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <!--Accordion-->
+                                                <div class="accordion">
+                                                    <div class="card card-sm card-body border-soft border">
+                                                        <div data-target="#panel-7" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="icon-title h6 mb-0 font-weight-bold"><i class="fab fa-leanpub"></i>Our
+                                                                Company</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-7">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card card-sm card-body border-soft border">
+                                                        <div data-target="#panel-8" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="icon-title h6 mb-0 font-weight-bold"><i class="fas fa-box-open"></i>Pixel
+                                                                Components</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-8">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card card-sm card-body border-soft border">
+                                                        <div data-target="#panel-9" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                                            <span class="icon-title h6 mb-0 font-weight-bold"><i class="fas fa-donate"></i>Licenses</span>
+                                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        <div class="collapse" id="panel-9">
+                                                            <div class="pt-3">
+                                                                <p class="mb-0">
+                                                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
+                                                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--End of Accordion-->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!--Accordion--&gt;
+&lt;div class=&quot;accordion&quot;&gt;
+    &lt;div class=&quot;card card-sm card-body border border-soft&quot;&gt;
+        &lt;div data-target=&quot;#panel-7&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;icon-title h6 mb-0&quot;&gt;&lt;i class=&quot;fab fa-leanpub&quot;&gt;&lt;/i&gt;Our Company&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-7&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card card-sm card-body border border-soft&quot;&gt;
+        &lt;div data-target=&quot;#panel-8&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;icon-title h6 mb-0&quot;&gt;&lt;i class=&quot;fas fa-box-open&quot;&gt;&lt;/i&gt;Neumorph Components&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-8&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card card-sm card-body border border-soft&quot;&gt;
+        &lt;div data-target=&quot;#panel-9&quot; class=&quot;accordion-panel-header&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;panel-1&quot;&gt;
+            &lt;span class=&quot;icon-title h6 mb-0&quot;&gt;&lt;i class=&quot;fas fa-donate&quot;&gt;&lt;/i&gt;Licenses&lt;/span&gt;
+            &lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse&quot; id=&quot;panel-9&quot;&gt;
+            &lt;div class=&quot;pt-3&quot;&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End of Accordion--&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="accessibility" class="my-5">
+                            <h5 class="mb-3">Accessibility</h5>
+                            <p>Be sure to add <code class="text-danger">aria-expanded</code> to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive
+                                technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of <code class="text-danger">aria-expanded="false"</code>. If you’ve set the collapsible element to
+                                be open by default using the <code class="text-danger">show</code> class, set <code class="text-danger">aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute on the control
+                                based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element). If the control element’s HTML
+                                element is not a button (e.g., an <code class="text-danger">&lt;a&gt;</code> or <code class="text-danger">&lt;div&gt;</code>), the attribute <code class="text-danger">role="button"</code> should be added to the element.</p>
+                            <p>If your control element is targeting a single collapsible element – i.e. the <code class="text-danger">data-target</code> attribute is pointing to an <code class="text-danger">id</code> selector – you should add the <code class="text-danger">aria-controls</code>                                attribute to the control element, containing the <code class="text-danger">id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with
+                                additional shortcuts to navigate directly to the collapsible element itself.
+                            </p>
+                            <p>Note that Bootstrap’s current implementation does not cover the various keyboard interactions described in the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#accordion">WAI-ARIA
+                                    Authoring Practices 1.1 accordion pattern</a> - you will need to include these yourself with custom JavaScript.</p>
+                        </div>
+                        <div id="usage" class="my-5">
+                            <h5 class="mb-3">Usage</h5>
+                            <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+                            <ul>
+                                <li><code class="text-danger">.collapse</code> hides the content</li>
+                                <li><code class="text-danger">.collapse.show</code> shows the content</li>
+                                <li><code class="text-danger">.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+                            </ul>
+                            <p>These classes can be found in <code class="text-danger">_transitions.scss</code>.</p>
+                        </div>
+                        <div id="data-attributes" class="my-5">
+                            <h5 class="mb-3">Via data attributes</h5>
+                            <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+                            <p>Just add <code class="text-danger">data-toggle="collapse"</code> and a <code class="text-danger">data-target</code> to the element to automatically assign control of one or more collapsible elements. The
+                                <code class="text-danger">data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code class="text-danger">collapse</code> to the collapsible element. If you'd like it to
+                                default open, add the additional class
+                                <code class="text-danger">show</code>.</p>
+                            <p>To add accordion-like group management to a collapsible area, add the data attribute
+                                <code class="text-danger">data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+                        </div>
+                        <div id="javascript-behavior" class="my-5">
+                            <h5 class="mb-3">JavaScript behavior</h5>
+                            <p>For more information, see the official <a href="http://getbootstrap.com/docs/4.1/collapse/#via-javascript">Bootstrap
+                                    documentation</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#how-it-works" class="nav-link" data-smooth-scroll>How it works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example" class="nav-link " data-smooth-scroll>Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#multiple-targets" class="nav-link " data-smooth-scroll>Multiple targets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#accordion-example" class="nav-link " data-smooth-scroll>Accordion example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#with-icon" class="nav-link " data-smooth-scroll>Accordion with icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#with-border" class="nav-link " data-smooth-scroll>Accordion with border</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#accessibility" class="nav-link " data-smooth-scroll>Accessibility</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#data-attributes" class="nav-link " data-smooth-scroll>Via data attributes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

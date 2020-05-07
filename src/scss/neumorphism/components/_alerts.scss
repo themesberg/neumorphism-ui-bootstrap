@@ -1,0 +1,65 @@
+/**
+ * = Alerts
+ */
+
+.alert {
+    padding: $alert-padding-y $alert-padding-x;
+    border: $gray;
+    font-size: $font-size-sm;
+    border: $border-width solid $light;
+
+    &.alert-sm{
+        padding: .5rem 1rem;
+    }
+
+    .alert-inner--icon {
+        font-size: $font-size-lg;
+        margin-right: .375rem;
+    }
+
+    .alert-inner--text {
+        display: inline-block;
+        a {
+            font-weight: $font-weight-bold;
+        }
+    }
+
+}
+
+.alert-heading {
+    font-weight: $font-weight-bold;
+    font-size: $h4-font-size;
+} 
+
+.alert-dismissible {
+    .close { 
+        top: 50%;
+        right: $alert-padding-x;
+        padding: 0;
+        transform: translateY(-50%);
+        color: $dark;
+        opacity: 1;
+
+        @include media-breakpoint-down(xs) {
+            top: 1rem;
+            right: .5rem;
+        }
+
+        &>span:not(.sr-only) {
+            font-size: $font-size-xl;
+            background-color: transparent;
+            color: $gray;
+        }
+
+    }
+}
+
+// Alternate styles
+// Generate text modifier classes for colorizing the text.
+
+@each $color, $value in $theme-colors {
+    .alert-#{$color} {
+      background:$primary;
+      color:$value;
+    }
+}

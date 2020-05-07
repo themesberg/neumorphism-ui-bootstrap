@@ -1,0 +1,54 @@
+/**
+ * = Bootstrap carousels
+ */
+
+.carousel-caption {
+    &, h5 {
+        color: $white;
+    }
+}
+
+//Indicators
+
+.carousel-indicators {
+    bottom:30px;
+    li {
+        height: 10px;
+        width:10px;
+        border-radius:$circle-radius;
+        background:transparent;
+        border:2px solid $dark;
+    }
+    .active {
+        opacity: 1;
+        background: $dark;
+    }
+}
+
+//Carousel Controls 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: auto;
+  height: auto;
+  font-weight: 900;
+  color: $dark;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+    &::before{
+        content: '\f060';
+        font-family: $font-awesome-5;
+        font-size: $font-size-xxl;
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+    &:before{
+        font-family: $font-awesome-5;
+        content: "\f061";
+        font-size: $font-size-xxl;
+    }
+}

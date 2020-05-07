@@ -1,0 +1,958 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Modals"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Modal</h1>
+                            <p class="lead text-dark">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+                            <a href="https://getbootstrap.com/docs/4.3/components/modal/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="how-it-works" class="my-5">
+                            <h5>How it works</h5>
+                            <p>Before getting started with Bootstrap’s modal component, be sure to read the following as our menu options have recently changed.</p>
+                            <ul>
+                                <li>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <code class="text-danger">&lt;body&gt;</code> so that modal content scrolls instead.</li>
+                                <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
+                                <li>Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
+                                <li>Modals use <code class="text-danger">position: fixed</code>, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference
+                                    from other elements. You’ll likely run into issues when nesting a <code class="text-danger">.modal</code> within another fixed element.</li>
+                                <li>Once again, due to <code class="text-danger">position: fixed</code>, there are some caveats with using modals on mobile devices. <a href="https://getbootstrap.com/docs/4.3/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile">See
+                                        our browser support docs</a> for details.</li>
+                                <li>Due to how HTML5 defines its semantics, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus">the
+                                        <code class="text-danger">autofocus</code> HTML attribute</a> has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:</li>
+                            </ul>
+                            <div>
+                                <pre class="bg-white">
+                                        <code class="language-js">
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus');
+})
+                                        </code>
+                                    </pre>
+                            </div>
+                            <div class="alert alert-info">
+                                <p>The animation effect of this component is dependent on the <code class="text-white font-weight-bolder">prefers-reduced-motion</code> media query. See the <a class="text-white font-weight-bold" href="https://getbootstrap.com/docs/4.1/getting-started/accessibility/">reduced
+                                        motion section of our accessibility documentation</a>.</p>
+                            </div>
+                        </div>
+                        <div id="example" class="my-5">
+                            <h5 class="mb-3">Examples</h5>
+                            <p>Below is a <em>static</em> modal example (meaning its <code class="text-danger">position</code> and <code class="text-danger">display</code> have been overridden). Included are the modal header, modal body (required for
+                                <code
+                                    class="text-danger">padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <!-- Modal -->
+                                                <div class="modal static-example" tabindex="-1" role="dialog">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Modal body text goes here.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of modal -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal static-example&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
+            &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of modal --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="live-demo" class="my-5">
+                            <h5 class="mb-3">Live demo</h5>
+                            <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div class="col-md-4">
+                                                    <!-- Button Modal -->
+                                                    <button type="button" class="btn btn-block btn-secondary mb-3" data-toggle="modal" data-target="#modal-default">Default</button>
+                                                    <!-- Modal Content -->
+                                                    <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h6 class="modal-title" id="modal-title-default">Terms of Service</h6>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to
+                                                                        comply.
+                                                                    </p>
+                                                                    <p>The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations
+                                                                        to notify users as soon as possible of high-risk data breaches that could personally affect them.</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-sm btn-secondary">I
+                                                                        Got It</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Modal Content -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Button Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-secondary mb-3&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-default&quot;&gt;Default&lt;/button&gt;
+&lt;!-- Modal Content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-default&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modal-default&quot;
+    aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-dialog-centered&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;h6 class=&quot;modal-title&quot; id=&quot;modal-title-default&quot;&gt;Terms of Service&lt;/h6&gt; 
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;p&gt;With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.&lt;/p&gt;
+                &lt;p&gt;The European Union&rsquo;s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.&lt;/p&gt;  
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot;&gt;I Got It&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Modal Content --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="vertically-centered" class="my-5">
+                            <h3 class="mb-3">Vertically centered</h3>
+                            <p>Add <code class="text-danger">.modal-dialog-centered</code> to <code class="text-danger">.modal-dialog</code> to vertically center the modal.</p>
+                            <h5 class="mt-5">Notification</h5>
+                            <!-- Tab -->
+                            <div class="my-4">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <div class="col-md-4">
+                                                    <!-- Button Modal -->
+                                                    <button type="button" class="btn btn-block btn-secondary mb-3" data-toggle="modal" data-target="#modal-notification">Notification</button>
+                                                    <!-- Modal Content -->
+                                                    <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+                                                        <div class="modal-dialog modal-info modal-dialog-centered" role="document">
+                                                            <div class="modal-content bg-gradient-secondary">
+                                                                <div class="modal-header">
+                                                                    <p class="modal-title" id="modal-title-notification">A new experience, personalized for you.</p>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="py-3 text-center">
+                                                                        <span class="modal-icon display-1-lg"><i class="far fa-envelope-open"></i></span>
+                                                                        <h4 class="modal-title my-3">Important message!</h4>
+                                                                        <p>Do you know that you can assign status and relation to a company right in the visit list?.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-sm btn-white">Go
+                                                                        to Inbox</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Modal Content -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Button Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-secondary mb-3&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-notification&quot;&gt;Notification&lt;/button&gt;
+&lt;!-- Modal Content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-notification&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modal-notification&quot;
+    aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-info modal-dialog-centered&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content bg-gradient-secondary&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;p class=&quot;modal-title&quot; id=&quot;modal-title-notification&quot;&gt;A new experience, personalized for you.&lt;/p&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;py-3 text-center&quot;&gt;
+                    &lt;span class=&quot;modal-icon display-1-lg&quot;&gt;&lt;i class=&quot;far fa-envelope-open&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4 class=&quot;modal-title my-3&quot;&gt;Important message!&lt;/h4&gt;
+                    &lt;p&gt;Do you know that you can assign status and relation to a company right in the visit list?.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-white&quot;&gt;Go to Inbox&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Modal Content --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="sign-in" class="my-5">
+                            <h5 class="mb-3">Sign in</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <div class="col-md-4">
+                                                    <!-- Button Modal -->
+                                                    <button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-form">Sign In</button>
+                                                    <!-- Modal Content -->
+                                                    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body p-0">
+                                                                    <div class="card bg-primary shadow-md border-0">
+                                                                        <div class="card-header bg-white py-4">
+                                                                            <div class="text-muted text-center mb-3">
+                                                                                <h4>Log-in to your account </h4>
+                                                                                <small>Enter your account details below</small>
+                                                                            </div>
+                                                                            <div class="btn-wrapper text-center">
+                                                                                <a href="#" class="btn btn-sm btn-icon btn-github animate-up-1">
+                                                                                    <span class="btn-inner-icon">
+                                                                                        <i class="fab fa-github-alt"></i>
+                                                                                    </span>
+                                                                                    <span class="btn-inner-text">Github</span>
+                                                                                </a>
+                                                                                <a href="#" class="btn btn-sm btn-icon btn-twitter animate-up-1">
+                                                                                    <span class="btn-inner-icon">
+                                                                                        <i class="fab fa-twitter"></i>
+                                                                                    </span>
+                                                                                    <span class="btn-inner-text">Twitter</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="card-body section-image overlay-dark position-relative" data-background="../../assets/img/sign-in-image.jpg">
+                                                                            <form>
+                                                                                <div class="form-group">
+                                                                                    <input type="email" name="login-email" placeholder="Email Address" class="form-control">
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input type="password" name="login-password" placeholder="Password" class="form-control">
+                                                                                    <small class="form-text text-white"><a
+                                                                                            href="#">Forgot your
+                                                                                            password?</a>
+                                                                                    </small>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <button type="button" class="btn btn-block btn-white text-dark mt-4">Sign
+                                                                                        in</button>
+                                                                                </div>
+                                                                                <div class="form-check mb-3">
+                                                                                    <label class="form-check-label">
+                                                                                        <input class="form-check-input"
+                                                                                            type="checkbox">
+                                                                                        <span class="form-check-sign"></span>
+                                                                                        <span class="text-white">Keep
+                                                                                            me signed in</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="position-relative mt-4">
+                                                                                    <small class="form-text text-white">Don't
+                                                                                        have an account yet? <a href="#">Create
+                                                                                            one</a>
+                                                                                    </small>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Modal Content -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Button Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-default&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-form&quot;&gt;Sign In&lt;/button&gt;
+&lt;!-- Modal Content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-form&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modal-form&quot;
+    aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-dialog-centered modal-sm&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-body p-0&quot;&gt;
+                &lt;div class=&quot;card bg-primary shadow-md border-0&quot;&gt;
+                    &lt;div class=&quot;card-header bg-white py-4&quot;&gt;
+                        &lt;div class=&quot;text-muted text-center mb-3&quot;&gt;
+                            &lt;h4&gt;Log-in to your account &lt;/h4&gt;
+                            &lt;small&gt;Enter your account details below&lt;/small&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;btn-wrapper text-center&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-icon btn-github animate-up-1&quot;&gt;
+                                &lt;span class=&quot;btn-inner-icon&quot;&gt;
+                                    &lt;i class=&quot;fab fa-github-alt&quot;&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                                &lt;span class=&quot;btn-inner-text&quot;&gt;Github&lt;/span&gt;
+                            &lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-icon btn-twitter animate-up-1&quot;&gt;
+                                &lt;span class=&quot;btn-inner-icon&quot;&gt;
+                                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                                &lt;span class=&quot;btn-inner-text&quot;&gt;Twitter&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body section-image overlay-dark position-relative&quot; data-background=&quot;../../assets/img/sign-in-image.jpg&quot;&gt;
+                        &lt;form&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;input type=&quot;email&quot; name=&quot;login-email&quot; placeholder=&quot;Email Address&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;input type=&quot;password&quot; name=&quot;login-password&quot; placeholder=&quot;Password&quot; class=&quot;form-control&quot;&gt;
+                                &lt;small class=&quot;form-text text-white&quot;&gt;&lt;a href=&quot;#&quot;&gt;Forgot your password?&lt;/a&gt;
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;text-center&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-white text-dark mt-4&quot;&gt;Sign in&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-check mb-3&quot;&gt;
+                                &lt;label class=&quot;form-check-label&quot;&gt;
+                                    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;&gt;
+                                    &lt;span class=&quot;form-check-sign&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;text-white&quot;&gt;Keep me signed in&lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;position-relative mt-4&quot;&gt;
+                                &lt;small class=&quot;form-text text-white&quot;&gt;Don't have an account yet? &lt;a href=&quot;#&quot;&gt;Create one&lt;/a&gt;
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Modal Content --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="sign-up" class="my-5">
+                            <h5 class="mb-3">Sign up</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div class="col-md-4">
+                                                    <!-- Button Modal -->
+                                                    <button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal-form-signup">Sign Up</button>
+                                                    <!-- Modal Content -->
+                                                    <div class="modal fade" id="modal-form-signup" tabindex="-1" role="dialog" aria-labelledby="modal-form-signup" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body p-0">
+                                                                    <div class="card bg-primary shadow-md border-0">
+                                                                        <div class="card-header bg-white py-4">
+                                                                            <div class="text-muted text-center mb-3">
+                                                                                <h4>Sign up for free</h4>
+                                                                                <small>No setup fees. No requirements.</small>
+                                                                            </div>
+                                                                            <div class="btn-wrapper text-center">
+                                                                                <a href="#" class="btn btn-sm btn-icon btn-github animate-up-1">
+                                                                                    <span class="btn-inner-icon">
+                                                                                        <i class="fab fa-github-alt"></i>
+                                                                                    </span>
+                                                                                    <span class="btn-inner-text">Github</span>
+                                                                                </a>
+                                                                                <a href="#" class="btn btn-sm btn-icon btn-twitter animate-up-1">
+                                                                                    <span class="btn-inner-icon">
+                                                                                        <i class="fab fa-twitter"></i>
+                                                                                    </span>
+                                                                                    <span class="btn-inner-text">Twitter</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="card-body section-image overlay-dark position-relative" data-background="../../assets/img/sign-in-image.jpg">
+                                                                            <form>
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group mb-4">
+                                                                                        <div class="input-group-prepend">
+                                                                                            <span class="input-group-text"><i
+                                                                                                    class="far fa-envelope"></i></span>
+                                                                                        </div>
+                                                                                        <input class="form-control" placeholder="Email" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-prepend">
+                                                                                            <span class="input-group-text"><i
+                                                                                                    class="fas fa-unlock-alt"></i></span>
+                                                                                        </div>
+                                                                                        <input class="form-control" placeholder="Password" type="password">
+                                                                                    </div>
+                                                                                    <small class="text-white">Must be
+                                                                                        at least 8 characters</small>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <input class="form-control" placeholder="Confirm password" type="password">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-check mb-3">
+                                                                                    <label class="form-check-label">
+                                                                                        <input class="form-check-input"
+                                                                                            type="checkbox">
+                                                                                        <span class="form-check-sign"></span>
+                                                                                        <span class="text-white">I
+                                                                                            agree to the <a href="#">Terms
+                                                                                                &amp; Conditions</a></span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <button type="button" class="btn btn-block btn-white text-secondary mt-4">Sign
+                                                                                        up</button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Modal Content -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Button Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-tertiary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-form-signup&quot;&gt;Sign Up&lt;/button&gt;
+&lt;!-- Modal Content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-form-signup&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modal-form-signup&quot;
+    aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-dialog-centered modal-sm&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-body p-0&quot;&gt;
+                &lt;div class=&quot;card bg-primary shadow-md border-0&quot;&gt;
+                    &lt;div class=&quot;card-header bg-white py-4&quot;&gt;
+                        &lt;div class=&quot;text-muted text-center mb-3&quot;&gt;
+                            &lt;h4&gt;Sign up for free&lt;/h4&gt;
+                            &lt;small&gt;No setup fees. No requirements.&lt;/small&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;btn-wrapper text-center&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-icon btn-github animate-up-1&quot;&gt;
+                                &lt;span class=&quot;btn-inner-icon&quot;&gt;
+                                    &lt;i class=&quot;fab fa-github-alt&quot;&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                                &lt;span class=&quot;btn-inner-text&quot;&gt;Github&lt;/span&gt;
+                            &lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-icon btn-twitter animate-up-1&quot;&gt;
+                                &lt;span class=&quot;btn-inner-icon&quot;&gt;
+                                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                                &lt;span class=&quot;btn-inner-text&quot;&gt;Twitter&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body section-image overlay-dark position-relative&quot; data-background=&quot;../../assets/img/sign-in-image.jpg&quot;&gt;
+                        &lt;form&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;div class=&quot;input-group mb-4&quot;&gt;
+                                    &lt;div class=&quot;input-group-prepend&quot;&gt;
+                                        &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;input class=&quot;form-control&quot; placeholder=&quot;Email&quot; type=&quot;text&quot;&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;div class=&quot;input-group&quot;&gt;
+                                    &lt;div class=&quot;input-group-prepend&quot;&gt;
+                                        &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fas fa-unlock-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;input class=&quot;form-control&quot; placeholder=&quot;Password&quot; type=&quot;password&quot;&gt;
+                                &lt;/div&gt;
+                                &lt;small class=&quot;text-white&quot;&gt;Must be at least 8 characters&lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;div class=&quot;input-group&quot;&gt;
+                                    &lt;input class=&quot;form-control&quot; placeholder=&quot;Confirm password&quot; type=&quot;password&quot;&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-check mb-3&quot;&gt;
+                                &lt;label class=&quot;form-check-label&quot;&gt;
+                                    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot;&gt;
+                                    &lt;span class=&quot;form-check-sign&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;text-white&quot;&gt;I agree to the &lt;a href=&quot;#&quot;&gt;Terms &amp;amp; Conditions&lt;/a&gt;&lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;text-center&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-white text-secondary mt-4&quot;&gt;Sign up&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Modal Content --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="achievement" class="my-5">
+                            <h5 class="mb-3">Achievement</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <div class="col-md-4">
+                                                    <!-- Button Modal -->
+                                                    <button type="button" class="btn btn-block btn-tertiary mb-3" data-toggle="modal" data-target="#modal-achievement">Achievement</button>
+                                                    <!-- Modal Content -->
+                                                    <div class="modal fade" id="modal-achievement" tabindex="-1" role="dialog" aria-labelledby="modal-achievement" aria-hidden="true">
+                                                        <div class="modal-dialog modal-tertiary modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header mx-auto">
+                                                                    <p class="lead mb-0">You just unlocked a new badge</p>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="py-3 text-center">
+                                                                        <span class="modal-icon display-1-lg"><i class="fas fa-medal"></i></span>
+                                                                        <h4 class="modal-title my-2">Author Level 5</h4>
+                                                                        <p>One Thousand Dollars! Well done mate - heads are turning your way.</p>
+                                                                        <div class="progress-wrapper">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-sm btn-white text-tertiary">All
+                                                                        badges</button>
+                                                                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Modal Content -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Button Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-secondary mb-3&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-achievement&quot;&gt;Achievement&lt;/button&gt;
+&lt;!-- Modal Content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-achievement&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modal-achievement&quot;
+    aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-tertiary modal-dialog-centered&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header mx-auto&quot;&gt;
+                &lt;p class=&quot;lead mb-0&quot;&gt;You just unlocked a new badge&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;py-3 text-center&quot;&gt;
+                    &lt;span class=&quot;modal-icon display-1-lg&quot;&gt;&lt;i class=&quot;fas fa-medal&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4 class=&quot;modal-title my-2&quot;&gt;Author Level 5&lt;/h4&gt;
+                    &lt;p&gt;One Thousand Dollars! Well done mate - heads are turning your way.&lt;/p&gt;
+                    &lt;div class=&quot;progress-wrapper&quot;&gt;
+                        &lt;div class=&quot;progress&quot;&gt;
+                            &lt;div class=&quot;progress-bar bg-primary&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt; 
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-white text-tertiary&quot;&gt;All badges&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close ml-auto&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Modal Content --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="subscribe" class="my-5">
+                            <h5 class="mb-3">Subscribe</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <div class="col-md-4">
+                                                    <!-- Button Modal -->
+                                                    <button type="button" class="btn btn-block btn-secondary mb-3" data-toggle="modal" data-target="#modal-subscribe">Subscribe</button>
+                                                    <!-- Modal Content -->
+                                                    <div class="modal fade" id="modal-subscribe" tabindex="-1" role="dialog" aria-labelledby="modal-subscribe" aria-hidden="true">
+                                                        <div class="modal-dialog modal-tertiary modal-dialog-centered modal-lg" role="document">
+                                                            <div class="modal-content section-image overlay-dark" data-background="../../../../assets/img/blog/image-4.jpg">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="py-3 text-center">
+                                                                        <span class="modal-icon display-1-lg"><i class="fas fa-envelope-open-text"></i></span>
+                                                                        <h4 class="modal-title my-2">Join our 1,360,462 subscribers
+                                                                        </h4>
+                                                                        <p>Get exclusive access to freebies, premium products and news.</p>
+                                                                        <div class="form-group">
+                                                                            <div class="d-sm-flex flex-column flex-sm-row mb-3 justify-content-center">
+                                                                                <input type="text" placeholder="Enter your email adress here" class="mr-sm-1 mb-2 mb-sm-0 form-control form-control-lg">
+                                                                                <button type="submit" class="ml-sm-1 btn btn-secondary">Subscribe</button>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer z-2 mx-auto text-center">
+                                                                    <p class="text-white">
+                                                                        We’ll never share your details with third parties.
+                                                                        <br class="visible-md">View our <a href="#">Privacy
+                                                                            Policy</a> for more info.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Modal Content -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Button Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-block btn-secondary mb-3&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-subscribe&quot;&gt;Subscribe&lt;/button&gt;
+&lt;!-- Modal Content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-subscribe&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modal-subscribe&quot;
+    aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-tertiary modal-dialog-centered modal-lg&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content section-image overlay-dark&quot; data-background=&quot;../../../../assets/img/blog/image-4.jpg&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close ml-auto&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;py-3 text-center&quot;&gt;
+                    &lt;span class=&quot;modal-icon display-1-lg&quot;&gt;&lt;i class=&quot;fas fa-envelope-open-text&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4 class=&quot;modal-title my-2&quot;&gt;Join our 1,360,462 subscribers&lt;/h4&gt;
+                    &lt;p&gt;Get exclusive access to freebies, premium products and news.&lt;/p&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;div class=&quot;d-sm-flex flex-column flex-sm-row mb-3 justify-content-center&quot;&gt;
+                            &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email adress here&quot; class=&quot;mr-sm-1 mb-2 mb-sm-0 form-control form-control-lg&quot;&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;ml-sm-1 btn btn-secondary&quot;&gt;Subscribe&lt;/button&gt;
+                        &lt;/div&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer z-2 mx-auto text-center&quot;&gt;
+                &lt;p class=&quot;text-white&quot;&gt;
+                    We&rsquo;ll never share your details with third parties.
+                    &lt;br class=&quot;visible-md&quot;&gt;View our &lt;a href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt; for more info.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Modal Content --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="usage" class="my-5">
+                            <h5 class="mb-3">Usage</h5>
+                            <p>Utilize the Bootstrap grid system within a modal by nesting <code class="text-danger">.container-fluid</code> within the <code class="text-danger">.modal-body</code>. Then, use the normal grid system classes as you would anywhere
+                                else.</p>
+                            <p>For more information, see the official <a href="https://getbootstrap.com/docs/4.3/components/modal/">Bootstrap
+                                    documentation</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#example" class="nav-link" data-smooth-scroll>How it works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#live-demo" class="nav-link " data-smooth-scroll>Live demo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#vertically-centered" class="nav-link " data-smooth-scroll>Vertically centered</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sign-in" class="nav-link " data-smooth-scroll>Sign-in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sign-up" class="nav-link " data-smooth-scroll>Sign-up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#achievement" class="nav-link " data-smooth-scroll>Achievement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#subscribe" class="nav-link " data-smooth-scroll>Subscribe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#usage" class="nav-link " data-smooth-scroll>Usage</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

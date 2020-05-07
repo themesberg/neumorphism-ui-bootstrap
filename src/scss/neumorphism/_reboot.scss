@@ -1,0 +1,22 @@
+iframe {
+    border: 0;
+}
+
+figcaption,
+figure,
+main {
+    display: block;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+strong{
+    font-weight: $font-weight-bold;
+}
+
+button:focus {
+    outline: 0;
+  }

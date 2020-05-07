@@ -1,0 +1,145 @@
+/**
+ * = Timelines
+ */
+
+.timeline {
+    width: 100%;
+
+    &.timeline-one {
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            margin-left: 50%;
+            padding-bottom: $timeline-spacer-x;
+            padding-left: $timeline-spacer-x;
+            text-align: left;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                margin-left:0;
+            }
+        
+            img {
+                margin-bottom: $timeline-spacer-y;
+            }
+        
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 14px;
+                height: 14px;
+                margin-left: -7px;
+                background-color: $primary;
+                border: $border-width solid $light;
+                @include box-shadow($timeline-inset-shadow);
+                @include border-radius($border-radius);
+            }
+        
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom:18px;
+                width: $timeline-border-width;
+                margin-top: 1.875rem;
+                margin-left: -3px;
+                border:$border-width solid $light;
+                @include box-shadow($timeline-inset-shadow);
+                @include border-radius($border-radius);
+            }
+        
+            &:nth-child(2n+1) {
+                margin-left: 0;
+                padding-right: $timeline-spacer-x;
+                padding-left: 0;
+                text-align: right;
+
+                @include media-breakpoint-down(sm){
+                    padding-right:0;
+                    padding-left:  $timeline-spacer-x;
+                    text-align: left;
+                }
+
+                &:before,
+                &:after {
+                    right: 0;
+                    left: auto;
+
+                    @include media-breakpoint-down(sm){
+                        right: auto;
+                        left: 0;
+                    }
+                }
+
+                &:before {
+                    margin-right: -7px;
+                }
+
+                &:after {
+                    margin-right: -3px;
+                }
+            }
+        }
+    }
+
+    &.timeline-two{   
+        .row{
+            .timeline-separator{
+                width:15px;
+                height:15px;
+                margin: 0 -4px 0 0;
+                border: $border-width solid $light;
+            }
+            .col{
+                &.middle-line{
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        height: 100%;
+                        width: $timeline-border-width;
+                        margin-top: 1.875rem;
+                        margin-left: -3px;
+                        border: $border-width solid $light;
+                        @include box-shadow($timeline-inset-shadow);
+                        @include border-radius($border-radius);
+                    }
+                }
+            }
+        }
+        .card{
+            .card-body{
+                .post-meta{
+                    span{
+                        padding-right:.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &.timeline-three {
+        .row {
+            .col{
+                &.middle-line{
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        height: 100%;
+                        width: $timeline-border-width;
+                        margin-top: 1.875rem;
+                        margin-left: -3px;
+                        border: $border-width solid $light;
+                        @include box-shadow($timeline-inset-shadow);
+                        @include border-radius($border-radius);
+                    }
+                }
+            }
+        }
+    }
+}

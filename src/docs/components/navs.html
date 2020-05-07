@@ -1,0 +1,1135 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Navs"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Navs</h1>
+                            <p class="lead text-dark">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+                            <a href="https://getbootstrap.com/docs/4.3/components/navs/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div id="base-nav" class="my-5">
+                            <h5 class="mb-3">Base nav</h5>
+                            <p>Navigation available in Bootstrap share general markup and styles, from the base <code class="text-danger">.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
+                            <p>The base <code class="text-danger">.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some
+                                link padding for larger hit areas, and basic disabled styling.</p>
+                            <div class="alert alert-info" role="alert">
+                                <p class="alert-text mb-0">The base <code class="text-white font-weight-bolder">.nav</code> component does not include any <code class="text-white font-weight-bolder">.active</code> state. The following examples include the class, mainly to demonstrate
+                                    that this particular class does not trigger any special styling.</p>
+                            </div>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <ul class="nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Active</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <p>Classes are used throughout, so your markup can be super flexible. Use <code class="text-danger">&lt;ul&gt;</code>s like above, or roll your own with say a <code class="text-danger">&lt;nav&gt;</code> element. Because the
+                                <code
+                                    class="text-danger">.nav</code> uses <code class="text-danger">display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <nav class="nav">
+                                                    <a class="nav-link active" href="#">Active</a>
+                                                    <a class="nav-link" href="#">Link</a>
+                                                    <a class="nav-link" href="#">Link</a>
+                                                    <a class="nav-link disabled" href="#">Disabled</a>
+                                                </nav>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;nav class=&quot;nav&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <h5>Available styles</h5>
+                        <p>Change the style of <code class="text-danger">.nav</code>s component with modifiers and utilities. Mix and match as needed, or build your own.</p>
+                        <div id="horizontal-alignment" class="my-5">
+                            <h5 class="mb-3">Horizontal alignment</h5>
+                            <p>Change the horizontal alignment of your nav with <a href="http://getbootstrap.com/docs/4.1/layout/grid/#horizontal-alignment">flexbox
+                                    utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right aligned.</p>
+                            <!-- Tab -->
+                            <p>Centered with <code class="text-danger">.justify-content-center</code>:</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <ul class="nav justify-content-center">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Active</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav justify-content-center&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <p>Right-aligned with <code class="text-danger">.justify-content-end</code>:</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <ul class="nav justify-content-end">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Active</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav justify-content-end&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="vertical" class="my-5">
+                            <h5 class="mb-3">Vertical</h5>
+                            <p>Stack your navigation by changing the flex item direction with the <code class="text-danger">.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code class="text-danger">.flex-sm-column</code>).</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Active</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav flex-column&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <p>As always, vertical navigation is possible without <code class="text-danger">&lt;ul&gt;</code>s, too.
+                            </p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link active" href="#">Active</a>
+                                                    <a class="nav-link" href="#">Link</a>
+                                                    <a class="nav-link" href="#">Link</a>
+                                                    <a class="nav-link disabled" href="#">Disabled</a>
+                                                </nav>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;nav class=&quot;nav flex-column&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="tabs" class="my-5">
+                            <h5 class="mb-3">Tabs</h5>
+                            <p>Takes the basic nav from above and adds the <code class="text-danger">.nav-tabs</code> class to generate a tabbed interface.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Active</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="pills" class="my-5">
+                            <h3 class="mb-3">Pills</h3>
+                            <p>Take that same HTML, but use <code class="text-danger">.navs</code> instead:</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-8" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-15" data-toggle="tab" href="#tab-content-15" role="tab" aria-controls="tab-link-15" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-16" data-toggle="tab" href="#tab-content-16" role="tab" aria-controls="tab-link-16" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent8">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-15" role="tabpanel" aria-labelledby="tab-content-15">
+                                                <ul class="nav nav-pills">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Profile</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Settings</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Messages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-16" role="tabpanel" aria-labelledby="tab-content-16">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav nav-pills&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="round-pill" class="my-5">
+                            <h5 class="mb-3">Round pills</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-9" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-17" data-toggle="tab" href="#tab-content-17" role="tab" aria-controls="tab-link-17" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-18" data-toggle="tab" href="#tab-content-18" role="tab" aria-controls="tab-link-18" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent9">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-17" role="tabpanel" aria-labelledby="tab-content-17">
+                                                <ul class="nav nav-pills rounded">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Profile</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Settings</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Messages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-18" role="tabpanel" aria-labelledby="tab-content-18">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav nav-pills rounded&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="fill-and-justify" class="my-5">
+                            <h5 class="mb-3">Fill and justify</h5>
+                            <p>Force your <code class="text-danger">.nav</code>’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your <code class="text-danger">.nav-item</code>s,
+                                use <code class="text-danger">.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.
+                            </p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-10" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-19" data-toggle="tab" href="#tab-content-19" role="tab" aria-controls="tab-link-19" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-20" data-toggle="tab" href="#tab-content-20" role="tab" aria-controls="tab-link-20" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent10">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-19" role="tabpanel" aria-labelledby="tab-content-19">
+                                                <ul class="nav nav-pills nav-fill">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Profile</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Settings</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Messages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-20" role="tabpanel" aria-labelledby="tab-content-20">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav nav-pills nav-fill&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <p>When using a <code class="text-danger">&lt;nav&gt;</code>-based navigation, be sure to include <code class="text-danger">.nav-item</code> on the anchors.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-11" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-21" data-toggle="tab" href="#tab-content-21" role="tab" aria-controls="tab-link-21" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-22" data-toggle="tab" href="#tab-content-22" role="tab" aria-controls="tab-link-22" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent11">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-21" role="tabpanel" aria-labelledby="tab-content-21">
+                                                <nav class="nav nav-pills nav-fill">
+                                                    <a class="nav-item nav-link active" href="#">Profile</a>
+                                                    <a class="nav-item nav-link" href="#">Settings</a>
+                                                    <a class="nav-item nav-link" href="#">Messages</a>
+                                                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                </nav>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-22" role="tabpanel" aria-labelledby="tab-content-22">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;nav class=&quot;nav nav-pills nav-fill&quot;&gt;
+    &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;#&quot;&gt;Profile&lt;/a&gt;
+    &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+    &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+    &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <p>For equal-width elements, use <code class="text-danger">.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code class="text-danger">.nav-fill</code> above, every nav item will be the
+                                same width.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-12" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-23" data-toggle="tab" href="#tab-content-23" role="tab" aria-controls="tab-link-23" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-24" data-toggle="tab" href="#tab-content-24" role="tab" aria-controls="tab-link-24" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent12">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-23" role="tabpanel" aria-labelledby="tab-content-23">
+                                                <ul class="nav nav-pills nav-justified">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Profile</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Settings</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Messages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-24" role="tabpanel" aria-labelledby="tab-content-24">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;ul class=&quot;nav nav-pills nav-justified&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="flex-utilities" class="my-5">
+                            <h5 class="mb-3">Working with flex utilities</h5>
+                            <p>If you need responsive nav variations, consider using a series of <a href="https://getbootstrap.com/docs/4.3/utilities/flex/">flexbox
+                                    utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout
+                                that fills the available width starting from the small breakpoint.</p>
+                            <!-- Tab Nav -->
+                            <div class="nav-wrapper position-relative mt-5 p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-13" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-25" data-toggle="tab" href="#tab-content-25" role="tab" aria-controls="tab-link-25" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-26" data-toggle="tab" href="#tab-content-26" role="tab" aria-controls="tab-link-26" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <!-- End of Tab Nav -->
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="tab-content" id="tabcontent13">
+                                        <div class="tab-pane bg-white p-4 fade show active" id="tab-content-25" role="tabpanel" aria-labelledby="tab-content-25">
+                                            <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+                                                <li class="nav-item">
+                                                    <a class="nav-link flex-sm-fill text-sm-center active" href="#">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link flex-sm-fill text-sm-center" href="#">Profile</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link flex-sm-fill text-sm-center" href="#">Settings</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link flex-sm-fill text-sm-center" href="#">Messages</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-26" role="tabpanel" aria-labelledby="tab-content-26">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&lt;ul class=&quot;nav nav-pills nav-fill flex-column flex-sm-row&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center active&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; href=&quot;#&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Tab -->
+                        <h5 id="icons" class="my-5">Pills with icons</h5>
+                        <p>You cand use icons in your navigation pill</p>
+                        <div class="nav-wrapper position-relative mt-5 p-0">
+                            <ul class="nav nav-tabs flex-column flex-md-row" id="tab-14" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-27" data-toggle="tab" href="#tab-content-27" role="tab" aria-controls="tab-link-27" aria-selected="true">Result</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-28" data-toggle="tab" href="#tab-content-28" role="tab" aria-controls="tab-link-28" aria-selected="false">Html</a>
+                                </li>
+                                <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                            </ul>
+                        </div>
+                        <!-- End of Tab Nav -->
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="tab-content" id="tabcontent14">
+                                    <div class="tab-pane bg-white p-4 fade show active" id="tab-content-27" role="tabpanel" aria-labelledby="tab-content-27">
+                                        <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+                                            <li class="nav-item">
+                                                <a class="nav-link flex-sm-fill text-sm-center active" href="#"><i
+                                                        class="far fa-user-circle"></i>Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link flex-sm-fill text-sm-center" href="#"><i class="far fa-sun"></i>Settings</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link flex-sm-fill text-sm-center" href="#"><i class="far fa-comments mr-2"></i>Messages</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link flex-sm-fill text-sm-center" href="#"><i class="fas fa-signature"></i>Stats</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-content-28" role="tabpanel" aria-labelledby="tab-content-28">
+                                        <div>
+                                            <pre>
+                                                <code class="language-html">
+&lt;ul class=&quot;nav nav-pills nav-fill flex-column flex-sm-row&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center active&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-user-circle&quot;&gt;&lt;/i&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-comments&quot;&gt;&lt;/i&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fas fa-signature&quot;&gt;&lt;/i&gt;Stats&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                </code>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <h4>Only icon</h4>
+                        </div>
+                        <div id="circle-pill" class="my-5">
+                            <h5 class="mb-4">Circle pills</h5>
+                            <!-- Tab Nav -->
+                            <div class="nav-wrapper position-relative p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-15" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-29" data-toggle="tab" href="#tab-content-29" role="tab" aria-controls="tab-link-29" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-30" data-toggle="tab" href="#tab-content-30" role="tab" aria-controls="tab-link-30" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <!-- End of Tab Nav -->
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="tab-content" id="tabcontent15">
+                                        <div class="tab-pane bg-white p-4 fade show active" id="tab-content-29" role="tabpanel" aria-labelledby="tab-content-29">
+                                            <ul class="nav nav-pills nav-pill-circle flex-column flex-sm-row">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-user"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-lightbulb"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-sun"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-paper-plane"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-comments mr-2"></i></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-30" role="tabpanel" aria-labelledby="tab-content-30">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&lt;ul class=&quot;nav nav-pills nav-pill-circle flex-column flex-sm-row&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Tab -->
+                        <div id="square-pills" class="my-5">
+                            <h5 class="mb-3">Square pills</h5>
+                            <!-- Tab Nav -->
+                            <div class="nav-wrapper position-relative p-0">
+                                <ul class="nav nav-tabs flex-column flex-md-row" id="tab-16" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-31" data-toggle="tab" href="#tab-content-31" role="tab" aria-controls="tab-link-31" aria-selected="true">Result</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-32" data-toggle="tab" href="#tab-content-32" role="tab" aria-controls="tab-link-32" aria-selected="false">Html</a>
+                                    </li>
+                                    <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                </ul>
+                            </div>
+                            <!-- End of Tab Nav -->
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="tab-content" id="tabcontent16">
+                                        <div class="tab-pane bg-white p-4 fade show active" id="tab-content-31" role="tabpanel" aria-labelledby="tab-content-31">
+                                            <ul class="nav nav-pills nav-pill-square flex-column flex-sm-row">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-user"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-lightbulb"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-sun"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-paper-plane"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="nav-link-icon d-block"><i class="far fa-comments mr-2"></i></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-content-32" role="tabpanel" aria-labelledby="tab-content-32">
+                                            <div>
+                                                <pre>
+                                                    <code class="language-html">
+&lt;ul class=&quot;nav nav-pills nav-pill-square flex-column flex-sm-row&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Tab -->
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#base-nav" class="nav-link" data-smooth-scroll>Base nav</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#horizontal-alignment" class="nav-link " data-smooth-scroll>Horizontal
+                                    alignment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#vertical" class="nav-link " data-smooth-scroll>Vertical</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tabs" class="nav-link " data-smooth-scroll>Tabs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#pills" class="nav-link" data-smooth-scroll>Pills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#fill-and-justify" class="nav-link " data-smooth-scroll>Fill and justify</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#flex-utilities" class="nav-link " data-smooth-scroll>Flex utilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#icons" class="nav-link " data-smooth-scroll>Icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#circle-pill" class="nav-link " data-smooth-scroll>Circle pills</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

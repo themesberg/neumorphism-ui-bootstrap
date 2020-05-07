@@ -1,0 +1,88 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "..",
+        "title": "Pixel Documentation - Javascript"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "..",
+                "docs-path": "."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-3 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Javascript</h1>
+                            <p class="lead text-dark">Here we'll explain where to write your own custom Javascript.</p>
+                            <a href="https://getbootstrap.com/docs/4.0/getting-started/javascript/" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Bootstrap 4 documentation</span>
+                            </a>
+                        </div>
+                        <div class="my-5 mb-5" id="location">
+                            <h5 class="mb-3">Location</h5>
+                            <p>Pixel's main javascript file is located at <code class="text-danger">js/pixel.js</code>. If you ran one of the <code class="text-danger">gulp</code> commands, you'll observe another file called <code class="text-danger">pixel.min.js</code>                                which is a minified version of the previous file.</p>
+                            <p><span class="text-info">Note: </span> by default, the <code class="text-danger">pixel.min.js</code> is the file included in the templates.</p>
+                        </div>
+                        <div class="my-5 mb-5" id="content">
+                            <h5 class="mb-3">Content</h5>
+                            <p>We use jQuery to select elements and work with 3rd party plugins. The entirety of the custom JS is wrapped in a classic <code class="text-danger">jQuery(document).ready(function(){})</code> function to make sure the page is
+                                loaded before the scripts will be running.</p>
+                            <p>We recommend to use jQuery for basic DOM operations but obviously you can customize this file or furtherly add other Javascript files to your liking.</p>
+                        </div>
+                        <div class="my-5 mb-5" id="content">
+                            <h5 class="mb-3">Bootstrap</h5>
+                            <p>All of the standard Bootstrap 4 Javascript actions are available in Pixel so check out their <a href="https://getbootstrap.com/docs/4.0/getting-started/javascript/">documentation</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#location" class="nav-link " data-smooth-scroll>Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#content" class="nav-link " data-smooth-scroll>Content</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../"
+    })
+</body>
+
+</html>

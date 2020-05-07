@@ -1,0 +1,1683 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Profile cards"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Profile cards</h1>
+                            <p class="lead text-dark">Bootstrap 4 has more powerful components than the previous version 3. Undoubtedly card component is one of the stylish and mobile friendly one among others. Basically you can mix and match the cards to create different types
+                                of widgets. In this article let us discuss, how to create a Bootstrap 4 user profile card widget.
+                            </p>
+                        </div>
+                        <div id="example-1" class="my-5">
+                            <h5 class="mb-3">Default profile card</h5>
+                            <p>Below is an example of a basic profile-card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with bootstrap
+                                4 various <a href="https://getbootstrap.com/docs/4.3/utilities/sizing/">sizing
+                                    options</a> or <a href="https://getbootstrap.com/docs/4.3/layout/grid/#mix-and-match">grid
+                                    system</a></p>
+                            <p>Use the <code class="text-danger">.shadow</code>, <code class="text-danger">.border</code> and <code class="text-danger">.bg-*</code> modifier classes to make profile cards more creative.
+                            </p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <!-- Profile Card -->
+                                                    <div class="profile-card">
+                                                        <div class="card shadow-soft border-light">
+                                                            <img src="../../assets/img/team/8.jpg" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Tanislav Robert</h5>
+                                                                <h6 class="card-subtitle">Director</h6>
+                                                                <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                <ul class="social-buttons mt-3">
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                            <i class="fab fa-facebook-f"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                            <i class="fab fa-slack-hash"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                            <i class="fab fa-dribbble"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                            <i class="fab fa-google-plus"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                            <i class="fab fa-dropbox"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Profile Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light&quot;&gt;
+        &lt;img src=&quot;../../assets/img/team/8.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Tanislav Robert&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;Director&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                        &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                        &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-2" class="my-5">
+                            <h5 class="mb-3">Images top and bottom</h5>
+                            <p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p>
+                            <p>Similar to headers and footers, cards can include <code class="text-danger">top</code> and <code class="text-danger">bottom</code> “image caps”—images at the top or bottom of a card.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-soft border-light">
+                                                                <img src="../../assets/img/team/8.jpg" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Tanislav Robert</h5>
+                                                                    <h6 class="card-subtitle">Director</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                                <i class="fab fa-dribbble"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                                <i class="fab fa-dropbox"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-soft border-light">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Calota Oana</h5>
+                                                                    <h6 class="card-subtitle">Marketing</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-dribbble">
+                                                                                <i class="fab fa-dribbble"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-dropbox">
+                                                                                <i class="fab fa-dropbox"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <img src="../../assets/img/team/7.jpg" class="card-img-bottom" alt="...">
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light&quot;&gt;
+        &lt;img src=&quot;../../assets/img/team/8.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Tanislav Robert&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;Director&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                        &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                        &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Calota Oana&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;Marketing&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dribbble&quot;&gt;
+                        &lt;i class=&quot;fab fa-dribbble&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-dropbox&quot;&gt;
+                        &lt;i class=&quot;fab fa-dropbox&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;img src=&quot;../../assets/img/team/7.jpg&quot; class=&quot;card-img-bottom&quot; alt=&quot;...&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;    
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-3" class="my-5">
+                            <h5 class="mb-3">Shaped images</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <div class="mb-6">
+                                                            <small class="font-weight-bold">Organic image</small>
+                                                        </div>
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-soft border-light text-center">
+                                                                <div class="profile-image">
+                                                                    <img src="../../assets/img/team/9.jpg" class="card-img-top organic-radius" alt="image">
+                                                                </div>
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Tanislav Robert</h5>
+                                                                    <h6 class="card-subtitle">Director</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <div class="mb-6">
+                                                            <small class="font-weight-bold">Circle image</small>
+                                                        </div>
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-soft border-light text-center">
+                                                                <div class="profile-image">
+                                                                    <img src="../../assets/img/team/10.jpg" class="card-img-top rounded-circle" alt="image">
+                                                                </div>
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Calota Oana</h5>
+                                                                    <h6 class="card-subtitle">UI/UX Designer</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <div class="mb-6">
+                                                            <small class="font-weight-bold">Square image</small>
+                                                        </div>
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-soft border-light text-center">
+                                                                <div class="profile-image">
+                                                                    <img src="../../assets/img/team/6.jpg" class="card-img-top" alt="image">
+                                                                </div>
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Lucian Alex</h5>
+                                                                    <h6 class="card-subtitle">Developer</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light text-center&quot;&gt;
+        &lt;div class=&quot;profile-image&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/9.jpg&quot; class=&quot;card-img-top organic-radius&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;    
+        &lt;div class=&quot;card-body mt-n5&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Tanislav Robert&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;Director&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light text-center&quot;&gt;
+        &lt;div class=&quot;profile-image&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/10.jpg&quot; class=&quot;card-img-top rounded-circle&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;    
+        &lt;div class=&quot;card-body mt-n5&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Calota Oana&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;UI/UX Designer&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light text-center&quot;&gt;
+        &lt;div class=&quot;profile-image&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/6.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;    
+        &lt;div class=&quot;card-body mt-n5&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Lucian Alex&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;Developer&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;                                    
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-4" class="my-5">
+                            <h5 class="mb-3">Profile cards with cover image</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-sm text-center border-light">
+                                                                <div class="profile-cover" data-background="/img/team/cover-profile-2.jpg"></div>
+                                                                <div class="profile-image-small mt-n6">
+                                                                    <img src="../../assets/img/team/9.jpg" class="card-img-top organic-radius" alt="image">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title mb-0">Tanislav Robert</h5>
+                                                                    <a class="btn btn-sm btn-secondary my-3" href="#">
+                                                                        <span class="fas fa-user-plus mr-1"></span> Follow
+                                                                    </a>
+                                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-sm text-center border-light">
+                                                                <div class="profile-cover" data-background="/img/team/cover-profile.jpg"></div>
+                                                                <div class="profile-image-small mt-n6">
+                                                                    <img src="../../assets/img/team/10.jpg" class="card-img-top rounded-circle" alt="image">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title mb-0">Calota Oana</h5>
+                                                                    <a class="btn btn-sm btn-secondary my-3" href="#">
+                                                                        <span class="fas fa-user-plus mr-1"></span> Follow
+                                                                    </a>
+                                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card shadow-sm text-center border-light">
+                                                                <div class="profile-cover" data-background="/img/team/cover-profile-3.jpg"></div>
+                                                                <div class="profile-image-small mt-n6">
+                                                                    <img src="../../assets/img/team/6.jpg" class="card-img-top" alt="image">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title mb-0">Zoltan Szőgyényi</h5>
+                                                                    <a class="btn btn-sm btn-secondary my-3" href="#">
+                                                                        <span class="fas fa-user-plus mr-1"></span> Follow
+                                                                    </a>
+                                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-sm text-center border-light&quot;&gt;
+        &lt;div class=&quot;profile-cover&quot; data-background=&quot;/img/team/cover-profile-2.jpg&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;profile-image-small mt-n6&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/9.jpg&quot; class=&quot;card-img-top organic-radius&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;    
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-0&quot;&gt;Tanislav Robert&lt;/h5&gt;
+            &lt;a class=&quot;btn btn-sm btn-secondary my-3&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fas fa-user-plus mr-1&quot;&gt;&lt;/span&gt;
+                    Follow 
+                &lt;/a&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-sm text-center border-light&quot;&gt;
+        &lt;div class=&quot;profile-cover&quot; data-background=&quot;/img/team/cover-profile.jpg&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;profile-image-small mt-n6&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/10.jpg&quot; class=&quot;card-img-top rounded-circle&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;    
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-0&quot;&gt;Calota Oana&lt;/h5&gt;
+            &lt;a class=&quot;btn btn-sm btn-secondary my-3&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fas fa-user-plus mr-1&quot;&gt;&lt;/span&gt;
+                    Follow 
+                &lt;/a&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card shadow-sm text-center border-light&quot;&gt;
+        &lt;div class=&quot;profile-cover&quot; data-background=&quot;/img/team/cover-profile-3.jpg&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;profile-image-small mt-n6&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/6.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;    
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-0&quot;&gt;Zoltan Szőgy&eacute;nyi&lt;/h5&gt;
+            &lt;a class=&quot;btn btn-sm btn-secondary my-3&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fas fa-user-plus mr-1&quot;&gt;&lt;/span&gt;
+                    Follow 
+                &lt;/a&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-5" class="my-5">
+                            <h5 class="mb-3">Action cards</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card">
+                                                                <div class="card-image position-relative overlay-soft-dark">
+                                                                    <img src="../../assets/img/team/9.jpg" class="card-img-top" alt="image">
+                                                                    <div class="dropdown">
+                                                                        <div class="btn-group dropleft">
+                                                                            <a class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                <span class="icon icon-sm">
+                                                                                    <i class="fas fa-ellipsis-h icon-white"></i>
+                                                                                </span>
+                                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                            </a>
+                                                                            <div class="dropdown-menu">
+                                                                                <a class="dropdown-item" href="#">Edit
+                                                                                    profile</a>
+                                                                                <a class="dropdown-item" href="#">Dashboard</a>
+                                                                                <a class="dropdown-item" href="#">Settings</a>
+                                                                                <div class="dropdown-divider"></div>
+                                                                                <a class="dropdown-item" href="#">Sign
+                                                                                    out</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body shadow position-relative mt-n7 mx-2 bg-white text-center">
+                                                                    <h5 class="card-title">Tanislav Robert</h5>
+                                                                    <span class="text-muted"><i class="fas fa-map-marker-alt mr-2"></i>Timisoara,
+                                                                        RO</span>
+                                                                    <p class="mt-3">Robert drives the technical strategy of the platform and brand.</p>
+                                                                    <div class="btn-group">
+                                                                        <button class="btn btn-secondary btn-icon">
+                                                                            <span class="btn-inner--icon"><i class="far fa-user"></i></span>
+                                                                            <span class="btn-inner--text">Follow</span>
+                                                                        </button>
+                                                                        <button class="btn btn-dark">
+                                                                            <i class="far fa-envelope"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card">
+                                                            <div class="card text-center shadow-sm border-soft">
+                                                                <img class="card-img-top profile-image-small organic-radius mt-4" src="../../assets/img/team/9.jpg" alt="image">
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Tanislav Robert</h6>
+                                                                    <span class="d-block">
+                                                                        <i class="star fas fa-star text-warning"></i>
+                                                                        <i class="star fas fa-star text-warning"></i>
+                                                                        <i class="star fas fa-star text-warning"></i>
+                                                                        <i class="star fas fa-star text-warning"></i>
+                                                                        <i class="star far fa-star text-gray"></i>
+                                                                    </span>
+                                                                    <ul class="social-buttons mt-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="card-footer p-1">
+                                                                    <a class="btn btn-block btn-primary animate-up-1" href="#">
+                                                                        <span class="far fa-envelope mr-2"></span> Send a Message
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-image position-relative overlay-soft-dark&quot;&gt;
+            &lt;img src=&quot;../../assets/img/team/9.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;image&quot;&gt;
+            &lt;div class=&quot;dropdown&quot;&gt;
+                &lt;div class=&quot;btn-group dropleft&quot;&gt;
+                    &lt;a class=&quot;dropdown-toggle dropdown-toggle-split&quot;
+                        data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                        &lt;span class=&quot;icon icon-sm&quot;&gt;
+                            &lt;i class=&quot;fas fa-ellipsis-h icon-white&quot;&gt;&lt;/i&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;div class=&quot;dropdown-menu&quot;&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Edit profile&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dashboard&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Settings&lt;/a&gt;
+                        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Sign out&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body shadow position-relative mt-n7 mx-2 bg-white text-center&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Tanislav Robert&lt;/h5&gt;
+            &lt;span class=&quot;text-muted&quot;&gt;&lt;i class=&quot;fas fa-map-marker-alt mr-2&quot;&gt;&lt;/i&gt;Timisoara, RO&lt;/span&gt;
+            &lt;p class=&quot;mt-3&quot;&gt;Robert drives the technical strategy of the platform and brand.&lt;/p&gt;
+            &lt;div class=&quot;btn-group&quot;&gt;
+                &lt;button class=&quot;btn btn-secondary btn-icon&quot;&gt;
+                    &lt;span class=&quot;btn-inner--icon&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;span class=&quot;btn-inner--text&quot;&gt;Follow&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-dark&quot;&gt;
+                    &lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card&quot;&gt;
+    &lt;div class=&quot;card text-center shadow border-soft&quot;&gt;
+        &lt;img class=&quot;card-img-top profile-image-small organic-radius mt-4&quot; src=&quot;../../assets/img/team/9.jpg&quot; alt=&quot;image&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h6 class=&quot;card-title&quot;&gt;Tanislav Robert&lt;/h6&gt;
+            &lt;span class=&quot;d-block&quot;&gt;
+                &lt;i class=&quot;star fas fa-star text-warning&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;star fas fa-star text-warning&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;star fas fa-star text-warning&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;star fas fa-star text-warning&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;star far fa-star text-gray&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;ul class=&quot;social-buttons mt-3&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer p-1&quot;&gt;
+            &lt;a class=&quot;btn btn-block btn-primary animate-up-1&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;far fa-envelope mr-2&quot;&gt;&lt;/span&gt;
+                Send a Message
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-6" class="my-5">
+                            <h5 class="mb-3">Hover effect</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <!-- Profile Card -->
+                                                    <div class="profile-card-image">
+                                                        <div class="card">
+                                                            <img src="../../assets/img/team/team-2.jpg" class="card-img-top" alt="image">
+                                                            <div class="card-body mt-n5">
+                                                                <h5 class="card-title">Zoltan Szőgyényi</h5>
+                                                                <h6 class="card-subtitle">Web Developer</h6>
+                                                                <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                <ul class="social-buttons mt-4">
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                            <i class="fab fa-facebook-f"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                            <i class="fab fa-slack-hash"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                            <i class="fab fa-google-plus"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Profile Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card-image&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;../../assets/img/team/team-2.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;image&quot;&gt;
+        &lt;div class=&quot;card-body mt-n5&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Zoltan Szőgy&eacute;nyi&lt;/h5&gt;
+            &lt;h6 class=&quot;card-subtitle&quot;&gt;Web Developer&lt;/h6&gt;
+            &lt;p class=&quot;card-text my-2&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;ul class=&quot;social-buttons mt-4&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                        &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                        &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                        &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-7" class="my-5">
+                            <h5 class="mb-3">Minimal</h5>
+                            <p>With the <code class="text-danger">.rounded-circle</code> and <code class="text-danger">.organic-radius</code> classes you can change the shape of the image.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-alternative rounded-circle text-center over-hide">
+                                                            <img src="../../assets/img/team/9.jpg" alt="image">
+                                                            <div class="team-mask rounded-circle bg-white d-flex align-items-center">
+                                                                <h4>Tanislav Robert</h4>
+                                                                <h6 class="card-subtitle mt-n5">UI/UX Designer</h6>
+                                                                <ul class="social-buttons">
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                            <i class="fab fa-facebook-f"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                            <i class="fab fa-slack-hash"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                            <i class="fab fa-google-plus"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-alternative organic-radius text-center over-hide">
+                                                            <img src="../../assets/img/team/10.jpg" alt="image">
+                                                            <div class="team-mask organic-radius bg-white d-flex align-items-center">
+                                                                <h4>Calota Oana</h4>
+                                                                <h6 class="card-subtitle mt-n5">Web Developer</h6>
+                                                                <ul class="social-buttons">
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                            <i class="fab fa-facebook-f"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                            <i class="fab fa-slack-hash"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                            <i class="fab fa-google-plus"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-alternative text-center over-hide">
+                                                            <img src="../../assets/img/team/8.jpg" alt="image">
+                                                            <div class="team-mask bg-white d-flex align-items-center">
+                                                                <h4>Tanislav Alex</h4>
+                                                                <h6 class="card-subtitle mt-n5">Marketing</h6>
+                                                                <ul class="social-buttons">
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                            <i class="fab fa-facebook-f"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                            <i class="fab fa-slack-hash"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                            <i class="fab fa-google-plus"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card-alternative rounded-circle text-center over-hide&quot;&gt;
+    &lt;img src=&quot;../../assets/img/team/9.jpg&quot; alt=&quot;image&quot;&gt;
+    &lt;div class=&quot;team-mask bg-white d-flex align-items-center&quot;&gt;
+        &lt;h4&gt;Tanislav Robert&lt;/h4&gt;
+        &lt;h6 class=&quot;card-subtitle mt-n5&quot;&gt;UI/UX Designer&lt;/h6&gt;
+        &lt;ul class=&quot;social-buttons&quot;&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card-alternative organic-radius text-center over-hide&quot;&gt;
+    &lt;img src=&quot;../../assets/img/team/10.jpg&quot; alt=&quot;image&quot;&gt;
+    &lt;div class=&quot;team-mask bg-white d-flex align-items-center&quot;&gt;
+        &lt;h4&gt;Calota Oana&lt;/h4&gt;
+        &lt;h6 class=&quot;card-subtitle mt-n5&quot;&gt;Web Developer&lt;/h6&gt;
+        &lt;ul class=&quot;social-buttons&quot;&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;profile-card-alternative text-center over-hide&quot;&gt;
+    &lt;img src=&quot;../../assets/img/team/8.jpg&quot; alt=&quot;image&quot;&gt;
+    &lt;div class=&quot;team-mask bg-white d-flex align-items-center&quot;&gt;
+        &lt;h4&gt;Tanislav Alex&lt;/h4&gt;
+        &lt;h6 class=&quot;card-subtitle mt-n5&quot;&gt;Marketing&lt;/h6&gt;
+        &lt;ul class=&quot;social-buttons&quot;&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                    &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                    &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                    &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                    &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-8" class="my-5">
+                            <h5 class="mb-3">Rotating card</h5>
+                            <p>Card flipping card is a card animation that gives an element effect of flipping to the other side upon the interaction.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-8" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-15" data-toggle="tab" href="#tab-content-15" role="tab" aria-controls="tab-link-15" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-16" data-toggle="tab" href="#tab-content-16" role="tab" aria-controls="tab-link-16" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent8">
+                                            <div class="tab-pane fade show active" id="tab-content-15" role="tabpanel" aria-labelledby="tab-content-15">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <!-- Profile Card -->
+                                                    <div class="rotating-card-container">
+                                                        <div class="card shadow-sm border-light p-5 card-rotate">
+                                                            <div class="front text-center">
+                                                                <div class="profile-image mt-4">
+                                                                    <img src="../../assets/img/team/9.jpg" class="card-img-top rounded-circle border-primary" alt="image">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Robert Tanislav</h5>
+                                                                    <h6 class="card-subtitle">UI/UX Designer</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="back text-center">
+                                                                <div class="card-body p-5">
+                                                                    <h6 class="card-subtitle">UI/UX Designer</h6>
+                                                                    <ul class="social-buttons py-3">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <a class="btn btn-sm btn-secondary" href="#">
+                                                                        <span class="fas fa-user-plus mr-1"></span> Follow
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Profile Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-16" role="tabpanel" aria-labelledby="tab-content-16">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Profile Card --&gt;
+&lt;div class=&quot;rotating-card-container&quot;&gt;
+    &lt;div class=&quot;card shadow-sm border-light p-5 card-rotate&quot;&gt;
+        &lt;div class=&quot;front text-center&quot;&gt;
+            &lt;div class=&quot;profile-image mt-4&quot;&gt;
+                    &lt;img src=&quot;../../assets/img/team/9.jpg&quot; class=&quot;card-img-top organic-radius border-primary&quot; alt=&quot;image&quot;&gt;
+            &lt;/div&gt;    
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title&quot;&gt;Robert Tanislav&lt;/h5&gt;
+                &lt;h6 class=&quot;card-subtitle&quot;&gt;UI/UX Designer&lt;/h6&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;back text-center&quot;&gt;
+            &lt;div class=&quot;card-body p-5&quot;&gt;
+                &lt;h6 class=&quot;card-subtitle&quot;&gt;UI/UX Designer&lt;/h6&gt;
+                &lt;ul class=&quot;social-buttons py-3&quot;&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-facebook&quot;&gt;
+                            &lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-twitter&quot;&gt;
+                            &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-slack&quot;&gt;
+                            &lt;i class=&quot;fab fa-slack-hash&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-link btn-google-plus&quot;&gt;
+                            &lt;i class=&quot;fab fa-google-plus&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;a class=&quot;btn btn-sm btn-secondary&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fas fa-user-plus mr-1&quot;&gt;&lt;/span&gt;
+                    Follow 
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Profile Card --&gt;
+
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#example-1" class="nav-link" data-smooth-scroll>Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-2" class="nav-link" data-smooth-scroll>Image positioning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-3" class="nav-link" data-smooth-scroll>Shaped images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-4" class="nav-link" data-smooth-scroll>Cover images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-5" class="nav-link" data-smooth-scroll>Actions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-6" class="nav-link" data-smooth-scroll>Animation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-7" class="nav-link" data-smooth-scroll>Minimal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-8" class="nav-link" data-smooth-scroll>Rotating animation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

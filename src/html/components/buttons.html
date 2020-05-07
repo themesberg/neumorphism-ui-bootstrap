@@ -1,0 +1,87 @@
+<!--
+
+=========================================================
+* Neumorphism UI Kit Pro - v1.0.0
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui-kit-pro
+* Copyright 2020 Themesberg (https://www.themesberg.com/licensing)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Neumorph Components - Buttons"
+    })
+</head>
+
+<body>
+    @@include('./_navigation.html', {
+        "path": "../..",
+        "classes": "navbar-light"
+    })
+    <main>
+        <!-- Hero -->
+        <div class="section-header pb-6 bg-primary overflow-hidden text-center border-bottom border-light">
+            <div class="container z-2">
+                <div class="row mb-4 justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-7">
+                        <h1 class="display-3 mb-4">Buttons</h1>
+                        <p class="lead">Use Neumorphic's custom button styles for actions in forms, dialogs with support for multiple sizes, states, and more.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <div class="alert shadow-inset">
+                            <div class="d-flex">
+                                <div class="alert-inner--text">
+                                    <span class="icon text-danger icon-xs mr-2 mr-md-1"><span class="fas fa-file-alt"></span></span>
+                                    <a target="_blank" href="../../docs/components/buttons.html">See our Documentation</a> for a detailed technical explanation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Hero -->
+
+        @@include('./components/_buttons.html', {
+            "path": "../..",
+            "classes": "bg-primary text-dark"
+        })
+    </main>
+    @@include('./_footer.html', {
+        "path": "../..",
+        "classes": "bg-primary"
+    })
+
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+    <script>
+        $toggleTransitions = $('#toggleTransitions');
+        $buttonOverlay = $('.btn-loading-overlay');
+
+        $toggleTransitions.on('change', function() {
+            if ($(this).is(':checked')) {
+                $buttonOverlay.addClass('btn-loading');
+                $buttonOverlay.attr('disabled', true);
+            } else {
+                $buttonOverlay.removeClass('btn-loading');
+                $buttonOverlay.attr('disabled', false);
+            }
+        });
+    </script>
+</body>
+
+</html>

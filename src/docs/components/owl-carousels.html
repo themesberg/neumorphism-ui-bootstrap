@@ -1,0 +1,691 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Owl carousels"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Owl carousels</h1>
+                            <p class="lead text-dark">Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</p>
+                            <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html" target="_blank" class="btn btn-icon btn-primary mb-3">
+                                <span class="btn-inner-icon"><i class="fas fa-info-circle"></i></span>
+                                <span class="btn-inner-text">Owl Carousel documentation</span>
+                            </a>
+                        </div>
+                        <h3 class="mt-5">Installation</h3>
+                        <div id="installation" class="my-4">
+                            <h5 class="mb-3">Include css</h5>
+                            <p>First, include two CSS files into your HTML head:</p>
+                            <div>
+                                <pre class="bg-primary">
+                                        <code class="language-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;owlcarousel/owl.carousel.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;owlcarousel/owl.theme.default.min.css&quot;&gt;   
+                                        </code>
+                                    </pre>
+                            </div>
+                            <p><code class="text-danger">owl.carousel.css</code> file is required and should be included before any <code class="text-danger">*.js</code> files.</p>
+                            <p><code class="text-danger">owl.theme.default.min.css</code> file is optional and feel free to edit it. However, it is required if you'd like the default nav controls like dots or next buttons. Inside the source package you can
+                                also find SCSS files for easy generation of your own themes.</p>
+                        </div>
+                        <div class="my-5">
+                            <h5 class="mb-3">Include JS</h5>
+                            <p>Yep, include jQuery and <code class="text-danger">owl.carousel.min.js</code> into the footer.
+                            </p>
+                            <div>
+                                <pre class="bg-primary">
+                                        <code class="language-html">
+&lt;script src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;owlcarousel/owl.carousel.min.js&quot;&gt;&lt;/script&gt;
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                        <div id="set-html" class="my-5">
+                            <h5 class="mb-3">Set HTML</h5>
+                            <div>
+                                <pre class="bg-primary">
+                                        <code class="language-html">
+&lt;!-- Set up your HTML --&gt;
+&lt;div class=&quot;owl-carousel&quot;&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+    &lt;div&gt; Your Content &lt;/div&gt;
+&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                        <div id="call-plugin" class="my-5">
+                            <h5 class="mb-3">Call the plugin</h5>
+                            <p>Now call the Owl initializer function and your carousel is ready.</p>
+                            <div>
+                                <pre class="bg-primary">
+                                        <code class="language-js">
+$(document).ready(function(){
+    $(&quot;.owl-carousel&quot;).owlCarousel();
+});
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                        <h3 class="mt-5">Examples</h3>
+                        <div id="basic-carousel" class="my-5">
+                            <h5 class="mb-3">Basic carousel</h5>
+                            <p>Basic usage of Owl Carousel. I used <code class="text-danger">loop:true</code> and <code class="text-danger">margin:10</code>. The structure works with any kind of DOM element. In all of my examples i used <code class="text-danger">&lt;div class="item"&gt;...&lt;/div&gt;</code>                                but you could put any other element <code class="text-danger">div/span/a/img...</code></p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="false">Js</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <!-- Basic carousel -->
+                                                <div class="basic-carousel owl-carousel owl-theme">
+                                                    <!-- Item 1 -->
+                                                    <div class="item">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-image">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/team/team-1.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Tanislav Robert</h5>
+                                                                    <h6 class="card-subtitle">UI/UX Designer</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-4">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="item">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-image">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/team/team-3.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Calota Oana</h5>
+                                                                    <h6 class="card-subtitle">Marketing</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-4">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <!-- Item 3 -->
+                                                    <div class="item">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-image">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/team/team-2.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Zoltan Szőgyényi</h5>
+                                                                    <h6 class="card-subtitle">Web Developer</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-4">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <!-- Item 4 -->
+                                                    <div class="item">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-image">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/team/team-4.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Zoltan Szőgyényi</h5>
+                                                                    <h6 class="card-subtitle">Web Developer</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-4">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                    <!-- Item 5 -->
+                                                    <div class="item">
+                                                        <!-- Profile Card -->
+                                                        <div class="profile-card-image">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/team/team-5.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-body mt-n5">
+                                                                    <h5 class="card-title">Zoltan Szőgyényi</h5>
+                                                                    <h6 class="card-subtitle">Web Developer</h6>
+                                                                    <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                    <ul class="social-buttons mt-4">
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-facebook">
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-twitter">
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-slack">
+                                                                                <i class="fab fa-slack-hash"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" target="_blank" class="btn btn-link btn-google-plus">
+                                                                                <i class="fab fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Profile Card -->
+                                                    </div>
+                                                </div>
+                                                <!-- End of basic carousel -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;basic-carousel owl-carousel owl-theme&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 1&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 2&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 3&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 4&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 5&lt;/h4&gt;&lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-js">
+$('.basic-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    },
+    navText: [
+        '&lt;i class=&quot;fas fa-long-arrow-alt-left&quot;&gt;&lt;/i&gt;',
+        '&lt;i class=&quot;fas fa-long-arrow-alt-right&quot;&gt;&lt;/i&gt;'
+    ]
+});
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="mouswheel-scrolling" class="my-5">
+                            <h5 class="mb-3">Mouswheel scrolling </h5>
+                            <p>To add mouswheel scrolling just include the fantastic plugin jquery.mousewheel.js created by Brandon Aaron.<a href="https://github.com/brandonaaron/jquery-mousewheel">Link
+                                    to plugin GitHub page</a></p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="false">Html</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Js</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <!-- Mousewheel carousel -->
+                                                <div class="mouswheel-carousel owl-carousel owl-theme">
+                                                    <!-- Item 1 -->
+                                                    <div class="item">
+                                                        <!-- Blog Card -->
+                                                        <div class="blog-card">
+                                                            <div class="card shadow-sm border-0">
+                                                                <img src="../../assets/img/blog/image-1.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-header">
+                                                                    <div class="post-meta d-flex justify-content-between">
+                                                                        <h6 class="icon-info"><i class="fas fa-code mr-2"></i>Coding</h6><span><i
+                                                                                class="far fa-clock"></i>Last updated 3
+                                                                            mins ago</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body pt-0">
+                                                                    <h4>
+                                                                        <a href="#">Remote workers, here's how to dodge
+                                                                            distractions</a>
+                                                                    </h4>
+                                                                    <p class="card-text my-2">According to some historical records, some people out there have boundless energy, loads of free time, and ambition...
+                                                                    </p>
+                                                                </div>
+                                                                <div class="card-footer mx-4 px-0 pt-0">
+                                                                    <a class="btn btn-secondary" href="#">
+                                                                        <span class="fas fa-book-open mr-2"></span> Learn more
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Blog Card -->
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="item">
+                                                        <!-- Blog Card -->
+                                                        <div class="blog-card">
+                                                            <div class="card shadow-sm border-0">
+                                                                <img src="../../assets/img/blog/image-3.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-header">
+                                                                    <div class="post-meta d-flex justify-content-between">
+                                                                        <h6 class="icon-secondary"><i class="fas fa-medal mr-2"></i>Awards</h6><span><i
+                                                                                class="far fa-clock"></i>Last updated 1
+                                                                            day ago</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body pt-0">
+                                                                    <h4>
+                                                                        <a href="#">Eight tips for improving contact
+                                                                            form conversions</a>
+                                                                    </h4>
+                                                                    <p class="card-text my-2">According to some historical records, some people out there have boundless energy, loads of free time, and ambition...
+                                                                    </p>
+                                                                </div>
+                                                                <div class="card-footer mx-4 px-0 pt-0">
+                                                                    <a class="btn btn-secondary" href="#">
+                                                                        <span class="fas fa-book-open mr-2"></span> Learn more
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Blog Card -->
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="item">
+                                                        <!-- Blog Card -->
+                                                        <div class="blog-card">
+                                                            <div class="card shadow-sm border-0">
+                                                                <img src="../../assets/img/blog/image-4.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-header">
+                                                                    <div class="post-meta d-flex justify-content-between">
+                                                                        <h6 class="icon-tertiary"><i class="fas fa-briefcase"></i>Business</h6><span><i
+                                                                                class="far fa-clock"></i>Last updated 1
+                                                                            day ago</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body pt-0">
+                                                                    <h4>
+                                                                        <a href="#">Eight tips for improving contact
+                                                                            form conversions</a>
+                                                                    </h4>
+                                                                    <p class="card-text my-2">According to some historical records, some people out there have boundless energy, loads of free time, and ambition...
+                                                                    </p>
+                                                                </div>
+                                                                <div class="card-footer mx-4 px-0 pt-0">
+                                                                    <a class="btn btn-secondary" href="#">
+                                                                        <span class="fas fa-book-open mr-2"></span> Learn more
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Blog Card -->
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="item">
+                                                        <!-- Blog Card -->
+                                                        <div class="blog-card">
+                                                            <div class="card shadow-sm border-0">
+                                                                <img src="../../assets/img/blog/image-2.jpg" class="card-img-top" alt="image">
+                                                                <div class="card-header">
+                                                                    <div class="post-meta d-flex justify-content-between">
+                                                                        <h6 class="icon-danger"><i class="fas fa-running"></i>Health</h6><span><i
+                                                                                class="far fa-clock"></i>Last updated 1
+                                                                            day ago</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body pt-0">
+                                                                    <h4>
+                                                                        <a href="#">Eight tips for improving contact
+                                                                            form conversions</a>
+                                                                    </h4>
+                                                                    <p class="card-text my-2">According to some historical records, some people out there have boundless energy, loads of free time, and ambition...
+                                                                    </p>
+                                                                </div>
+                                                                <div class="card-footer mx-4 px-0 pt-0">
+                                                                    <a class="btn btn-secondary" href="#">
+                                                                        <span class="fas fa-book-open mr-2"></span> Learn more
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Blog Card -->
+                                                    </div>
+                                                </div>
+                                                <!--End of mousewheel carousel -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;mouswheel-carousel  owl-carousel owl-theme&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 1&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 2&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 3&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 4&lt;/h4&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;h4&gt;Item 5&lt;/h4&gt;&lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-js">
+var owl = $('.mouswheel-carousel');
+owl.owlCarousel({
+    loop:true,
+    nav:false,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },            
+        960:{
+            items:2
+        },
+        1200:{
+            items:2
+        }
+    },
+    navText: [
+        '&lt;i class=&quot;fas fa-long-arrow-alt-left&quot;&gt;&lt;/i&gt;',
+        '&lt;i class=&quot;fas fa-long-arrow-alt-right&quot;&gt;&lt;/i&gt;'
+    ]
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY&gt;0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="autoplay" class="my-5">
+                            <h5 class="mb-3">Autoplay</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="false">Js</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <!-- Autoplay carousel -->
+                                                <div class="autoplay-carousel owl-carousel owl-theme">
+                                                    <div class="item"><img src="../../assets/img/blog/image-1.jpg" alt="First slide"></div>
+                                                    <div class="item"><img src="../../assets/img/blog/image-2.jpg" alt="Second slide"></div>
+                                                    <div class="item"><img src="../../assets/img/blog/image-3.jpg" alt="Third slide"></div>
+                                                    <div class="item"><img src="../../assets/img/blog/image-4.jpg" alt="Fourth slide"></div>
+                                                </div>
+                                                <!-- End of autoplay carousel -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;autoplay-carousel owl-carousel owl-theme&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;img src=&quot;../../assets/img/blog/image-1.jpg&quot; alt=&quot;First slide&quot;&gt;&lt;/div&gt;          
+    &lt;div class=&quot;item&quot;&gt;&lt;img src=&quot;../../assets/img/blog/image-2.jpg&quot; alt=&quot;Second slide&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;img src=&quot;../../assets/img/blog/image-3.jpg&quot; alt=&quot;Third slide&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;&lt;img src=&quot;../../assets/img/blog/image-4.jpg&quot; alt=&quot;Fourth slide&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div>
+                                                    <pre>
+                                                            <code class="language-js">
+$('.autoplay-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    items:1,
+    autoplay:true,
+    autoplayTimeout:3000,
+    navText: [
+        '&lt;i class=&quot;fas fa-long-arrow-alt-left&quot;&gt;&lt;/i&gt;',
+        '&lt;i class=&quot;fas fa-long-arrow-alt-right&quot;&gt;&lt;/i&gt;'
+    ]
+});
+                                                            </code>
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#installation" class="nav-link" data-smooth-scroll>Installation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#basic-carousel" class="nav-link " data-smooth-scroll>Basic carousel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#mouswheel-scrolling" class="nav-link " data-smooth-scroll>Mouswheel scrolling</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#autoplay" class="nav-link " data-smooth-scroll>Autoplay</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

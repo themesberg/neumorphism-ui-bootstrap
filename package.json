@@ -1,0 +1,52 @@
+{
+    "name": "neumorphism-ui-kit-pro",
+    "version": "1.0.0",
+    "description": "Neumorphism inspired premium Bootstrap UI Kit featuring over 1000 components and 13 example pages.",
+    "main": "gulpfile.js",
+    "author": "Themesberg",
+    "keywords": ["neumorphism", "neumorphic", "neumorph", "neumorphism css", "neumorphism bootstrap", "neumorphism js", "neumorphism design", "neumorphism ui", "neumorphism ui kit", "themesberg", "gulp", "sass", "html", "js"],
+    "homepage": "https://themesberg.com/product/ui-kits/neumorphism-ui-kit-pro",
+    "bugs": {
+        "url" : "https://github.com/themesberg/th-neumorphism-ui-kit-pro"
+    },
+    "license": "https://www.themesberg.com/licensing",
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "del": "4.1.1",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "6.1.0",
+        "gulp-clean-css": "4.2.0",
+        "gulp-cssbeautify": "1.0.1",
+        "gulp-header": "2.0.7",
+        "gulp-htmlmin": "5.0.1",
+        "gulp-imagemin": "6.0.0",
+        "gulp-npm-dist": "^1.0.3",
+        "gulp-plumber": "1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-sourcemaps": "2.6.5",
+        "gulp-uglify": "3.0.2",
+        "gulp-wait": "0.0.2",
+        "gulp-file-include": "2.1.0",
+        "merge-stream": "2.0.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.11.2",
+        "bootstrap": "4.3.1",
+        "bootstrap-datepicker": "1.9.0",
+        "headroom.js": "0.10.3",
+        "jarallax": "1.12.0",
+        "jquery": "3.4.1",
+        "jquery-countdown": "2.2.0",
+        "jquery-validation": "1.19.1",
+        "jquery.counterup": "2.1.0",
+        "nouislider": "11.0.3",
+        "onscreen": "1.3.4",
+        "owl.carousel": "2.3.4",
+        "popper.js": "1.16.0",
+        "prismjs": "1.17.1",
+        "smooth-scroll": "^16.1.0",
+        "sticky-sidebar": "3.3.1",
+        "waypoints": "4.0.1"
+    }
+}

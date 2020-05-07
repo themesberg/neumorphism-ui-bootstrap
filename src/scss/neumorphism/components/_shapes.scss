@@ -1,0 +1,54 @@
+/**
+ * = Shapes
+ */
+
+.pattern {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    
+    &.bottom {
+        bottom: -10px;
+        @include transform(rotate(180deg));
+    }
+
+    &.top {
+        top:-10px
+    }
+
+    svg {
+        display: block;
+        width: calc(100% + 1.3px);
+        position: relative;
+        left: 50%;
+        @include transform(translateX(-50%))
+    }
+}
+
+.organic-radius{
+    border-radius:63% 37% 30% 70% / 50% 45% 55% 50%;
+}
+
+.avatar-sm {
+    width: $avatar-sm-y;
+    height: $avatar-sm-x;
+}
+
+.avatar-md {
+    width: $avatar-md-y;
+    height: $avatar-md-x;
+}
+
+.avatar-lg {
+    width: $avatar-lg-y;
+    height: $avatar-lg-x;
+}
+
+.color-shape {
+    width: 7rem;
+    height: 7rem;
+}

@@ -1,0 +1,51 @@
+/**
+ * = Accordions
+ */
+
+.accordion .card {
+    margin-bottom: 1.5rem;
+}
+
+.accordion-panel-header {
+    @include display-flex();
+    @include justify-content(space-between);
+    @include align-items(center);
+    user-select: none;
+
+    .icon {
+        color: $dark;
+        transition: $transition-base;
+        span {
+            font-size: $font-size-sm;
+        }
+    }
+    .icon-title {
+        margin-right: 1rem;
+        span {
+            margin-right: 1rem;
+        }
+
+        & + .icon {
+            height: 1rem;
+        }
+    }
+
+    &[aria-expanded="true"]{
+        > .icon {
+            @include transform(rotateZ(45deg));
+        }
+    }
+
+    &[aria-expanded="true"], &:hover{
+        > * {
+        color: theme-color('black');
+            span{ 
+                fill: theme-color('black');
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

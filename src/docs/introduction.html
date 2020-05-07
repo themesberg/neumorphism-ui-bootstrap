@@ -1,0 +1,125 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "..",
+        "title": "Pixel Documentation - Introduction"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse"
+        data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "..",
+                "docs-path": "."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-3 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Getting started</h1>
+                            <p class="lead text-dark">This guide will help you to set up and work with this theme.</p>
+                        </div>
+                        <div class="my-5 mb-5" id="getting-started">
+                            <h5 class="mb-3">How to set up the project</h5>
+                            <p class="mb-5">Pixel theme requires Node and Gulp CLI. Please follow these steps to
+                                install the required technologies:</p>
+                            <p>1. Make sure you have <a href="https://nodejs.org/en/" target="_blank">Node</a> locally installed.</p>
+                            <p>2. Download Gulp Command Line Interface to be able to use <code class="text-danger">gulp</code>
+                                in your Terminal.</p>
+                            <pre class="bg-primary language-bash"><code class="language-bash">npm install gulp-cli -g</code></pre>
+                            <p>3. After installing Gulp, run <code class="text-danger">npm install</code> in the main
+                                <code class="text-dark">pixel/</code> folder to download all the project dependencies.
+                                You'll find them in the <code class="text-dark">node_modules/</code> folder.</p>
+                            <pre class="bg-primary language-bash"><code class="language-bash">npm install</code></pre>
+                            <p>4. Run <code class="text-danger">gulp</code> in the <code class="text-dark">pixel/</code>
+                                folder to serve the project files using BrowserSync. Running <code class="text-danger">gulp</code>
+                                will compile the theme and open <code class="text-dark">/index.html</code> in your main
+                                browser.</p>
+                            <pre class="bg-primary language-bash"><code class="language-bash">gulp</code></pre>
+                            <p>While the <code class="text-danger">gulp</code> command is running, files in the <code
+                                    class="text-danger">assets/scss/</code>, <code class="text-danger">assets/js/</code>
+                                and <code class="text-danger">components/</code> folders will be monitored for changes.
+                                Files from the <code class="text-danger">assets/scss/</code> folder will generate
+                                injected CSS.</p>
+                            <p>Hit <code class="text-dark">CTRL+C</code> to terminate the <code class="text-danger">gulp</code>
+                                command. This will stop the local server from running.</p>
+                        </div>
+                        <div class="my-5 mb-5" id="dev">
+                            <h5 class="mb-3">Theme without Sass, Gulp or Npm</h5>
+                            <div>
+                                <div class="alert alert-info" role="alert">
+                                    <span class="alert-inner--text">If you'd like to get a version of our theme without
+                                        Sass, Gulp or Npm, we've got you covered. Run the following command:</span>
+                                </div>
+                                <pre class="bg-light language-bash"><code class="language-bash">gulp build:dev</code></pre>
+                                <p>This will generate a folder <code class="text-danger">html&css</code> which will
+                                    have
+                                    unminified CSS, Html and Javascript.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my-5 mb-5" id="support">
+                            <h5 class="mb-3">How to get support</h5>
+                            <p>Themesberg provides support and guidance for this product.</p>
+                            <p>You can ask for support from <a href="https://themesberg.com/contact">here.</a></p>
+                        </div>
+                        <div class="my-5 mb-5" id="feedback">
+                            <h5 class="mb-3">Providing feedback</h5>
+                            <p>Everyday we strive to create better products. Let us know about your opinion via twitter
+                                or feedback{at}themesberg.com.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#getting-started" class="nav-link " data-smooth-scroll>Getting started</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#dev" class="nav-link " data-smooth-scroll>Only HTML, CSS and Javascript</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#support" class="nav-link " data-smooth-scroll>Get support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#feedback" class="nav-link " data-smooth-scroll>Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../"
+    })
+</body>
+
+</html>

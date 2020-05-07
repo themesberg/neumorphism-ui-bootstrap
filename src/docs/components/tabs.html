@@ -1,0 +1,1121 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Tabs"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Tabs</h1>
+                            <p class="lead text-dark">Use the tab JavaScript plugin—include it individually or through the compiled <code class="text-danger">bootstrap.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content, even via
+                                dropdown menus.</p>
+                        </div>
+                        <div id="base-tab" class="my-5">
+                            <h5 class="mb-3">Base tab</h5>
+                            <p>If you’re building our JavaScript from source, it <a href="https://getbootstrap.com/docs/4.3/getting-started/javascript/#util">requires
+                                    <code class="text-danger">util.js</code></a>.</p>
+                            <p>Dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/TR/wai-aria-practices/#tabpanel"><abbr
+                                        title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr>
+                                    Authoring Practices</a>, require <code class="text-danger">role="tablist"</code>,
+                                <code class="text-danger">role="tab"</code>, <code class="text-danger">role="tabpanel"</code>, and additional <code class="text-danger">aria-</code> attributes in order to convey their structure, functionality and current
+                                state to users of assistive technologies (such as screen readers).</p>
+                            <p>Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element
+                                is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern,
+                                meaning that it cannot be easily made understandable to users of assistive technologies.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <!-- Tab -->
+                                                <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                        butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                        voluptate nisi qui.</div>
+                                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Baw denim you basicaly haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                        butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                        voluptate nisi qui.</div>
+                                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                        butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                        voluptate nisi qui.</div>
+                                                </div>
+                                                <!-- End of tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;ul class=&quot;nav nav-tabs mb-3&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#contact&quot; role=&quot;tab&quot; aria-controls=&quot;contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot; id=&quot;myTabContent&quot;&gt;
+    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot;&gt;Some text here&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot;&gt;Some text here&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;Some text here&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <p>To help fit your needs, this works with <code class="text-danger">&lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code class="text-danger">&lt;nav&gt;</code>,
+                                you shouldn’t add <code class="text-danger">role="tablist"</code> directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below,
+                                a simple <code class="text-danger">&lt;div&gt;</code>) and wrap the <code class="text-danger">&lt;nav&gt;</code> around it.</p>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <!-- Tab -->
+                                                <nav>
+                                                    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                        butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                        voluptate nisi qui.</div>
+                                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Baw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                        butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                        voluptate nisi qui.</div>
+                                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                        butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                        voluptate nisi qui.</div>
+                                                </div>
+                                                <!-- End of tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;nav&gt;
+    &lt;div class=&quot;nav nav-tabs mb-3&quot; id=&quot;nav-tab&quot; role=&quot;tablist&quot;&gt;
+        &lt;a class=&quot;nav-item nav-link active&quot; id=&quot;nav-home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#nav-home&quot; role=&quot;tab&quot; aria-controls=&quot;nav-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
+        &lt;a class=&quot;nav-item nav-link&quot; id=&quot;nav-profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#nav-profile&quot; role=&quot;tab&quot; aria-controls=&quot;nav-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+        &lt;a class=&quot;nav-item nav-link&quot; id=&quot;nav-contact-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#nav-contact&quot; role=&quot;tab&quot; aria-controls=&quot;nav-contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;tab-content&quot; id=&quot;nav-tabContent&quot;&gt;
+    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nav-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-home-tab&quot;&gt;Some text here&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-profile-tab&quot;&gt;Some text here&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-contact-tab&quot;&gt;Some text here&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <h3>Navs</h3>
+                        <div id="navs" class="my-5">
+                            <h5 class="mb-3">Square</h5>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <!-- Tab -->
+                                                <div class="nav-wrapper position-relative">
+                                                    <ul class="nav nav-pills nav-fill flex-column flex-md-row mb-3" id="tab-30" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center active" id="tab-link-example-1" data-toggle="tab" href="#link-example-1" role="tab" aria-controls="link-example-1" aria-selected="true">Home</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="tab-link-example-2" data-toggle="tab" href="#link-example-2" role="tab" aria-controls="link-example-2" aria-selected="false">Profile</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="tab-link-example-3" data-toggle="tab" href="#link-example-3" role="tab" aria-controls="link-example-3" aria-selected="false">Messages</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End of Tab Nav -->
+                                                <!-- Tab Content -->
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <div class="tab-content" id="tabcontentexample">
+                                                            <div class="tab-pane fade show active" id="link-example-1" role="tabpanel" aria-labelledby="tab-link-example-1">
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-2" role="tabpanel" aria-labelledby="tab-link-example-2">
+                                                                <p>Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-3" role="tabpanel" aria-labelledby="tab-link-example-3">
+                                                                <p> Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                                                                    Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of Tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;div class=&quot;nav-wrapper&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills nav-fill flex-column flex-md-row&quot; id=&quot;tab-30&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center active&quot; id=&quot;tab-link-example-1&quot; data-toggle=&quot;tab&quot;
+                href=&quot;#link-example-1&quot; role=&quot;tab&quot; aria-controls=&quot;link-example-1&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;tab-link-example-2&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-2&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-2&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;tab-link-example-3&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-3&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-3&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab Nav --&gt;
+&lt;!-- Tab Content --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body p-0&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;tabcontentexample&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;link-example-1&quot; role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;tab-link-example-1&quot;&gt;
+                &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-2&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-2&quot;&gt;
+                &lt;p&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-3&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-3&quot;&gt;
+                &lt;p&gt; Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div class="my-5">
+                            <h5 class="mb-3">Round</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <!-- Tab -->
+                                                <div class="nav-wrapper position-relative">
+                                                    <ul class="nav nav-pills nav-fill rounded flex-column flex-md-row mb-3" id="tab-31" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center active" id="tab-link-example-4" data-toggle="tab" href="#link-example-4" role="tab" aria-controls="link-example-4" aria-selected="true">Home</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="tab-link-example-5" data-toggle="tab" href="#link-example-5" role="tab" aria-controls="link-example-5" aria-selected="false">Profile</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="tab-link-example-6" data-toggle="tab" href="#link-example-6" role="tab" aria-controls="link-example-6" aria-selected="false">Messages</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End of Tab Nav -->
+                                                <!-- Tab Content -->
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <div class="tab-content" id="tabcontentexample-2">
+                                                            <div class="tab-pane fade show active" id="link-example-4" role="tabpanel" aria-labelledby="tab-link-example-4">
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-5" role="tabpanel" aria-labelledby="tab-link-example-5">
+                                                                <p>Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-6" role="tabpanel" aria-labelledby="tab-link-example-6">
+                                                                <p> Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                                                                    Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of Tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;div class=&quot;nav-wrapper&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills nav-fill rounded flex-column flex-md-row&quot; id=&quot;tab-31&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center active&quot; id=&quot;tab-link-example-4&quot; data-toggle=&quot;tab&quot;
+                href=&quot;#link-example-4&quot; role=&quot;tab&quot; aria-controls=&quot;link-example-4&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;tab-link-example-5&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-5&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-5&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;tab-link-example-6&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-6&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-6&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab Nav --&gt;
+&lt;!-- Tab Content --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body p-0&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;tabcontentexample-2&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;link-example-4&quot; role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;tab-link-example-4&quot;&gt;
+                &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-5&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-5&quot;&gt;
+                &lt;p&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-6&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-6&quot;&gt;
+                &lt;p&gt; Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="icon-tab" class="my-5">
+                            <h5 class="mb-3">Icons</h5>
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <!-- Tab -->
+                                                <div class="nav-wrapper position-relative">
+                                                    <ul class="nav nav-pills nav-fill rounded flex-column flex-md-row mb-3" id="tab-32" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center active" id="tab-link-example-7" data-toggle="tab" href="#link-example-7" role="tab" aria-controls="link-example-7" aria-selected="true"><i
+                                                                    class="far fa-user-circle"></i>Profile</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="tab-link-example-8" data-toggle="tab" href="#link-example-8" role="tab" aria-controls="link-example-8" aria-selected="false"><i
+                                                                    class="far fa-sun"></i>Settings</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="tab-link-example-9" data-toggle="tab" href="#link-example-9" role="tab" aria-controls="link-example-9" aria-selected="false"><i
+                                                                    class="fas fa-envelope-open-text"></i>Messages</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End of Tab Nav -->
+                                                <!-- Tab Content -->
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <div class="tab-content" id="tabcontentexample-3">
+                                                            <div class="tab-pane fade show active" id="link-example-7" role="tabpanel" aria-labelledby="tab-link-example-7">
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-8" role="tabpanel" aria-labelledby="tab-link-example-8">
+                                                                <p>Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-9" role="tabpanel" aria-labelledby="tab-link-example-9">
+                                                                <p> Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                                                                    Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of Tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;div class=&quot;nav-wrapper&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills nav-fill rounded flex-column flex-md-row mb-3&quot; id=&quot;tab-32&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center active&quot; id=&quot;tab-link-example-7&quot; data-toggle=&quot;tab&quot;
+                href=&quot;#link-example-7&quot; role=&quot;tab&quot; aria-controls=&quot;link-example-7&quot; aria-selected=&quot;true&quot;&gt;&lt;i class=&quot;far fa-user-circle&quot;&gt;&lt;/i&gt;Profile&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;tab-link-example-8&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-8&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-8&quot; aria-selected=&quot;false&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;Settings&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;tab-link-example-9&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-9&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-9&quot; aria-selected=&quot;false&quot;&gt;&lt;i class=&quot;fas fa-envelope-open-text&quot;&gt;&lt;/i&gt;Messages&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab Nav --&gt;
+&lt;!-- Tab Content --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body p-0&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;tabcontentexample-3&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;link-example-7&quot; role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;tab-link-example-7&quot;&gt;
+                &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-8&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-8&quot;&gt;
+                &lt;p&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-9&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-9&quot;&gt;
+                &lt;p&gt; Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="circle-tab" class="my-5">
+                            <h5 class="mb-3">Circle</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane p-4 fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <!-- Tab -->
+                                                <div class="nav-wrapper position-relative">
+                                                    <ul class="nav nav-pills nav-pill-circle flex-sm-row mb-3" id="tab-33" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-sm-center active" id="tab-link-example-10" data-toggle="tab" href="#link-example-10" role="tab" aria-controls="link-example-10" aria-selected="true">
+                                                                <span class="nav-link-icon d-block"><i class="far fa-user"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-sm-center" id="tab-link-example-11" data-toggle="tab" href="#link-example-11" role="tab" aria-controls="link-example-11" aria-selected="false">
+                                                                <span class="nav-link-icon d-block"><i class="far fa-sun"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-sm-center" id="tab-link-example-12" data-toggle="tab" href="#link-example-12" role="tab" aria-controls="link-example-12" aria-selected="false">
+                                                                <span class="nav-link-icon d-block"><i class="fas fa-envelope-open-text"></i></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End of Tab Nav -->
+                                                <!-- Tab Content -->
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <div class="tab-content" id="tabcontentexample-4">
+                                                            <div class="tab-pane fade show active" id="link-example-10" role="tabpanel" aria-labelledby="tab-link-example-10">
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-11" role="tabpanel" aria-labelledby="tab-link-example-11">
+                                                                <p>Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-12" role="tabpanel" aria-labelledby="tab-link-example-12">
+                                                                <p> Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                                                                    Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of Tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;div class=&quot;nav-wrapper&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills nav-pill-circle flex-sm-row mb-3&quot; id=&quot;tab-33&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-sm-center active&quot; id=&quot;tab-link-example-10&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-10&quot; 
+                role=&quot;tab&quot; aria-controls=&quot;link-example-10&quot; aria-selected=&quot;true&quot;&gt;
+                &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-sm-center&quot; id=&quot;tab-link-example-11&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-11&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-11&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-sm-center&quot; id=&quot;tab-link-example-12&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-12&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-12&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon d-block&quot;&gt;&lt;i class=&quot;fas fa-envelope-open-text&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab Nav --&gt;
+&lt;!-- Tab Content --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body p-0&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;tabcontentexample-4&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;link-example-10&quot; role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;tab-link-example-10&quot;&gt;
+                &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-11&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-11&quot;&gt;
+                &lt;p&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-12&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-12&quot;&gt;
+                &lt;p&gt; Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="color-tab" class="my-5">
+                            <h5 class="mb-3">Color</h5>
+                            <p>Takes the basic nav from above and adds the <code class="text-danger">.nav-tabs</code> class to generate a tabbed interface.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <!-- Tab -->
+                                                <div class="nav-wrapper position-relative">
+                                                    <ul class="nav nav-pills nav-pill-circle mb-3" id="tab-34" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-sm-center active" id="tab-link-example-13" data-toggle="tab" href="#link-example-13" role="tab" aria-controls="link-example-13" aria-selected="true">
+                                                                <span class="nav-link-icon icon-primary d-block"><i
+                                                                        class="far fa-user"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-sm-center" id="tab-link-example-14" data-toggle="tab" href="#link-example-14" role="tab" aria-controls="link-example-14" aria-selected="false">
+                                                                <span class="nav-link-icon icon-secondary d-block"><i
+                                                                        class="far fa-sun"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-sm-center" id="tab-link-example-15" data-toggle="tab" href="#link-example-15" role="tab" aria-controls="link-example-15" aria-selected="false">
+                                                                <span class="nav-link-icon icon-tertiary d-block"><i
+                                                                        class="fas fa-envelope-open-text"></i></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End of Tab Nav -->
+                                                <!-- Tab Content -->
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <div class="tab-content" id="tabcontentexample-5">
+                                                            <div class="tab-pane fade show active" id="link-example-13" role="tabpanel" aria-labelledby="tab-link-example-13">
+                                                                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-14" role="tabpanel" aria-labelledby="tab-link-example-14">
+                                                                <p>Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="link-example-15" role="tabpanel" aria-labelledby="tab-link-example-15">
+                                                                <p> Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                                                                    Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p>Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of Tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Tab --&gt;
+&lt;div class=&quot;nav-wrapper&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills nav-pill-circle mb-3&quot; id=&quot;tab-34&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-sm-center active&quot; id=&quot;tab-link-example-13&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-13&quot; 
+                role=&quot;tab&quot; aria-controls=&quot;link-example-13&quot; aria-selected=&quot;true&quot;&gt;
+                &lt;span class=&quot;nav-link-icon icon-primary d-block&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-sm-center&quot; id=&quot;tab-link-example-14&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-14&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-14&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon icon-secondary d-block&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-sm-center&quot; id=&quot;tab-link-example-15&quot; data-toggle=&quot;tab&quot; href=&quot;#link-example-15&quot;
+                role=&quot;tab&quot; aria-controls=&quot;link-example-15&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon icon-tertiary d-block&quot;&gt;&lt;i class=&quot;fas fa-envelope-open-text&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab Nav --&gt;
+&lt;!-- Tab Content --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body p-0&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;tabcontentexample-5&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;link-example-13&quot; role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;tab-link-example-13&quot;&gt;
+                &lt;p&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-14&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-14&quot;&gt;
+                &lt;p&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;link-example-15&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-link-example-15&quot;&gt;
+                &lt;p&gt; Booth exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="vertical-tab" class="my-5">
+                            <h3 class="mb-5">Vertical tabs</h3>
+                            <!-- Tab -->
+                            <h5>Default</h5>
+                            <div class="my-4">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-8" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-15" data-toggle="tab" href="#tab-content-15" role="tab" aria-controls="tab-link-15" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-16" data-toggle="tab" href="#tab-content-16" role="tab" aria-controls="tab-link-16" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent8">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-15" role="tabpanel" aria-labelledby="tab-content-15">
+                                                <!-- Vertical tab -->
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="nav flex-column navs vertical-tab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                                                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="tab-content" id="v-pills-tabContent">
+                                                            <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                                <p class="lead">Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p class="lead">Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                                <p class="lead">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p class="lead">Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                                <p class="lead">Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p class="lead">Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of vertical tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-16" role="tabpanel" aria-labelledby="tab-content-16">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Vertical tab --&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-3&quot;&gt;
+        &lt;div class=&quot;nav flex-column navs vertical-tab&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-profile-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-profile&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+        &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-messages-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-messages&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/a&gt;
+        &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-settings-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-settings&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-9&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab&quot;&gt;
+                &lt;p class=&quot;lead&quot;&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p class=&quot;lead&quot;&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;                        
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-messages-tab&quot;&gt;
+                &lt;p class=&quot;lead&quot;&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p class=&quot;lead&quot;&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;                        
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-settings-tab&quot;&gt;
+                &lt;p class=&quot;lead&quot;&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p class=&quot;lead&quot;&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;                            
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of vertical tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="vertical-circle" class="my-5">
+                            <h5 class="mb-3">Circle</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-9" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-17" data-toggle="tab" href="#tab-content-17" role="tab" aria-controls="tab-link-17" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-18" data-toggle="tab" href="#tab-content-18" role="tab" aria-controls="tab-link-18" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="tab-content" id="tabcontent9">
+                                            <div class="tab-pane bg-white p-4 fade show active" id="tab-content-17" role="tabpanel" aria-labelledby="tab-content-17">
+                                                <!-- Vertical tab -->
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="nav flex-column navs nav-pill-circle vertical-tab" id="v-pills-tab-1" role="tablist" aria-orientation="vertical">
+                                                            <a class="nav-link flex-sm-fill text-sm-center active" id="v-pills-profile-tab-1" data-toggle="pill" href="#v-pills-profile-1" role="tab" aria-controls="v-pills-profile-1" aria-selected="false">
+                                                                <span class="nav-link-icon icon-primary d-block"><i
+                                                                        class="far fa-user"></i></span>
+                                                            </a>
+                                                            <a class="nav-link flex-sm-fill text-sm-center" id="v-pills-messages-tab-1" data-toggle="pill" href="#v-pills-messages-1" role="tab" aria-controls="v-pills-messages-1" aria-selected="false">
+                                                                <span class="nav-link-icon icon-secondary d-block"><i
+                                                                        class="far fa-sun"></i></span>
+                                                            </a>
+                                                            <a class="nav-link" id="v-pills-settings-tab-1" data-toggle="pill" href="#v-pills-settings-1" role="tab" aria-controls="v-pills-settings-1" aria-selected="false">
+                                                                <span class="nav-link-icon icon-tertiary d-block"><i
+                                                                        class="far fa-paper-plane"></i></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="tab-content" id="v-pills-tabContent-1">
+                                                            <div class="tab-pane fade show active" id="v-pills-profile-1" role="tabpanel" aria-labelledby="v-pills-profile-tab-1">
+                                                                <p class="lead">Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p class="lead">Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-messages-1" role="tabpanel" aria-labelledby="v-pills-messages-tab-1">
+                                                                <p class="lead">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                                                                    veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p class="lead">Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-settings-1" role="tabpanel" aria-labelledby="v-pills-settings-tab-1">
+                                                                <p class="lead">Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam
+                                                                    delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                                                                <p class="lead">Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of vertical tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-18" role="tabpanel" aria-labelledby="tab-content-18">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Vertical tab --&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-3&quot;&gt;
+        &lt;div class=&quot;nav flex-column navs nav-pill-circle vertical-tab&quot; id=&quot;v-pills-tab-1&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center active&quot; id=&quot;v-pills-profile-tab-1&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-profile-1&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile-1&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon icon-primary d-block&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link flex-sm-fill text-sm-center&quot; id=&quot;v-pills-messages-tab-1&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-messages-1&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-messages-1&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon icon-secondary d-block&quot;&gt;&lt;i class=&quot;far fa-sun&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-settings-tab-1&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-settings-1&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-settings-1&quot; aria-selected=&quot;false&quot;&gt;
+                &lt;span class=&quot;nav-link-icon icon-tertiary d-block&quot;&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-9&quot;&gt;
+        &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent-1&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-profile-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab-1&quot;&gt;
+                &lt;p class=&quot;lead&quot;&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p class=&quot;lead&quot;&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;                        
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-messages-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-messages-tab-1&quot;&gt;
+                &lt;p class=&quot;lead&quot;&gt;Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p class=&quot;lead&quot;&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;                        
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-settings-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-settings-tab-1&quot;&gt;
+                &lt;p class=&quot;lead&quot;&gt;Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.&lt;/p&gt;
+                &lt;p class=&quot;lead&quot;&gt;Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity.&lt;/p&gt;                            
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of vertical tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <h5>Using data attributes</h5>
+                        <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code class="text-danger">data-toggle="tab"</code> or <code class="text-danger">data-toggle="pill"</code> on an element. Use these data
+                            attributes on <code class="text-danger">.nav-tabs</code> or
+                            <code class="text-danger">.navs</code>.</p>
+                        <div>
+                            <pre>
+                                    <code class="language-html">
+&lt;!-- Nav tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; id=&quot;messages-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#messages&quot; role=&quot;tab&quot; aria-controls=&quot;messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; id=&quot;settings-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#settings&quot; role=&quot;tab&quot; aria-controls=&quot;settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Tab panes --&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;messages-tab&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;settings-tab&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+                                    </code>
+                                </pre>
+                        </div>
+                        <h5 id="via-javascript">Via JavaScript</h5>
+                        <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+                        <div>
+                            <pre>
+                                    <code class="language-js">
+$('#myTab a').on('click', function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+})
+                                    </code>
+                                </pre>
+                        </div>
+                        <p>You can activate individual tabs in several ways:</p>
+                        <div>
+                            <pre>
+                                        <code class="language-js">
+$('#myTab a[href=&quot;#profile&quot;]').tab('show'); // Select tab by name
+$('#myTab li:first-child a').tab('show'); // Select first tab
+$('#myTab li:last-child a').tab('show'); // Select last tab
+$('#myTab li:nth-child(3) a').tab('show'); // Select third tab
+                                        </code>
+                                    </pre>
+                        </div>
+                        <h5 id="methods">Methods</h5>
+                        <p>For more information, see the official <a href="https://getbootstrap.com/docs/4.3/components/navs/">Bootstrap
+                                documentation</a>.</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#base-tab" class="nav-link" data-smooth-scroll>Base tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#navs" class="nav-link " data-smooth-scroll>Navs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#icon-tab" class="nav-link " data-smooth-scroll>Icon tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#circle-tab" class="nav-link " data-smooth-scroll>Circle tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#color-tab" class="nav-link" data-smooth-scroll>Color tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#vertical-tab" class="nav-link " data-smooth-scroll>Vertical tabs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#vertical-circle" class="nav-link " data-smooth-scroll>Vertical circle</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#via-javascript" class="nav-link " data-smooth-scroll>Via javascript</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#methods" class="nav-link " data-smooth-scroll>Methods</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

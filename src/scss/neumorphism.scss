@@ -1,0 +1,47 @@
+/*
+
+=========================================================
+* Neumorphism UI Kit Pro - v1.0.0
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui-kit-pro
+* Copyright 2020 Themesberg (https://www.themesberg.com/licensing)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+// Bootstrap mixins and functions
+@import "bootstrap/mixins";
+@import "bootstrap/functions";
+
+// Change variables here
+@import "neumorphism/variables";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Vendor
+@import "neumorphism/vendor";
+
+// mixins & functions
+@import "neumorphism/mixins";
+@import "neumorphism/functions";
+
+// Utilities
+@import "neumorphism/reboot";
+@import "neumorphism/utilities";
+
+// Layout
+@import "neumorphism/layout";
+
+// Components
+@import "neumorphism/components";
+
+// write your custom styles here!

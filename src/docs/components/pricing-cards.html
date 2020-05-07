@@ -1,0 +1,1062 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Pricing cards"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Pricing Cards</h1>
+                            <p class="lead text-dark">Quickly build an effective pricing table for your potential customers with this examples. Our cards are built with default Bootstrap components and utilities with some customizations.</p>
+                        </div>
+                        <div id="example-1" class="my-5">
+                            <h5 class="mb-3">Basic</h5>
+                            <p>Combination of the card component, styled lists and other components.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <!-- Pricing Card -->
+                                                    <div class="pricing-card">
+                                                        <div class="card shadow-soft border-light text-center mt-1">
+                                                            <!-- Header -->
+                                                            <header class="card-header bg-white p-3">
+                                                                <h2 class="h5 text-primary mb-4">Basic</h2>
+                                                                <span class="d-block">
+                                                                    <span class="display-1 text-dark font-weight-bold">
+                                                                        <span class="align-top font-medium">$</span>19
+                                                                </span>
+                                                                <span class="d-block text-light font-small">/ month</span>
+                                                                </span>
+                                                            </header>
+                                                            <!-- End Header -->
+                                                            <!-- Content -->
+                                                            <div class="card-body">
+                                                                <ul class="list-group mb-4">
+                                                                    <li class="list-group-item"><strong>1</strong> free domain
+                                                                    </li>
+                                                                    <li class="list-group-item">Storage space: <strong>5GB</strong></li>
+                                                                    <li class="list-group-item"><strong>100k</strong> monthly visitors</li>
+                                                                    <li class="list-group-item">One-click staging site</li>
+                                                                    <li class="list-group-item">Search engine wizard
+                                                                    </li>
+                                                                    <li class="list-group-item">Community support</li>
+                                                                </ul>
+                                                                <button type="button" class="btn btn-primary btn-block" tabindex="0">Start Starter</button>
+                                                            </div>
+                                                            <!-- End Content -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Pricing Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing Card --&gt;
+&lt;div class=&quot;pricing-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light text-center mt-1&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;header class=&quot;card-header bg-white p-3&quot;&gt;
+            &lt;h2 class=&quot;h5 text-primary mb-4&quot;&gt;Basic&lt;/h2&gt;
+            &lt;span class=&quot;d-block&quot;&gt;
+            &lt;span class=&quot;display-1 text-dark font-weight-bold&quot;&gt;
+                &lt;span class=&quot;align-top font-medium&quot;&gt;$&lt;/span&gt;19
+            &lt;/span&gt;
+            &lt;span class=&quot;d-block text-light font-small&quot;&gt;/ month&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/header&gt;
+        &lt;!-- End Header --&gt;
+        &lt;!-- Content --&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;ul class=&quot;list-group mb-4&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;1&lt;/strong&gt; free domain&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Storage space: &lt;strong&gt;5GB&lt;/strong&gt;&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;100k&lt;/strong&gt; monthly visitors&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;One-click staging site&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Search engine wizard &lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Community support&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot; tabindex=&quot;0&quot;&gt;Start Starter&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- End Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Pricing Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-2" class="my-5">
+                            <h5 class="mb-3">Basic 2</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <!-- Pricing Card -->
+                                                    <div class="pricing-card">
+                                                        <div class="card shadow-soft border-light p-4">
+                                                            <!-- Header -->
+                                                            <header class="card-header border-bottom bg-white text-center">
+                                                                <span class="d-block">
+                                                                    <span class="display-1 text-secondary font-weight-bold">
+                                                                        <span class="align-top font-medium">$</span>19
+                                                                </span>
+                                                                <span class="text-light font-small">/ month</span>
+                                                                </span>
+                                                            </header>
+                                                            <!-- End Header -->
+                                                            <!-- Content -->
+                                                            <div class="card-body">
+                                                                <p>Faster sites deliver better business results for your clients.</p>
+                                                                <ul class="list-group mb-4">
+                                                                    <li class="list-group-item"><strong>Full Support</strong> No
+                                                                    </li>
+                                                                    <li class="list-group-item"><strong>Storage</strong> 50 GB</li>
+                                                                    <li class="list-group-item"><strong>Monthly
+                                                                            Visitors</strong> 400k</li>
+                                                                </ul>
+                                                                <button type="button" class="btn btn-outline-secondary btn-block" tabindex="0"><span class="fas fa-cart-plus mr-3"></span>Add
+                                                                    to Cart</button>
+                                                            </div>
+                                                            <!-- End Content -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Pricing Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing Card --&gt;
+&lt;div class=&quot;pricing-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light p-4&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;header class=&quot;card-header border-bottom bg-white text-center&quot;&gt;
+            &lt;span class=&quot;d-block&quot;&gt;
+                &lt;span class=&quot;display-1 text-secondary font-weight-bold&quot;&gt;
+                    &lt;span class=&quot;align-top font-medium&quot;&gt;$&lt;/span&gt;19
+                &lt;/span&gt;
+                &lt;span class=&quot;text-light font-small&quot;&gt;/ month&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/header&gt;
+        &lt;!-- End Header --&gt;
+        &lt;!-- Content --&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;p&gt;Faster sites deliver better business results for
+                your clients.&lt;/p&gt;
+            &lt;ul class=&quot;list-group mb-4&quot;&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Full Support&lt;/strong&gt;
+                    No&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Storage&lt;/strong&gt;
+                    50 GB&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Monthly
+                        Visitors&lt;/strong&gt; 400k&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary btn-block&quot;
+                tabindex=&quot;0&quot;&gt;&lt;span class=&quot;fas fa-cart-plus mr-3&quot;&gt;&lt;/span&gt;Add to Cart&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- End Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Pricing Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-3" class="my-5">
+                            <h5 class="mb-3">Background</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <!-- Pricing Card -->
+                                                    <div class="pricing-card">
+                                                        <div class="card section-image overlay-dark text-white border-0 p-3" data-background="../../assets/img/pricing/pricing-1.jpg">
+                                                            <!-- Header -->
+                                                            <header class="card-header p-3">
+                                                                <span class="icon mb-4"><i class="far fa-money-bill-alt"></i></span>
+                                                                <span class="d-block">
+                                                                    <span class="display-1 font-weight-bold">
+                                                                        19<span class="align-baseline font-medium">$</span>
+                                                                </span>
+                                                                <span class="font-small">/ month</span>
+                                                                </span>
+                                                            </header>
+                                                            <!-- End Header -->
+                                                            <!-- Content -->
+                                                            <div class="card-body p-2">
+                                                                <ul class="list-group mb-4">
+                                                                    <li class="list-group-item"><i class="far fa-lightbulb"></i>Community support
+                                                                    </li>
+                                                                    <li class="list-group-item"><i class="far fa-hdd"></i>15 GB SSD storage</li>
+                                                                    <li class="list-group-item"><i class="far fa-paper-plane"></i>One-click staging site</li>
+                                                                    <li class="list-group-item"><i class="far fa-envelope"></i>10 E-mail accounts</li>
+                                                                    <li class="list-group-item"><i class="far fa-id-badge"></i>2 Bootstrap Themes</li>
+                                                                </ul>
+                                                                <button type="button" class="btn btn-secondary btn-block" tabindex="0">Add to Cart</button>
+                                                            </div>
+                                                            <!-- End Content -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Pricing Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing Card --&gt;
+&lt;div class=&quot;pricing-card&quot;&gt;
+    &lt;div class=&quot;card section-image overlay-dark text-white border-0 p-3&quot; data-background=&quot;../../assets/img/pricing/pricing-2.jpg&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;header class=&quot;card-header p-3&quot;&gt;
+            &lt;span class=&quot;icon mb-4&quot;&gt;&lt;i class=&quot;far fa-money-bill-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;d-block&quot;&gt;
+            &lt;span class=&quot;display-1 font-weight-bold&quot;&gt;
+                19&lt;span class=&quot;align-baseline font-medium&quot;&gt;$&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;span class=&quot;font-small&quot;&gt;/ month&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/header&gt;
+        &lt;!-- End Header --&gt;
+        &lt;!-- Content --&gt;
+        &lt;div class=&quot;card-body p-2&quot;&gt;
+            &lt;ul class=&quot;list-group mb-4&quot;&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;Community support&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-hdd&quot;&gt;&lt;/i&gt;15 GB SSD storage&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;One-click staging site&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt;10 E-mail accounts&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-id-badge&quot;&gt;&lt;/i&gt;2 Bootstrap Themes&lt;/li&gt;
+            &lt;/ul&gt;   
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-block&quot; tabindex=&quot;0&quot;&gt;Add to Cart&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- End Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Pricing Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-4" class="my-5">
+                            <h5 class="mb-3">Box</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <div class="col-md-12 col-lg-6">
+                                                    <!-- Pricing Card -->
+                                                    <div class="pricing-card">
+                                                        <div class="card shadow-soft border-light">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col-sm-5">
+                                                                    <!-- Header -->
+                                                                    <header class="card-header text-center">
+                                                                        <h2 class="h5 mb-0">Basic</h2>
+                                                                        <span class="d-block my-3">
+                                                                            <span class="display-2 font-weight-bold"><span
+                                                                                    class="align-baseline font-medium">$</span>19
+                                                                        </span>
+                                                                        </span>
+                                                                        <button type="button" class="btn btn-sm btn-outline-gray btn-block" tabindex="0">Add to Cart</button>
+                                                                    </header>
+                                                                </div>
+                                                                <div class="col-sm-7">
+                                                                    <!-- Content -->
+                                                                    <div class="card-body">
+                                                                        <ul class="list-group simple-list">
+                                                                            <li class="list-group-item"><i class="far fa-lightbulb"></i>Basic support
+                                                                            </li>
+                                                                            <li class="list-group-item"><i class="far fa-hdd"></i>15 GB SSD storage</li>
+                                                                            <li class="list-group-item"><i class="far fa-paper-plane"></i>SSH/SFTP access
+                                                                            </li>
+                                                                            <li class="list-group-item"><i class="far fa-envelope"></i>5 E-mail accounts</li>
+                                                                            <li class="list-group-item"><i class="far fa-id-badge"></i>2 Bootstrap Themes</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <!-- End Content -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of Pricing Card -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing Card --&gt;
+&lt;div class=&quot;pricing-card&quot;&gt;
+    &lt;div class=&quot;card shadow-soft border-light&quot;&gt;
+        &lt;div class=&quot;row no-gutters align-items-center&quot;&gt;
+            &lt;div class=&quot;col-sm-5&quot;&gt;
+                &lt;!-- Header --&gt;
+                &lt;header class=&quot;card-header text-center&quot;&gt;                                    
+                    &lt;h2 class=&quot;h5 mb-0&quot;&gt;Basic&lt;/h2&gt;
+                    &lt;span class=&quot;d-block my-3&quot;&gt;
+                        &lt;span class=&quot;display-2 font-weight-bold&quot;&gt;&lt;span class=&quot;align-baseline font-medium&quot;&gt;$&lt;/span&gt;19
+                        &lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-outline-gray btn-block&quot; tabindex=&quot;0&quot;&gt;Add to Cart&lt;/button&gt;
+                &lt;/header&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-7&quot;&gt;
+                &lt;!-- Content --&gt;
+                &lt;div class=&quot;card-body&quot;&gt;
+                    &lt;ul class=&quot;list-group simple-list&quot;&gt;
+                        &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;Basic support&lt;/li&gt;
+                        &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-hdd&quot;&gt;&lt;/i&gt;15 GB SSD storage&lt;/li&gt;
+                        &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;SSH/SFTP access&lt;/li&gt;
+                        &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt;5 E-mail accounts&lt;/li&gt;
+                        &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;far fa-id-badge&quot;&gt;&lt;/i&gt;2 Bootstrap Themes&lt;/li&gt;
+                    &lt;/ul&gt;   
+                &lt;/div&gt;
+                &lt;!-- End Content --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Pricing Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-5" class="my-5">
+                            <h5 class="mb-3">Basic 3</h5>
+                            <p>Change the border color using utilities built on our theme colors, (e.g. <code class="text-danger">.border-primary</code>,
+                                <code class="text-danger">.border-secondary</code>.)</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Pricing Card -->
+                                                        <div class="pricing-card animate-up-2">
+                                                            <div class="card shadow-soft border-primary p-0">
+                                                                <!-- Header -->
+                                                                <header class="card-header bg-white">
+                                                                    <h2 class="h5 text-primary mb-3">Basic</h2>
+                                                                    <span class="d-block">
+                                                                        <span class="display-1 text-primary font-weight-bold">
+                                                                            <span class="align-top font-medium">$</span>19
+                                                                    </span>
+                                                                    <span class="d-block text-light font-small">/
+                                                                            month</span>
+                                                                    </span>
+                                                                </header>
+                                                                <!-- End Header -->
+                                                                <!-- Content -->
+                                                                <div class="card-body p-0">
+                                                                    <p class="p-3">Our Website Backup automatically backs up your data – every day. And in worst-case scenarios, if disaster strikes, you can restore your data.</p>
+                                                                    <button type="button" class="btn btn-primary btn-block rounded-0" tabindex="0">Add to Cart</button>
+                                                                </div>
+                                                                <!-- End Content -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Pricing Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Pricing Card -->
+                                                        <div class="pricing-card animate-up-2">
+                                                            <div class="card shadow-soft border-secondary p-0">
+                                                                <!-- Header -->
+                                                                <header class="card-header bg-white">
+                                                                    <h2 class="h5 text-secondary mb-3">Regular</h2>
+                                                                    <span class="d-block">
+                                                                        <span class="display-1 text-secondary font-weight-bold">
+                                                                            <span class="align-top font-medium">$</span>39
+                                                                    </span>
+                                                                    <span class="d-block text-light font-small">/
+                                                                            month</span>
+                                                                    </span>
+                                                                </header>
+                                                                <!-- End Header -->
+                                                                <!-- Content -->
+                                                                <div class="card-body p-0">
+                                                                    <p class="p-3">So, get Website Backup and stop worrying about data loss. Get back to doing what you do best – running your business and making money.</p>
+                                                                    <button type="button" class="btn btn-secondary btn-block rounded-0" tabindex="0">Add to Cart</button>
+                                                                </div>
+                                                                <!-- End Content -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Pricing Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Pricing Card -->
+                                                        <div class="pricing-card animate-up-2">
+                                                            <div class="card shadow-soft border-tertiary p-0">
+                                                                <!-- Header -->
+                                                                <header class="card-header bg-white">
+                                                                    <h2 class="h5 text-tertiary mb-3">Premium</h2>
+                                                                    <span class="d-block">
+                                                                        <span class="display-1 text-tertiary font-weight-bold">
+                                                                            <span class="align-top font-medium">$</span>79
+                                                                    </span>
+                                                                    <span class="d-block text-light font-small">/
+                                                                            month</span>
+                                                                    </span>
+                                                                </header>
+                                                                <!-- End Header -->
+                                                                <!-- Content -->
+                                                                <div class="card-body p-0">
+                                                                    <p class="p-3">It’s hard to believe anyone would want to harm your website, but they do. Thankfully, our security team is on the job 24/7 to meticulously monitor.</p>
+                                                                    <button type="button" class="btn btn-tertiary btn-block rounded-0" tabindex="0">Add to Cart</button>
+                                                                </div>
+                                                                <!-- End Content -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Pricing Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing Card --&gt;
+&lt;div class=&quot;pricing-card animate-up-2&quot;&gt;
+    &lt;div class=&quot;card shadow border-primary p-0&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;header class=&quot;card-header bg-white&quot;&gt;
+            &lt;h2 class=&quot;h5 text-primary mb-3&quot;&gt;Basic&lt;/h2&gt;
+            &lt;span class=&quot;d-block&quot;&gt;
+            &lt;span class=&quot;display-1 text-primary font-weight-bold&quot;&gt;
+                &lt;span class=&quot;align-top font-medium&quot;&gt;$&lt;/span&gt;19
+            &lt;/span&gt;
+            &lt;span class=&quot;d-block text-light font-small&quot;&gt;/ month&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/header&gt;
+        &lt;!-- End Header --&gt;
+        &lt;!-- Content --&gt;
+        &lt;div class=&quot;card-body p-0&quot;&gt;
+            &lt;p class=&quot;p-3&quot;&gt;Our Website Backup automatically backs up your data &ndash; every day. And in worst-case scenarios, if disaster strikes, you can restore your data.&lt;/p&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block rounded-0&quot; tabindex=&quot;0&quot;&gt;Add to Cart&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- End Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Pricing Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-6" class="my-5">
+                            <h5 class="mb-3">Background color variation</h5>
+                            <p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities <strong>do not set <code class="text-danger">color</code></strong>,
+                                so in some cases you’ll want to use <code class="text-danger">.text-*</code> utilities.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Pricing Card -->
+                                                        <div class="pricing-card">
+                                                            <div class="card bg-primary text-center text-white p-4">
+                                                                <!-- Header -->
+                                                                <header class="card-header border-0">
+                                                                    <div class="pricing-value border-white">
+                                                                        <span class="display-2 font-weight-bold">
+                                                                            <span class="font-medium">$</span>79
+                                                                        </span>
+                                                                    </div>
+                                                                </header>
+                                                                <!-- End Header -->
+                                                                <!-- Content -->
+                                                                <div class="card-body">
+                                                                    <ul class="list-group mb-4">
+                                                                        <li class="list-group-item">Community support</li>
+                                                                        <li class="list-group-item">15 GB SSD storage</li>
+                                                                        <li class="list-group-item">One-click staging site
+                                                                        </li>
+                                                                    </ul>
+                                                                    <button type="button" class="btn btn-white btn-block text-primary font-weight-bold" tabindex="0"><span class="fas fa-cart-plus mr-3"></span>Add
+                                                                        to Cart</button>
+                                                                </div>
+                                                                <!-- End Content -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Pricing Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Pricing Card -->
+                                                        <div class="pricing-card">
+                                                            <div class="card bg-secondary text-center text-white p-4">
+                                                                <!-- Header -->
+                                                                <header class="card-header border-0">
+                                                                    <div class="pricing-value border-white">
+                                                                        <span class="display-2 font-weight-bold">
+                                                                            <span class="font-medium">$</span>79
+                                                                        </span>
+                                                                    </div>
+                                                                </header>
+                                                                <!-- End Header -->
+                                                                <!-- Content -->
+                                                                <div class="card-body">
+                                                                    <ul class="list-group mb-4">
+                                                                        <li class="list-group-item">Community support</li>
+                                                                        <li class="list-group-item">15 GB SSD storage</li>
+                                                                        <li class="list-group-item">One-click staging site
+                                                                        </li>
+                                                                    </ul>
+                                                                    <button type="button" class="btn btn-white btn-block text-secondary font-weight-bold" tabindex="0"><span class="fas fa-cart-plus mr-3"></span>Add
+                                                                        to Cart</button>
+                                                                </div>
+                                                                <!-- End Content -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Pricing Card -->
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <!-- Pricing Card -->
+                                                        <div class="pricing-card">
+                                                            <div class="card bg-tertiary text-center text-white p-4">
+                                                                <!-- Header -->
+                                                                <header class="card-header border-0">
+                                                                    <div class="pricing-value border-white">
+                                                                        <span class="display-2 font-weight-bold">
+                                                                            <span class="font-medium">$</span>79
+                                                                        </span>
+                                                                    </div>
+                                                                </header>
+                                                                <!-- End Header -->
+                                                                <!-- Content -->
+                                                                <div class="card-body">
+                                                                    <ul class="list-group mb-4">
+                                                                        <li class="list-group-item">Community support</li>
+                                                                        <li class="list-group-item">15 GB SSD storage</li>
+                                                                        <li class="list-group-item">One-click staging site
+                                                                        </li>
+                                                                    </ul>
+                                                                    <button type="button" class="btn btn-white btn-block text-tertiary font-weight-bold" tabindex="0"><span class="fas fa-cart-plus mr-3"></span>Add
+                                                                        to Cart</button>
+                                                                </div>
+                                                                <!-- End Content -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Pricing Card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing Card --&gt;
+&lt;div class=&quot;pricing-card&quot;&gt;
+    &lt;div class=&quot;card bg-primary text-center text-white p-4&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;header class=&quot;card-header border-0&quot;&gt;
+            &lt;div class=&quot;pricing-value border-white&quot;&gt;
+                &lt;span class=&quot;display-2 font-weight-bold&quot;&gt;
+                    &lt;span class=&quot;font-medium&quot;&gt;$&lt;/span&gt;79
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/header&gt;
+        &lt;!-- End Header --&gt;
+        &lt;!-- Content --&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;ul class=&quot;list-group mb-4&quot;&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;Community support&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;15 GB SSD storage&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;One-click staging site&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-white btn-block text-tertiary font-weight-bold&quot; tabindex=&quot;0&quot;&gt;&lt;span class=&quot;fas fa-cart-plus mr-3&quot;&gt;&lt;/span&gt;Add to Cart&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- End Content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Pricing Card --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="example-7" class="my-5">
+                            <h5 class="mb-3">Tabs</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <!-- Pricing tab -->
+                                                <div class="pixel-tab">
+                                                    <div class="row mt-5">
+                                                        <div class="col-lg-2 col-md-3 align-self-center">
+                                                            <!-- Nav -->
+                                                            <div class="nav nav-pills flex-column" role="tablist">
+                                                                <a class="nav-link active" data-toggle="pill" href="#price-tab-1" role="tab" aria-expanded="true">
+                                                                    <h2>$0</h2>
+                                                                    <h6 class="subtitle">Free</h6>
+                                                                </a>
+                                                                <a class="nav-link" data-toggle="pill" href="#price-tab-2" role="tab" aria-expanded="true">
+                                                                    <h2>$10<small>/m</small></h2>
+                                                                    <h6 class="subtitle">Regular</h6>
+                                                                </a>
+                                                                <a class="nav-link" data-toggle="pill" href="#price-tab-3" role="tab" aria-expanded="true">
+                                                                    <h2>$30<small>/m</small></h2>
+                                                                    <h6 class="subtitle">Premium</h6>
+                                                                </a>
+                                                            </div>
+                                                            <!-- End of Nav -->
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-9">
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane fade active show" id="price-tab-1" role="tabpanel">
+                                                                    <div class="row no-gutters">
+                                                                        <!-- Price Tab  -->
+                                                                        <div class="col-lg-7">
+                                                                            <div class="pricing-box">
+                                                                                <h2 class="mb-0">Free Plan</h2>
+                                                                                <p>This plan is perfect for students and small teams to build personal projects.
+                                                                                </p>
+                                                                                <ul class="list-inline mb-4">
+                                                                                    <li><i class="far fa-address-card"></i><span>Personal
+                                                                                            License</span></li>
+                                                                                    <li><i class="far fa-paper-plane"></i><span>5
+                                                                                            Demos Included</span></li>
+                                                                                    <li><i class="far fa-file-code"></i><span>2
+                                                                                            Bootstrap Themes</span></li>
+                                                                                    <li><i class="far fa-hdd"></i><span>10
+                                                                                            GB Hosting</span></li>
+                                                                                    <li><i class="far fa-lightbulb"></i><span>Newsletter</span></li>
+                                                                                    <li><i class="far fa-grin-hearts"></i><span>Free
+                                                                                            Support</span></li>
+                                                                                </ul>
+                                                                                <a href="#" class="btn btn-block btn-secondary">Add
+                                                                                    to Cart</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Image & Description -->
+                                                                        <div class="col-lg-5 bg-image overlay-dark text-center align-items-center" data-background="/img/pricing/pricing-1.jpg">
+                                                                            <div class="description-box text-white">
+                                                                                <span class="display-3 align-middle">$0</span>
+                                                                                <p class="lead mt-2">If you want to try Pixel before committing to an active monthly plan, then you can sign up for a free 30-day trial.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- /Image & Description -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="price-tab-2" role="tabpanel">
+                                                                    <div class="row no-gutters">
+                                                                        <!-- Price Tab  -->
+                                                                        <div class="col-lg-7">
+                                                                            <div class="pricing-box">
+                                                                                <h2 class="mb-0">Regular Plan</h2>
+                                                                                <p>This plan is perfect for students and small teams to build personal projects.
+                                                                                </p>
+                                                                                <ul class="list-inline mb-4">
+                                                                                    <li><i class="far fa-address-card"></i><span>Personal
+                                                                                            License</span></li>
+                                                                                    <li><i class="far fa-paper-plane"></i><span>20
+                                                                                            Demos Included</span></li>
+                                                                                    <li><i class="far fa-file-code"></i><span>10
+                                                                                            Bootstrap Themes</span></li>
+                                                                                    <li><i class="far fa-hdd"></i><span>100
+                                                                                            GB Hosting</span></li>
+                                                                                    <li><i class="far fa-lightbulb"></i><span>Newsletter</span></li>
+                                                                                    <li><i class="far fa-grin-hearts"></i><span>Free
+                                                                                            Support</span></li>
+                                                                                </ul>
+                                                                                <a href="#" class="btn btn-block btn-secondary">Add
+                                                                                    to Cart</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Image & Description -->
+                                                                        <div class="col-lg-5 bg-image overlay-dark text-center align-items-center" data-background="/img/pricing/pricing-1.jpg">
+                                                                            <div class="description-box text-white">
+                                                                                <span class="display-3 align-middle">$10/month</span>
+                                                                                <p class="lead mt-2">Build a unique website with advanced design tools, CSS snippets and the ability to monetize your site.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- /Image & Description -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="price-tab-3" role="tabpanel">
+                                                                    <div class="row no-gutters">
+                                                                        <!-- Price Tab  -->
+                                                                        <div class="col-lg-7">
+                                                                            <div class="pricing-box">
+                                                                                <h2 class="mb-0">Premium Plan</h2>
+                                                                                <p>This plan is perfect for students and small teams to build personal projects.
+                                                                                </p>
+                                                                                <ul class="list-inline mb-4">
+                                                                                    <li><i class="far fa-address-card"></i><span>Commercial
+                                                                                            License</span></li>
+                                                                                    <li><i class="far fa-paper-plane"></i><span>All
+                                                                                            Demos Included</span></li>
+                                                                                    <li><i class="far fa-file-code"></i><span>All
+                                                                                            Bootstrap Themes</span></li>
+                                                                                    <li><i class="far fa-hdd"></i><span>5
+                                                                                            TB Hosting</span></li>
+                                                                                    <li><i class="far fa-lightbulb"></i><span>Newsletter</span></li>
+                                                                                    <li><i class="far fa-grin-hearts"></i><span>Free
+                                                                                            Support</span></li>
+                                                                                </ul>
+                                                                                <a href="#" class="btn btn-block btn-secondary">Add
+                                                                                    to Cart</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Image & Description -->
+                                                                        <div class="col-lg-5 bg-image overlay-dark text-center align-items-center" data-background="/img/pricing/pricing-1.jpg">
+                                                                            <div class="description-box text-white">
+                                                                                <span class="display-3 align-middle">$30/month</span>
+                                                                                <p class="lead mt-2">Power your business website with unlimited premium and business theme templates.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- /Image & Description  -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End of pricing tab -->
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Pricing tab --&gt;
+&lt;div class=&quot;pixel-tab&quot;&gt;
+    &lt;div class=&quot;row mt-5&quot;&gt;
+        &lt;div class=&quot;col-lg-2 col-md-3 align-self-center&quot;&gt;
+            &lt;!-- Nav --&gt;
+            &lt;div class=&quot;nav nav-pills flex-column&quot; role=&quot;tablist&quot;&gt;
+                &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;pill&quot; href=&quot;#price-tab-1&quot; role=&quot;tab&quot; aria-expanded=&quot;true&quot;&gt;
+                    &lt;h2&gt;$0&lt;/h2&gt;
+                    &lt;h6 class=&quot;subtitle&quot;&gt;Free&lt;/h6&gt;
+                &lt;/a&gt;
+                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;pill&quot; href=&quot;#price-tab-2&quot; role=&quot;tab&quot; aria-expanded=&quot;true&quot;&gt;
+                    &lt;h2&gt;$10&lt;small&gt;/m&lt;/small&gt;&lt;/h2&gt;
+                    &lt;h6 class=&quot;subtitle&quot;&gt;Regular&lt;/h6&gt;
+                &lt;/a&gt;
+                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;pill&quot; href=&quot;#price-tab-3&quot; role=&quot;tab&quot; aria-expanded=&quot;true&quot;&gt;
+                    &lt;h2&gt;$30&lt;small&gt;/m&lt;/small&gt;&lt;/h2&gt;
+                    &lt;h6 class=&quot;subtitle&quot;&gt;Premium&lt;/h6&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;!-- End of Nav --&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-10 col-md-9&quot;&gt;
+            &lt;div class=&quot;tab-content&quot;&gt;
+                &lt;div class=&quot;tab-pane fade active show&quot; id=&quot;price-tab-1&quot; role=&quot;tabpanel&quot;&gt;
+                    &lt;div class=&quot;row no-gutters&quot;&gt;
+                        &lt;!-- Price Tab  --&gt;
+                        &lt;div class=&quot;col-lg-7&quot;&gt;
+                            &lt;div class=&quot;pricing-box&quot;&gt;
+                                &lt;h2 class=&quot;mb-0&quot;&gt;Free Plan&lt;/h2&gt;
+                                &lt;p&gt;This plan is perfect for students and small teams to build personal projects.&lt;/p&gt;
+                                &lt;ul class=&quot;list-inline mb-4&quot;&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-address-card&quot;&gt;&lt;/i&gt;&lt;span&gt;Personal License&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;span&gt;5 Demos Included&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt;&lt;span&gt;2 Bootstrap Themes&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-hdd&quot;&gt;&lt;/i&gt;&lt;span&gt;10 GB Hosting&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;&lt;span&gt;Newsletter&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-grin-hearts&quot;&gt;&lt;/i&gt;&lt;span&gt;Free Support&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;btn btn-block btn-secondary&quot;&gt;Add to Cart&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- Image &amp; Description --&gt;
+                        &lt;div class=&quot;col-lg-5 bg-image overlay-dark text-center align-items-center&quot; data-background=&quot;/img/pricing/pricing-1.jpg&quot;&gt;
+                            &lt;div class=&quot;description-box text-white&quot;&gt;
+                                &lt;span class=&quot;display-3 align-middle&quot;&gt;$0&lt;/span&gt;
+                                &lt;p class=&quot;lead mt-2&quot;&gt;If you want to try Pixel before committing to an active monthly plan, then you can sign up for a free 30-day trial.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- /Image &amp; Description --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tab-pane fade&quot; id=&quot;price-tab-2&quot; role=&quot;tabpanel&quot;&gt;
+                    &lt;div class=&quot;row no-gutters&quot;&gt;
+                        &lt;!-- Price Tab  --&gt;
+                        &lt;div class=&quot;col-lg-7&quot;&gt;
+                            &lt;div class=&quot;pricing-box&quot;&gt;
+                                &lt;h2 class=&quot;mb-0&quot;&gt;Regular Plan&lt;/h2&gt;
+                                &lt;p&gt;This plan is perfect for students and small teams to build personal projects.&lt;/p&gt;
+                                &lt;ul class=&quot;list-inline mb-4&quot;&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-address-card&quot;&gt;&lt;/i&gt;&lt;span&gt;Personal License&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;span&gt;20 Demos Included&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt;&lt;span&gt;10 Bootstrap Themes&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-hdd&quot;&gt;&lt;/i&gt;&lt;span&gt;100 GB Hosting&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;&lt;span&gt;Newsletter&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-grin-hearts&quot;&gt;&lt;/i&gt;&lt;span&gt;Free Support&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;btn btn-block btn-secondary&quot;&gt;Add to Cart&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- Image &amp; Description --&gt;
+                        &lt;div class=&quot;col-lg-5 bg-image overlay-dark text-center align-items-center&quot; data-background=&quot;/img/pricing/pricing-1.jpg&quot;&gt;
+                            &lt;div class=&quot;description-box text-white&quot;&gt;
+                                &lt;span class=&quot;display-3 align-middle&quot;&gt;$10/month&lt;/span&gt;
+                                &lt;p class=&quot;lead mt-2&quot;&gt;Build a unique website with advanced design tools, CSS snippets and the ability to monetize your site.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- /Image &amp; Description --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tab-pane fade&quot; id=&quot;price-tab-3&quot; role=&quot;tabpanel&quot;&gt;
+                    &lt;div class=&quot;row no-gutters&quot;&gt;
+                        &lt;!-- Price Tab  --&gt;
+                        &lt;div class=&quot;col-lg-7&quot;&gt;
+                            &lt;div class=&quot;pricing-box&quot;&gt;
+                                &lt;h2 class=&quot;mb-0&quot;&gt;Premium Plan&lt;/h2&gt;
+                                &lt;p&gt;This plan is perfect for students and small teams to build personal projects.&lt;/p&gt;
+                                &lt;ul class=&quot;list-inline mb-4&quot;&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-address-card&quot;&gt;&lt;/i&gt;&lt;span&gt;Commercial License&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-paper-plane&quot;&gt;&lt;/i&gt;&lt;span&gt;All Demos Included&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt;&lt;span&gt;All Bootstrap Themes&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-hdd&quot;&gt;&lt;/i&gt;&lt;span&gt;5 TB Hosting&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;&lt;span&gt;Newsletter&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;i class=&quot;far fa-grin-hearts&quot;&gt;&lt;/i&gt;&lt;span&gt;Free Support&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;btn btn-block btn-secondary&quot;&gt;Add to Cart&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- Image &amp; Description --&gt;
+                        &lt;div class=&quot;col-lg-5 bg-image overlay-dark text-center align-items-center&quot; data-background=&quot;/img/pricing/pricing-1.jpg&quot;&gt;
+                            &lt;div class=&quot;description-box text-white&quot;&gt;
+                                &lt;span class=&quot;display-3 align-middle&quot;&gt;$30/month&lt;/span&gt;
+                                &lt;p class=&quot;lead mt-2&quot;&gt;Power your business website with unlimited premium and business theme templates.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- /Image &amp; Description  --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of pricing tab --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#example-1" class="nav-link" data-smooth-scroll>Basic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-2" class="nav-link" data-smooth-scroll>Basic 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-5" class="nav-link" data-smooth-scroll>Basic 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-3" class="nav-link" data-smooth-scroll>Background</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-4" class="nav-link" data-smooth-scroll>Box</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-6" class="nav-link" data-smooth-scroll>Creative</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#example-7" class="nav-link" data-smooth-scroll>Tabs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

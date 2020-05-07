@@ -1,0 +1,1123 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 4 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Pixel Documentation - Steps"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs-path": ".."
+            })
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Steps</h1>
+                            <p class="lead text-dark">Use Pixel's custom steps elements to show a list of features or any other information..</p>
+                        </div>
+                        <div id="round" class="my-5">
+                            <h5 class="mb-3">Round shape</h5>
+                            <p>For each <code class="text-danger">.step</code> you can change the content inside the
+                                <code class="text-danger">.step-number</code> and the icon for <code class="text-danger">.icon-white</code>. The class <code class="text-danger">.rounded-circle</code> is the style modifier for these shapes.</p>
+                            <p>You can use Bootstrap's text utility classes to position the text to your liking.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab" href="#tab-content-1" role="tab" aria-controls="tab-link-1" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2" role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel" aria-labelledby="tab-content-1">
+                                                <div class="row mt-4">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape shape-light rounded-circle text-white mb-4">
+                                                                <span class="step-number rounded-circle border-lighter">1</span>
+                                                                <span class="icon-white"><i class="fas fa-bullseye"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Goal identification</h5>
+                                                            <p>Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center">
+                                                            <div class="step-shape shape-light rounded-circle text-white mb-4">
+                                                                <span class="step-number rounded-circle border-lighter">2</span>
+                                                                <span class="icon-white"><i class="fas fa-code-branch"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Content creation</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-right">
+                                                            <div class="step-shape shape-light rounded-circle text-white mb-4">
+                                                                <span class="step-number rounded-circle border-lighter">3</span>
+                                                                <span class="icon-white"><i class="fas fa-award"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Testing</h5>
+                                                            <p>We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.
+                                                            </p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel" aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row mt-4&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light rounded-circle text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number rounded-circle border-lighter&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-bullseye&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Goal identification&lt;/h5&gt;
+            &lt;p&gt;Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light rounded-circle text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number rounded-circle border-lighter&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-code-branch&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Content creation&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-right&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light rounded-circle text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number rounded-circle border-lighter&quot;&gt;3&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Testing&lt;/h5&gt;
+            &lt;p&gt;We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="organic" class="my-5">
+                            <h5 class="mb-3">Organic shape</h5>
+                            <p>Use the <code class="text-danger">.organic-shape</code> class to style the steps as shown below.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab" href="#tab-content-3" role="tab" aria-controls="tab-link-3" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4" role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel" aria-labelledby="tab-content-3">
+                                                <div class="row mt-4">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape shape-light organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">1</span>
+                                                                <span class="icon-white"><i class="fas fa-bullseye"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Goal identification</h5>
+                                                            <p>Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center">
+                                                            <div class="step-shape shape-light organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">2</span>
+                                                                <span class="icon-white"><i class="fas fa-code-branch"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Content creation</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-right">
+                                                            <div class="step-shape shape-light organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">3</span>
+                                                                <span class="icon-white"><i class="fas fa-award"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Testing</h5>
+                                                            <p>We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.
+                                                            </p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel" aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row mt-4&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-bullseye&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Goal identification&lt;/h5&gt;
+            &lt;p&gt;Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-code-branch&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Content creation&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-right&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;3&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Testing&lt;/h5&gt;
+            &lt;p&gt;We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="square" class="my-5">
+                            <h5 class="mb-3">Square shape</h5>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab" href="#tab-content-5" role="tab" aria-controls="tab-link-5" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6" role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel" aria-labelledby="tab-content-5">
+                                                <div class="row mt-4">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape shape-light text-white mb-4">
+                                                                <span class="step-number border-lighter">1</span>
+                                                                <span class="icon-white"><i class="fas fa-bullseye"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Goal identification</h5>
+                                                            <p>Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center">
+                                                            <div class="step-shape shape-light text-white mb-4">
+                                                                <span class="step-number border-lighter">2</span>
+                                                                <span class="icon-white"><i class="fas fa-code-branch"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Content creation</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-right">
+                                                            <div class="step-shape shape-light text-white mb-4">
+                                                                <span class="step-number border-lighter">3</span>
+                                                                <span class="icon-white"><i class="fas fa-award"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Testing</h5>
+                                                            <p>We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.
+                                                            </p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel" aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row mt-4&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-bullseye&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Goal identification&lt;/h5&gt;
+            &lt;p&gt;Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-code-branch&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Content creation&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-right&quot;&gt;
+            &lt;div class=&quot;step-shape shape-light text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;3&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Testing&lt;/h5&gt;
+            &lt;p&gt;We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="colored" class="my-5">
+                            <h5 class="mb-3">Colored shapes</h5>
+                            <p>You can use classes such as <code class="text-danger">.shape-primary</code> or <code class="text-danger">.code-secondary</code> to modify the colors of the shapes. They work with any form of shapes as seen in the previous examples.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-7" data-toggle="tab" href="#tab-content-7" role="tab" aria-controls="tab-link-7" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-8" data-toggle="tab" href="#tab-content-8" role="tab" aria-controls="tab-link-8" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent4">
+                                            <div class="tab-pane fade show active" id="tab-content-7" role="tabpanel" aria-labelledby="tab-content-7">
+                                                <div class="row mt-4">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape shape-primary organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">1</span>
+                                                                <span class="icon-white"><i class="fas fa-assistive-listening-systems"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Primary color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center">
+                                                            <div class="step-shape shape-secondary organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">2</span>
+                                                                <span class="icon-white"><i class="fas fa-highlighter"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Secondary color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-right">
+                                                            <div class="step-shape shape-tertiary organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">3</span>
+                                                                <span class="icon-white"><i class="fas fa-fire"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Tertiary color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape shape-info organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">4</span>
+                                                                <span class="icon-white"><i class="fas fa-assistive-listening-systems"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Info color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center">
+                                                            <div class="step-shape shape-success organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">5</span>
+                                                                <span class="icon-white"><i class="fas fa-highlighter"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Success color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-right">
+                                                            <div class="step-shape shape-danger organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">6</span>
+                                                                <span class="icon-white"><i class="fas fa-fire"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Danger color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape shape-warning organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">7</span>
+                                                                <span class="icon-white"><i class="fas fa-assistive-listening-systems"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Warning color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center">
+                                                            <div class="step-shape shape-dark organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">8</span>
+                                                                <span class="icon-white"><i class="fas fa-highlighter"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Dark color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-right">
+                                                            <div class="step-shape shape-gray organic-radius text-white mb-4">
+                                                                <span class="step-number border-lighter">9</span>
+                                                                <span class="icon-white"><i class="fas fa-fire"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Gray color</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-8" role="tabpanel" aria-labelledby="tab-content-8">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row mt-4&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape shape-primary organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-assistive-listening-systems&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Primary color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center&quot;&gt;
+            &lt;div class=&quot;step-shape shape-secondary organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-highlighter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Secondary color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-right&quot;&gt;
+            &lt;div class=&quot;step-shape shape-tertiary organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;3&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-fire&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Tertiary color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape shape-info organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;4&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-assistive-listening-systems&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Info color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center&quot;&gt;
+            &lt;div class=&quot;step-shape shape-success organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;5&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-highlighter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Success color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-right&quot;&gt;
+            &lt;div class=&quot;step-shape shape-danger organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;6&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-fire&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Danger color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape shape-warning organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;7&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-assistive-listening-systems&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Warning color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center&quot;&gt;
+            &lt;div class=&quot;step-shape shape-dark organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;8&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-highlighter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Dark color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-right&quot;&gt;
+            &lt;div class=&quot;step-shape shape-gray organic-radius text-white mb-4&quot;&gt;
+                &lt;span class=&quot;step-number border-lighter&quot;&gt;9&lt;/span&gt;
+                &lt;span class=&quot;icon-white&quot;&gt;&lt;i class=&quot;fas fa-fire&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Gray color&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="bordered" class="my-5">
+                            <h5 class="mb-3">Bordered steps</h5>
+                            <p>Use classes such as <code class="text-danger">.border-primary</code> or <code class="text-danger">.border-secondary</code> to create an outline for the shapes.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-5" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-9" data-toggle="tab" href="#tab-content-9" role="tab" aria-controls="tab-link-9" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-10" data-toggle="tab" href="#tab-content-10" role="tab" aria-controls="tab-link-10" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent5">
+                                            <div class="tab-pane fade show active" id="tab-content-9" role="tabpanel" aria-labelledby="tab-content-9">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step text-center text-md-left">
+                                                            <div class="step-shape bordered border-primary rounded-circle mb-4">
+                                                                <span class="step-number rounded-circle text-primary border-primary">1</span>
+                                                                <span class="icon-primary"><i class="fas fa-assistive-listening-systems"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Discussion</h5>
+                                                            <p>Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4 text-center">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <div class="step-shape bordered border-tertiary organic-radius mb-4">
+                                                                <span class="step-number text-tertiary border-tertiary">3</span>
+                                                                <span class="icon-tertiary"><i class="fas fa-fire"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Production</h5>
+                                                            <p>Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4 text-center text-md-right">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <div class="step-shape bordered border-secondary mb-4">
+                                                                <span class="step-number text-secondary border-secondary">2</span>
+                                                                <span class="icon-secondary"><i class="fas fa-highlighter"></i></span>
+                                                            </div>
+                                                            <h5 class="step-title">Prototyping</h5>
+                                                            <p>We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.
+                                                            </p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-10" role="tabpanel" aria-labelledby="tab-content-10">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step text-center text-md-left&quot;&gt;
+            &lt;div class=&quot;step-shape bordered border-primary rounded-circle mb-4&quot;&gt;
+                &lt;span class=&quot;step-number rounded-circle text-primary border-primary&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;icon-primary&quot;&gt;&lt;i class=&quot;fas fa-assistive-listening-systems&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Discussion&lt;/h5&gt;
+            &lt;p&gt;Where I work with the client to determine what goals the site needs to fulfill. I.e., what its purpose is.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 text-center&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;div class=&quot;step-shape bordered border-tertiary organic-radius mb-4&quot;&gt;
+                &lt;span class=&quot;step-number text-tertiary border-tertiary&quot;&gt;3&lt;/span&gt;
+                &lt;span class=&quot;icon-tertiary&quot;&gt;&lt;i class=&quot;fas fa-fire&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Production&lt;/h5&gt;
+            &lt;p&gt;Now that we have a bigger picture of the site in mind, we can start creating content for the individual pages.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 text-center text-md-right&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;div class=&quot;step-shape bordered border-secondary mb-4&quot;&gt;
+                &lt;span class=&quot;step-number text-secondary border-secondary&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;icon-secondary&quot;&gt;&lt;i class=&quot;fas fa-highlighter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Prototyping&lt;/h5&gt;
+            &lt;p&gt;We've got all your pages and defined how they display to the site visitor, so it's time to make sure it all works.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="letter-background" class="my-5">
+                            <h5 class="mb-3">Letter or number in the background</h5>
+                            <p>Update the content inside <code class="text-danger">.back-layer</code> to change the number in the background.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-6" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-11" data-toggle="tab" href="#tab-content-11" role="tab" aria-controls="tab-link-11" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-12" data-toggle="tab" href="#tab-content-12" role="tab" aria-controls="tab-link-12" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent6">
+                                            <div class="tab-pane fade show active" id="tab-content-11" role="tabpanel" aria-labelledby="tab-content-11">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="back-layer layer-primary lh-100">1</span>
+                                                            <h5 class="step-title">Visual Design</h5>
+                                                            <p>Once the blueprint for the site has been defined through the creation of the sitemap and wireframes, the next step is to create a visual style. </p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="back-layer layer-secondary lh-100">2</span>
+                                                            <h5 class="step-title">Site Development</h5>
+                                                            <p>With designs approved, it’s time to flesh out the design of the pages, develop new content and refine old content, create videos, slideshows, etc.</p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="back-layer layer-tertiary lh-100">3</span>
+                                                            <h5 class="step-title">Site Testing</h5>
+                                                            <p>After site development, it will be placed on a production server where only internal audiences and anyone who you share the link with can view it. </p>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-12" role="tabpanel" aria-labelledby="tab-content-12">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;back-layer layer-primary lh-100&quot;&gt;1&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Visual Design&lt;/h5&gt;
+            &lt;p&gt;Once the blueprint for the site has been defined through the creation of the sitemap and wireframes, the next step is to create a visual style. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;back-layer layer-secondary lh-100&quot;&gt;2&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Site Development&lt;/h5&gt;
+            &lt;p&gt;With designs approved, it&rsquo;s time to flesh out the design of the pages, develop new content and refine old content, create videos, slideshows, etc.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;back-layer layer-tertiary lh-100&quot;&gt;3&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Site Testing&lt;/h5&gt;
+            &lt;p&gt;After site development, it will be placed on a production server where only internal audiences and anyone who you share the link with can view it. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="icon-background" class="my-5">
+                            <h5 class="mb-3">Icon in the background</h5>
+                            <p>Update the icon used inside the <code class="text-danger">.back-layer</code>. Furthermore, you can use classes such as <code class="text-danger">.layer-primary</code> or <code class="text-danger">.layer-secondary</code> to
+                                change the color.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-7" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-13" data-toggle="tab" href="#tab-content-13" role="tab" aria-controls="tab-link-13" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-14" data-toggle="tab" href="#tab-content-14" role="tab" aria-controls="tab-link-14" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent7">
+                                            <div class="tab-pane fade show active" id="tab-content-13" role="tabpanel" aria-labelledby="tab-content-13">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="back-layer layer-primary"><i class="fas fa-paint-brush"></i></span>
+                                                            <h5 class="step-title">Visual Design</h5>
+                                                            <p>Once the blueprint for the site has been defined through the creation of the sitemap and wireframes, the next step is to create a visual style. </p>
+                                                            <a href="#" class="btn btn-link text-dark">Learn more</a>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="back-layer layer-secondary"><i class="fas fa-code-branch"></i></span>
+                                                            <h5 class="step-title">Site Development</h5>
+                                                            <p>With designs approved, it’s time to flesh out the design of the pages, develop new content and refine old content, create videos, slideshows, etc.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Learn more</a>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="back-layer layer-tertiary"><span class="fas fa-puzzle-piece"></span></span>
+                                                            <h5 class="step-title">Site Testing</h5>
+                                                            <p>After site development, it will be placed on a production server where only internal audiences and anyone who you share the link with can view it. </p>
+                                                            <a href="#" class="btn btn-link text-dark">Learn more</a>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-14" role="tabpanel" aria-labelledby="tab-content-14">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;back-layer layer-primary&quot;&gt;&lt;i class=&quot;fas fa-paint-brush&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Visual Design&lt;/h5&gt;
+            &lt;p&gt;Once the blueprint for the site has been defined through the creation of the sitemap and wireframes, the next step is to create a visual style. &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Learn more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;back-layer layer-secondary&quot;&gt;&lt;i class=&quot;fas fa-code-branch&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Site Development&lt;/h5&gt;
+            &lt;p&gt;With designs approved, it&rsquo;s time to flesh out the design of the pages, develop new content and refine old content, create videos, slideshows, etc.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Learn more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;back-layer layer-tertiary&quot;&gt;&lt;i class=&quot;fas fa-puzzle-piece&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Site Testing&lt;/h5&gt;
+            &lt;p&gt;After site development, it will be placed on a production server where only internal audiences and anyone who you share the link with can view it. &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Learn more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="background-and-icon" class="my-5">
+                            <h5 class="mb-3">Background and icon</h5>
+                            <p>The following example shows how you can combine the classes and layouts as shown in the previous examples.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-8" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-15" data-toggle="tab" href="#tab-content-15" role="tab" aria-controls="tab-link-15" aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-16" data-toggle="tab" href="#tab-content-16" role="tab" aria-controls="tab-link-16" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip" data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent8">
+                                            <div class="tab-pane fade show active" id="tab-content-15" role="tabpanel" aria-labelledby="tab-content-15">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="icon-lg icon-primary"><i class="fas fa-palette"></i></span>
+                                                            <span class="back-layer layer-gray">1</span>
+                                                            <h5 class="step-title">Visual Design</h5>
+                                                            <p>Once the blueprint for the site has been defined through the creation of the sitemap and wireframes, the next step is to create a visual style. </p>
+                                                            <a href="#" class="btn btn-link text-primary btn-icon">
+                                                                <span class="btn-inner-icon"><i class="fas fa-link"></i></span>
+                                                                <span class="btn-inner-text">See More</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="icon-lg icon-secondary"><i class="fas fa-code-branch"></i></span>
+                                                            <span class="back-layer layer-gray">2</span>
+                                                            <h5 class="step-title">Site Development</h5>
+                                                            <p>With designs approved, it’s time to flesh out the design of the pages, develop new content and refine old content, create videos, slideshows, etc.</p>
+                                                            <a href="#" class="btn btn-link text-secondary btn-icon">
+                                                                <span class="btn-inner-icon"><i class="fas fa-link"></i></span>
+                                                                <span class="btn-inner-text">See More</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Step -->
+                                                        <div class="step">
+                                                            <span class="icon-lg icon-tertiary"><span class="fas fa-puzzle-piece"></span></span>
+                                                            <span class="back-layer layer-gray">3</span>
+                                                            <h5 class="step-title">Site Testing</h5>
+                                                            <p>After site development, it will be placed on a production server where only internal audiences and anyone who you share the link with can view it. </p>
+                                                            <a href="#" class="btn btn-link text-tertiary btn-icon">
+                                                                <span class="btn-inner-icon"><i class="fas fa-link"></i></span>
+                                                                <span class="btn-inner-text">See More</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- End of Step -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-16" role="tabpanel" aria-labelledby="tab-content-16">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;icon-lg icon-primary&quot;&gt;&lt;i class=&quot;fas fa-palette&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;back-layer layer-gray&quot;&gt;1&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Visual Design&lt;/h5&gt;
+            &lt;p&gt;Once the blueprint for the site has been defined through the creation of the sitemap and wireframes, the next step is to create a visual style. &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-primary btn-icon&quot;&gt;
+                &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;span class=&quot;btn-inner-text&quot;&gt;See More&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;icon-lg icon-secondary&quot;&gt;&lt;i class=&quot;fas fa-code-branch&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;back-layer layer-gray&quot;&gt;2&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Site Development&lt;/h5&gt;
+            &lt;p&gt;With designs approved, it&rsquo;s time to flesh out the design of the pages, develop new content and refine old content, create videos, slideshows, etc.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-secondary btn-icon&quot;&gt;
+                &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;span class=&quot;btn-inner-text&quot;&gt;See More&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;!-- Step --&gt;
+        &lt;div class=&quot;step&quot;&gt;
+            &lt;span class=&quot;icon-lg icon-tertiary&quot;&gt;&lt;i class=&quot;fas fa-puzzle-piece&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class=&quot;back-layer layer-gray&quot;&gt;3&lt;/span&gt;
+            &lt;h5 class=&quot;step-title&quot;&gt;Site Testing&lt;/h5&gt;
+            &lt;p&gt;After site development, it will be placed on a production server where only internal audiences and anyone who you share the link with can view it. &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-tertiary btn-icon&quot;&gt;
+                &lt;span class=&quot;btn-inner-icon&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;span class=&quot;btn-inner-text&quot;&gt;See More&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- End of Step --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#round" class="nav-link" data-smooth-scroll>Round</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#organic" class="nav-link" data-smooth-scroll>Organic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#square" class="nav-link" data-smooth-scroll>Square</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#colored" class="nav-link" data-smooth-scroll>Colored</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#bordered" class="nav-link" data-smooth-scroll>Bordered</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#letter-background" class="nav-link" data-smooth-scroll>Letter background</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#icon-background" class="nav-link" data-smooth-scroll>Icon background</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#background-and-icon" class="nav-link" data-smooth-scroll>Background and icon</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+</body>
+
+</html>

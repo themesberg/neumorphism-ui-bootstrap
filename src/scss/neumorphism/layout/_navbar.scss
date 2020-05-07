@@ -1,0 +1,444 @@
+/**
+ * = Navigation bars
+ */
+
+.navbar-main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    .navbar-toggler-icon {
+        background-image: $navbar-dark-toggler-icon-bg;
+    }
+}
+
+.navbar .navbar-nav {
+
+    .nav-link {
+        font-size: $navbar-nav-link-font-size;
+        text-transform: $navbar-nav-link-text-transform;
+        letter-spacing: $navbar-nav-link-letter-spacing;
+        font-weight: $navbar-nav-link-font-weight;
+        @include transitions(.8s, $transition-bezier-card);
+
+        .nav-link-inner-text {
+            margin-left: .25rem;
+        }
+    }
+
+    .nav-item {
+        .media:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .dropdown {
+
+        .dropdown-item {
+            font-weight: $navbar-dropdown-item-font-weight;
+            font-size: .85rem;
+        }
+
+    }
+
+    .mega-dropdown {
+        position: static;
+
+        .dropdown-menu {
+            width: calc(100% - 35px);
+            left: 20px;
+            padding: 20px;
+            border-radius: $dropdown-border-radius;
+            overflow: hidden;
+        }
+
+        .dropdown-item {
+            border-radius: $dropdown-border-radius;
+        }
+
+        .inside-bg {
+            margin: -20px 0 -20px -20px;
+
+            h3 {
+                font-size: $font-size-xl;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        .inside-bg-right {
+            margin: -20px -20px -20px 0;
+        }
+
+        .bg-img {
+            background-size: cover;
+            position: relative;
+            background-position: center center;
+            height: 100%;
+            padding: 20px;
+        }
+
+        h6 {
+            margin: 15px 0;
+            font-size: 15px;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    
+        .dropdown-menu {
+            display: none;
+            top: 0;
+            left: calc(100% - 1px);
+            opacity: 0;
+
+            &.menu-right {
+                left: auto;
+                right: 100%;
+            }
+        }
+
+        &.show {
+            .dropdown-menu {
+                display: block;
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+
+    .nav-link-arrow {
+        transition: $transition-transform;
+    }
+
+}
+
+.navbar-brand {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+
+    img {
+        height: 20px;
+    }
+}
+
+// Navbar text and logo dark & light
+.navbar-dark {
+
+    .navbar-brand-light {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: $white;
+    }
+}
+
+.navbar-light {
+
+    .navbar-brand-dark {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: $gray-900;
+    }
+
+}
+
+// Theme color variants
+// eg. navbar-theme-primary, navbar-theme-secondary
+@each $color, $value in $theme-colors {
+    &.navbar-theme-#{$color}:not(.headroom) {
+        background-color: $value;
+    }
+    &.navbar-theme-#{$color}:not(.navbar-transparent) {
+        background-color: $value;
+    }
+
+    &.navbar-theme-#{$color}.navbar-light:not(.headroom) .navbar-nav {
+        .dropdown-item,
+        .list-group-item {
+            &.active, &:hover, &:focus {
+                color: darken($value, 40%);
+                background: $primary;
+                @include box-shadow($shadow-inset);
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+
+            .nav-link, 
+            .show > .nav-link, 
+            .dropdown-item,
+            .list-group-item {
+                &, &:focus, &.active, &:hover {
+                    background: $primary;
+                    @include box-shadow($shadow-inset);
+                }
+            }
+        }
+    }
+    
+    &.navbar-theme-#{$color} .navbar-nav {
+
+        .dropdown-item,
+        .list-group-item {
+            &.active, &:hover, &:focus {
+                color: $dark;
+                background: rgba($value, .1);
+                @include box-shadow($shadow-inset);
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+
+            .nav-link, 
+            .show > .nav-link, 
+            .dropdown-item,
+            .list-group-item {
+                &, &:focus, &.active, &:hover {
+                    color: $dark;
+                    background: transparent;
+                }
+
+                &.disabled {
+                    color: $navbar-light-disabled-color;
+                }
+            }
+
+            .dropdown  .dropdown-menu {
+                padding: 5px 15px;
+            }
+
+            .dropdown-item {
+                font-size: $navbar-dropdown-item-font-size;
+            }
+
+            .dropdown:not(.mega-dropdown) {
+                .dropdown-item {
+                    padding-left: 8px;
+                    margin-bottom: 5px;
+                    @include border-radius($border-radius);
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    border: 0;
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar-nav {
+        .nav-item {
+            margin-right: .5rem;
+
+            [data-toggle="dropdown"]::after {
+                transition: $transition-base;
+            }
+
+            &.show {
+                [data-toggle="dropdown"]::after {
+                    @include transform(rotate(180deg));
+                }
+            }
+        }
+        .nav-link {
+            padding-top: $navbar-nav-link-padding-y;
+            padding-bottom: $navbar-nav-link-padding-y;
+            border-radius: $navbar-nav-link-border-radius;
+
+            i {
+                margin-right: .3rem;
+                font-size: $font-size-xs;
+            }
+        }
+
+        .nav-link-icon {
+            padding-left: .5rem;
+            padding-right: .5rem;
+            font-size: 1rem;
+            border-radius: $navbar-nav-link-border-radius;
+
+            i {
+                margin-right: 0;
+            }
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            pointer-events: none;
+            margin: 0;
+            border-radius: $dropdown-border-radius;
+        }
+
+        .dropdown-menu-right {
+            &:before {
+                right: 20px;
+                left: auto;
+            }
+        }
+
+        .dropdown-menu {
+            &.show {
+                opacity: 1;
+                pointer-events: auto;
+                animation: show-navbar-dropdown .25s ease forwards;
+            }
+
+            &.close {
+                display: block;
+                animation: hide-navbar-dropdown .15s ease backwards;
+            }
+        }
+
+        .dropdown-menu {
+            display: block;
+            opacity: 0; 
+            pointer-events: none;
+            transition: $transition-base;
+        }
+
+        .dropdown:hover,
+        .dropdown-submenu:hover {
+            & > .dropdown-menu {
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+
+        .dropdown:hover .nav-link > .nav-link-arrow {
+            @include transform(rotate(180deg));
+        }
+
+        .dropdown-submenu:hover .dropdown-item > .nav-link-arrow {
+            @include transform(rotate(90deg));
+        }
+        
+        .dropdown-menu-inner {
+            position: relative;
+            padding: 1rem;
+        }
+    }
+
+    .navbar-transparent {
+        .navbar-nav {
+            .nav-link {
+                &.disabled {
+                    color: $navbar-dark-disabled-color;
+                }
+            }
+        }
+
+        .navbar-brand {
+            color: $navbar-dark-color; 
+
+            @include hover-focus {
+                color: $navbar-dark-color;
+            }
+        }
+
+    }
+
+}
+
+// Collapse
+.navbar-collapse-header {
+    display: none;
+}
+
+@include media-breakpoint-down(md) {
+    .navbar-nav {
+        .nav-link {
+            padding: .625rem 0;
+            @include display-flex();
+            @include justify-content(space-between);
+        }
+
+        .dropdown-menu {
+            @include box-shadow($shadow-inset);
+            min-width: auto;
+
+            .media svg {
+                width: 30px;
+            }
+        }
+    }
+
+    .navbar-collapse {     
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        overflow-y: auto;
+        // using !important to overwrite Bootstrap's inline styles
+        height: calc(100vh - 30px) !important;
+        opacity: 0;
+
+        .navbar-toggler {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+
+            span {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                border-radius: 2px;
+                opacity: 1;
+                background: #283448;
+            }
+        }
+
+        .navbar-collapse-header {
+            display: block;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .collapse-brand img {
+            height: 25px;
+        }
+
+        .collapse-close { 
+            text-align: right;
+        }
+    }
+
+    .dropdown.show .nav-link > .nav-link-arrow {
+        @include transform(rotate(180deg));
+    }
+
+    .dropdown-submenu.show .dropdown-item > .nav-link-arrow {
+        @include transform(rotate(90deg));
+    }
+
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+        padding: 1.5rem;
+        color: $dark;
+        border-radius: $dropdown-border-radius;
+        background: $primary;
+        animation: show-navbar-collapse .2s ease forwards;
+        @include box-shadow($box-shadow-soft);
+    }
+
+    .navbar-collapse.collapsing-out {
+        animation: hide-navbar-collapse .2s ease forwards;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin badge-variant($bg) {
+  
+    @at-root a#{&} {
+      @include hover-focus {
+        color: $dark;
+        background-color: $primary;
+      }
+  
+    }
+  }

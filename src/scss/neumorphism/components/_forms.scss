@@ -1,0 +1,292 @@
+/**
+ * = Forms
+ */
+
+label {
+    font-size: $font-size-sm;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-control {
+    font-size: $input-font-size;
+    border-radius:$input-border-radius;
+    @include box-shadow($shadow-inset);
+    
+    &:focus {
+        &:placeholder {
+            color: $input-focus-placeholder-color;
+        }
+    }
+
+    &:disabled,
+    &[readonly] {
+      background-color: $input-disabled-bg;
+      // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+      opacity: .6;
+    }
+}
+
+
+/* Textareas */
+
+textarea[resize="none"] {
+    resize: none!important;
+}
+
+textarea[resize="both"] {
+    resize: both!important;
+}
+
+textarea[resize="vertical"] {
+    resize: vertical!important;
+}
+
+textarea[resize="horizontal"] {
+    resize: horizontal!important;
+}
+
+
+/* shadow styles */
+
+.form-control-muted {
+    background-color: $input-muted-bg;
+    border-color: $input-muted-bg;
+    box-shadow: none;
+
+    &:focus {
+        background-color: $input-muted-bg;
+    }
+}
+
+
+// Sizes 
+.form-control-lg {
+    font-size: $font-size-base;
+}
+
+.form-control-xl {
+    height: $input-height-xl;
+    padding: $input-padding-y-lg $input-padding-x-lg;
+    line-height: $input-line-height-lg;
+    @include font-size($input-font-size-lg);
+    @include border-radius($input-border-radius-lg);
+  }
+
+// Validation
+
+.has-danger {
+    .form-control {
+        // Placeholder
+        &::placeholder {
+            color: $form-feedback-invalid-color;
+        }
+    }
+}
+
+.has-success {
+    .form-control {
+        // Placeholder
+        &::placeholder {
+            color: $form-feedback-valid-color;
+        }
+    }
+}
+
+// Checkboxes and radios
+// Indent the labels to position radios/checkboxes as hanging controls.
+
+.form-check{
+    padding-left: 0;
+}
+
+.form-check-input {
+    &:disabled ~ .form-check-label {
+      color: $gray-800;
+    }
+}
+
+.form-check .form-check-label{
+    display: inline-block;
+    position: relative;
+    padding-left: 1.375rem;
+    font-weight: $font-weight-normal;
+    line-height: 16px;
+    margin-bottom: 0;
+    @include transition($transition-base);
+    color: $gray;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.radio .form-check-sign{
+    padding-left: 28px;
+}
+
+.form-check input[type="radio"] +.form-check-inline .form-check-label {
+    padding-left: 5px;
+    margin-right: 10px;
+}
+
+.form-check .form-check-label::before,
+.form-check .form-check-label::after{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 0;
+    background-color: $custom-checkbox-bg;
+    border: 1px solid $gray-500;
+    @include transition($transition-base);
+    @include border-radius($custom-checkbox-indicator-border-radius);
+    @include box-shadow($custom-checkbox-shadow-inset);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-check{
+    &.square-check{
+        .form-check-label{
+            &::before{
+                @include border-radius($square-checkbox-indicator-border-radius);
+            }
+            &::after{
+                @include border-radius($square-checkbox-indicator-border-radius);
+            }
+        }
+    }
+}
+
+.form-check .form-check-sign-white:before {
+    background-color: $white;
+}
+
+.form-check input[type="checkbox"]:checked + .form-check-sign::before,
+.form-check input[type="checkbox"]:checked + .form-check-sign::before{
+    border: none;
+}
+
+.form-check .form-check-label::after{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    top: 0px;
+    text-align: center;
+    opacity: 0;
+    color: $dark;
+    font-weight: 900;
+    border: 0;
+}
+
+.form-check.disabled .form-check-label,
+.form-check.disabled .form-check-label {
+    color: $gray-800;
+    cursor: not-allowed;
+}
+
+.form-check input[type="checkbox"],
+.form-check input[type="radio"]{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.form-check input[type="checkbox"]:checked + .form-check-label::after{
+    background-color:$custom-checkbox-checked-bg;
+    opacity: 1;
+    font-size: .6rem;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.form-check input[type="checkbox"]:disabled + .form-check-label::after{
+    color:$custom-checkbox-disabled-checked-bg;
+}
+
+.form-check input[type="checkbox"]+ .form-check-label::after{
+    opacity: 0;
+}
+
+.form-control input[type="checkbox"]:disabled + .form-check-label::before,
+.checkbox input[type="checkbox"]:disabled + .form-check-label::after{
+    cursor: not-allowed;
+}
+
+.form-check input[type="checkbox"]:disabled + .form-check-label,
+.form-check input[type="radio"]:disabled + .form-check-label{
+    pointer-events: none;
+}
+
+.form-check input[type="radio"] + .form-check-label{
+    padding-top: 3px;
+}
+.form-check input[type="radio"] + .form-check-label::before,
+.form-check input[type="radio"] + .form-check-label::after{
+    content: " ";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    padding: 1px;
+    @include transition(opacity .3s linear);
+}
+
+.form-check input[type="radio"] + .form-check-label::before,
+.form-check input[type="radio"] + .form-check-label::after{
+    content: " ";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    padding: 1px;
+    @include transition(opacity .3s linear);
+}
+
+.form-check input[type="radio"] + .form-check-label:after,
+.form-check input[type="radio"] {
+    opacity: 0;
+}
+
+.form-check input[type="radio"]:checked + .form-check-label::after {
+    width: 8px;
+    height: 8px;
+    top: 7px;
+    left: 4px;
+    background-color: $custom-toggle-slider-indicator-bg;
+    border: 4px solid $custom-toggle-slider-indicator-bg;
+    opacity: 1;
+}
+
+.form-check input[type="radio"]:checked + .form-check-label::before {
+    background-color: $custom-checkbox-checked-bg;
+}
+
+
+.form-check input[type="radio"]:disabled + .form-check-label::before {
+    color: $custom-checkbox-disabled-checked-bg;
+}
+
+.form-check input[type="radio"]:disabled + .form-check-label::before,
+.form-check input[type="radio"]:disabled + .form-check-label::after {
+    color: $gray-800;
+}
+
+//Round checkboxes 
+.round-check{
+    .form-check-sign::before,
+    .form-check-sign::after{
+        border-radius: $circle-radius;
+    }
+}

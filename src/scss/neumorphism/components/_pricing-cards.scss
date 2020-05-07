@@ -1,0 +1,28 @@
+/**
+ * = Pricing cards
+ */
+
+
+
+.card-header {
+    background: transparent;
+    z-index: 2;
+}
+
+.card-body{
+    z-index: 2;
+}
+
+.pricing-value{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+
+    span {
+        line-height: 140px;
+    }
+}
+
+@include media-breakpoint-down(md){
+    margin-top: 1rem;
+}

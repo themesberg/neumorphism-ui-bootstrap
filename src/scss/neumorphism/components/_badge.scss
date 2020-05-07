@@ -1,0 +1,87 @@
+/**
+ * = Badges
+ */
+
+.badge {
+    font-size:$badge-font-size;
+    font-weight: $badge-font-weight;
+    border: $border-width solid $light;
+
+    a {
+        color: $white;
+    }
+}
+
+// Variations
+.badge-pill {
+    padding-right: $badge-pill-padding-x;
+    padding-left: $badge-pill-padding-x;
+}
+
+// Multiple inline badges
+.badge-inline {
+    margin-right: .625rem;
+
+    & + span {
+        top: 2px;
+        position: relative;
+
+        & > a {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Sizes
+.badge-md {
+    padding: .4rem .55rem;
+}
+
+.badge-lg {
+    padding: .65rem .85rem;
+}
+
+
+//Tags 
+.wi-tags{
+    a {
+        background-color: $primary;
+        display: inline-block;
+        padding: 0.125rem 0.875rem;
+        margin: 0.45rem;
+        line-height: 2;
+        font-size: $font-size-sm;
+        @include box-shadow($box-shadow-light);
+        @include border-radius($border-radius);
+    }
+}
+
+.presentation-badge {
+    position: relative;
+    font-size: $font-size-lg;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    right: -15px;
+    padding: 5px 14px;
+    top: -45px;
+    background: $white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-sm;
+    @include media-breakpoint-down(md){
+        font-size: $font-size-sm;
+        right: -13px;
+        padding: 5px 10px;
+        top: -23px;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .badge-#{$color} {
+      @include badge-variant($value);
+      box-shadow: $shadow-inset;
+      background-color: transparent;
+      color: $value;
+
+    }
+}
+
