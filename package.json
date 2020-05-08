@@ -1,15 +1,32 @@
 {
-    "name": "neumorphism-ui-kit-pro",
+    "name": "neumorphism-ui",
     "version": "1.0.0",
-    "description": "Neumorphism inspired premium Bootstrap UI Kit featuring over 1000 components and 13 example pages.",
+    "description": "Neumorphism inspired premium Bootstrap UI Kit featuring over 100 components and 4 example pages.",
     "main": "gulpfile.js",
     "author": "Themesberg",
-    "keywords": ["neumorphism", "neumorphic", "neumorph", "neumorphism css", "neumorphism bootstrap", "neumorphism js", "neumorphism design", "neumorphism ui", "neumorphism ui kit", "themesberg", "gulp", "sass", "html", "js"],
-    "homepage": "https://themesberg.com/product/ui-kits/neumorphism-ui-kit-pro",
+    "keywords": [
+        "neumorphism",
+        "neumorphic",
+        "neomorphism",
+        "neomorphic",
+        "neumorph",
+        "neumorphism css",
+        "neumorphism bootstrap",
+        "neumorphism js",
+        "neumorphism design",
+        "neumorphism ui",
+        "neumorphism ui kit",
+        "themesberg",
+        "gulp",
+        "sass",
+        "html",
+        "js"
+    ],
+    "homepage": "https://themesberg.com/product/ui-kits/neumorphism-ui-kit",
     "bugs": {
-        "url" : "https://github.com/themesberg/th-neumorphism-ui-kit-pro"
+        "url": "https://github.com/themesberg/neumorphism-ui"
     },
-    "license": "https://www.themesberg.com/licensing",
+    "license": "https://www.themesberg.com/licensing#mit",
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "4.1.1",
