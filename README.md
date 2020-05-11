@@ -6,7 +6,7 @@
  <img src="https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-ui-preview.gif" alt="Neumorphism UI Preview"/>
  </a>
 
-Start developing neumorphic web applications and pages using Neumorphism UI which makes use of the neumorphic design trend. It features over 1000 individual components, more than 25 sections and 13 example pages.
+Start developing neumorphic web applications and pages using Neumorphism UI which makes use of the neumorphic design trend. It features over 200 individual components and 5 example pages.
 
 ## Neumorphic components
 
@@ -45,13 +45,13 @@ This product is built using the following widely used technologies:
 
 ## Demo
 
-| Components | About | Pricing | Services |
-| --- | --- | --- | --- |
-| [![Components](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/all-components.jpg)](https://demo.themesberg.com/neumorphism-ui/html/components/all.html) | [![About page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/about.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/about.html) | [![Pricing page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/pricing.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/pricing.html) | [![Services page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/services.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/services.html)
+| Components | About | Contact |
+| --- | --- | --- |
+| [![Components](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/all-components.jpg)](https://demo.themesberg.com/neumorphism-ui/html/components/all.html) | [![About page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/about.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/about.html) | [![Contact page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/contact.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/contact.html)
 
-| Contact | Login | Register | Documentation |
-| --- | --- | --- | --- |
-| [![Contact page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/contact.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/contact.html) | [![Login page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/login.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/sign-in.html) | [![Register page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/register.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/sign-up.html) | [![Documentation](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/docs.jpg)](https://themesberg.com/docs/neumorphism-ui/getting-started/quick-start/)
+| Login | Register | Documentation |
+| --- | --- | --- |
+| [![Login page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/login.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/sign-in.html) | [![Register page](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/register.jpg)](https://demo.themesberg.com/neumorphism-ui/html/pages/sign-up.html) | [![Documentation](https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/github/docs.jpg)](https://themesberg.com/docs/neumorphism-ui/getting-started/quick-start/)
 
 -   [Live Preview](https://demo.themesberg.com/neumorphism-ui/)
 -   [Details](https://themesberg.com/product/ui-kits/neumorphism-ui?ref=github-neumorphism)
