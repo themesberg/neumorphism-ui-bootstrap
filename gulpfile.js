@@ -1,11 +1,11 @@
 /*
 
 =========================================================
-* Neumorphism UI Kit - v1.0.0
+* Neumorphism UI - v1.0.0
 =========================================================
 
-* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui-kit
-* Copyright 2020 Themesberg MIT LICENSE (https://www.themesberg.com/licensing#mit)
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui
+* Copyright 2020 Themesberg MIT License (https://www.themesberg.com/licensing#mit)
 
 * Coded by https://themesberg.com
 
@@ -88,7 +88,10 @@ gulp.task('index', function () {
     return gulp.src([paths.src.base + '**.html'])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'development'
+            }
         }))
         .pipe(gulp.dest(paths.temp.base))
         .pipe(browserSync.stream());
@@ -98,7 +101,10 @@ gulp.task('html', function () {
     return gulp.src([paths.src.html])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'development'
+            }
         }))
         .pipe(gulp.dest(paths.temp.html))
         .pipe(browserSync.stream());
@@ -152,7 +158,10 @@ gulp.task('minify:html', function () {
         }))
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'production'
+            }
         }))
         .pipe(gulp.dest(paths.dist.html))
 });
@@ -164,7 +173,10 @@ gulp.task('minify:html:index', function () {
         }))
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'production'
+            }
         }))
         .pipe(gulp.dest(paths.dist.base))
 });
@@ -208,7 +220,10 @@ gulp.task('copy:dist:html', function () {
     return gulp.src([paths.src.html])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'production'
+            }
         }))
         .pipe(gulp.dest(paths.dist.html));
 });
@@ -217,7 +232,10 @@ gulp.task('copy:dev:html', function () {
     return gulp.src([paths.src.html])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'development'
+            }
         }))
         .pipe(gulp.dest(paths.dev.html));
 });
@@ -227,7 +245,10 @@ gulp.task('copy:dist:html:index', function () {
     return gulp.src([paths.src.base + '**.html'])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'production'
+            }
         }))
         .pipe(gulp.dest(paths.dist.base))
 });
@@ -236,7 +257,10 @@ gulp.task('copy:dev:html:index', function () {
     return gulp.src([paths.src.base + '**.html'])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: './src/partials/'
+            basepath: './src/partials/',
+            context: {
+                environment: 'development'
+            }
         }))
         .pipe(gulp.dest(paths.dev.base))
 });

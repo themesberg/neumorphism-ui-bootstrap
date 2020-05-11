@@ -1,7 +1,7 @@
 {
     "name": "neumorphism-ui",
     "version": "1.0.0",
-    "description": "Neumorphism inspired premium Bootstrap UI Kit featuring over 100 components and 4 example pages.",
+    "description": "Neumorphism inspired premium Bootstrap UI Kit featuring over 100 components and 5 example pages.",
     "main": "gulpfile.js",
     "author": "Themesberg",
     "keywords": [
@@ -15,14 +15,14 @@
         "neumorphism js",
         "neumorphism design",
         "neumorphism ui",
-        "neumorphism ui kit",
+        "Neumorphism UI",
         "themesberg",
         "gulp",
         "sass",
         "html",
         "js"
     ],
-    "homepage": "https://themesberg.com/product/ui-kits/neumorphism-ui-kit",
+    "homepage": "https://themesberg.com/product/ui-kits/neumorphism-ui",
     "bugs": {
         "url": "https://github.com/themesberg/neumorphism-ui"
     },
