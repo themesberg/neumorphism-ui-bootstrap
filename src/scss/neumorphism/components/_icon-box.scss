@@ -34,14 +34,6 @@
 		}
 	}
 
-	&.icon-shape-lg{
-		width: $icon-shape-lg;
-		height: $icon-shape-lg;
-		span, svg {
-			font-size: $icon-size-lg;
-		}
-	}
-
 	&.icon-sm{
 		span, svg {
 			font-size: $icon-size-sm;
@@ -68,16 +60,6 @@
 	span{
 		font-size: 800px;
     	opacity: .1;
-	}
-}
-
-//Colors for icons
-@each $color, $value in $theme-colors {
-	.icon-shape-#{$color} {
-		@include icon-shape-variant(theme-color($color));
-	}
-	.icon-#{$color} {
-		color:$value;
 	}
 }
 
