@@ -9,7 +9,7 @@ $enable-print-styles:       true;
 
 // Color scheme
 $default:       #262833;
-$primary:       #e6e7ee;
+$primary:       #F2F4F8;
 $secondary:     #2D4CC8;
 
 // Generic colors
@@ -58,7 +58,7 @@ $info:          $teal;
 $warning:       $yellow;
 $danger:        $red;
 $gray:          $gray-900;
-$light:         $gray-400;
+$light:         #F2F4F8;
 $soft:          $gray-300;
 $dark:          $dark;
 
@@ -139,7 +139,7 @@ $yiq-text-dark:             $dark;
 $path--rel      : "/img";
 
 // Body
-$body-bg: $soft;
+$body-bg: $primary;
 $body-color: $gray-900;
 
 // Shadows
@@ -481,7 +481,7 @@ $input-disabled-bg:                     $gray-300;
 $input-muted-bg:                        $gray-100;
 
 $input-color:                           $body-color;
-$input-border-color:                    $light;
+$input-border-color:                    $gray-300;
 $input-border-width:                    $border-width ;
 
 $input-focus-bg:                        $primary;
