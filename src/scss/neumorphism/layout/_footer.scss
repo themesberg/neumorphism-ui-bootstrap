@@ -39,3 +39,14 @@
 .copyright {
     font-size: $font-size-sm;
 }
+
+#producthunt-badge {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
