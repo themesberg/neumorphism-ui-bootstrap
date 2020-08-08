@@ -60,7 +60,7 @@
         "nouislider": "11.0.3",
         "onscreen": "1.3.4",
         "popper.js": "1.16.0",
-        "prismjs": "1.17.1",
+        "prismjs": "1.21.0",
         "smooth-scroll": "^16.1.0",
         "sticky-sidebar": "3.3.1",
         "waypoints": "4.0.1"
