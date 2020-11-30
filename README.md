@@ -1,5 +1,5 @@
-<a href="https://themesberg.com/black-friday?utm_medium=social&utm_source=github&utm_campaign=bf-readme-2020">
-<img border="0" alt="Themesberg Black Friday Offer 2020" src="https://themesberg.s3.us-east-2.amazonaws.com/public/posts/black-friday/2020/black-friday-bootstrap-themes.png" >
+<a href="https://themesberg.com/cyber-monday?utm_medium=social&utm_source=github&utm_campaign=cm-readme-2020">
+<img border="0" alt="Themesberg Cyber Monday Offer 2020" src="https://themesberg.s3.us-east-2.amazonaws.com/public/campaigns/cyber-monday/2020/thumbnail.png" >
 </a>
 
 # [Neumorphism UI](https://demo.themesberg.com/neumorphism-ui/) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fthemesberg.com%2Fproduct%2Fui-kits%2Fneumorphism-ui&via=themesberg&text=Start%20developing%20neumorphic%20interfaces%20with%20Neumorphism%20UI%20PRO&hashtags=neumorphism%2Cneomorphism%2Cbootstrap)
