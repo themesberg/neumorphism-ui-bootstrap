@@ -152,14 +152,14 @@
 // Theme color variants
 // eg. navbar-theme-primary, navbar-theme-secondary
 @each $color, $value in $theme-colors {
-    &.navbar-theme-#{$color}:not(.headroom) {
+    .navbar-theme-#{$color}:not(.headroom) {
         background-color: $value;
     }
-    &.navbar-theme-#{$color}:not(.navbar-transparent) {
+    .navbar-theme-#{$color}:not(.navbar-transparent) {
         background-color: $value;
     }
 
-    &.navbar-theme-#{$color}.navbar-light:not(.headroom) .navbar-nav {
+    .navbar-theme-#{$color}.navbar-light:not(.headroom) .navbar-nav {
         .dropdown-item,
         .list-group-item {
             &.active, &:hover, &:focus {
@@ -183,7 +183,7 @@
         }
     }
     
-    &.navbar-theme-#{$color} .navbar-nav {
+    .navbar-theme-#{$color} .navbar-nav {
 
         .dropdown-item,
         .list-group-item {
