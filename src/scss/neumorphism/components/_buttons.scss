@@ -213,7 +213,7 @@
 
 // Set color of theme buttons
 @each $color, $value in $theme-colors {
-    &.btn-#{$color}{
+    .btn-#{$color}{
         @include button-variant($value, $value);
     }
 }
